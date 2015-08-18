@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Amrita Car pooling system</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="scripts/main.js" type="text/javascript"></script>
+  <script src="scripts/picker.js" type="text/javascript"></script>
+  <script src="scripts/picker.date.js" type="text/javascript"></script>
+  <script src="scripts/account.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="css/account.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="javascript:void(0)" class="logo">
+      <img src="images/logo.png" alt="Logo Image">
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        <li class="nav-link"><a href="find.html">Find a ride</a></li>
+        <li class="nav-link"><a href="ofer_a_ride.html">Offer a ride</a></li>
+        <li class="nav-link"><a href="javascript:void(0)">About us</a></li>
+        <li class="nav-link"><a href="login.html">Login</a></li>
+       
+          
+          </ul>
+    </nav>
+      </div>
+    </header>
+
+<!-- ^^End navigation -->
+
+<!-- account creation -->
+
+<style>
+   #account_step2{
+       display: none;
+   } 
+   #form_submit{
+       display: none;
+   }
+</style>
+<div class="signup">
+<h1>Create a New Account</h1>
+<form action="">
+   <fieldset id="account_step1">
+   <!-- first name-->
+   <label for="first_name">First Name</label>
+   <input type="text" name="first_name" value="10"/>
+   <!-- Last name-->
+   <label for="last_name">Last Name</label>
+   <input type="text" name="last_name"/>
+   
+   <!--Username -->
+   <label for="password">Password</label>
+   <input type="password" name="password">
+   <label for="password_confirm">Confirm Password</label>
+   <input type="password" name="password_confirm">
+   </fieldset>
+   
+    <fieldset id="account_step2">
+    <!-- Gender-->
+   <div id="signup_gender">
+       <label for="gender_select">Gender</label>
+   
+   <span for="gender_male">Male</span>
+   <input type="radio" name="gender_select"/>
+   
+    <span for="gender_female">FeMale</span>
+   <input type="radio" name="gender_select"/>
+   
+    <span for="gender_others">Others</span>
+   <input type="radio" name="gender_select"/>
+   </div>
+   
+   <!-- Date of birth-->
+   <label for="date_picker">Date of birth</label>
+   <input type="text" class="date_picker">
+   
+   
+   <!--Email id -->
+   <label for="email_id">Email</label>
+   <input type="text" name="email_id">
+   
+   <!--Occupation -->
+   <label for="occupation">Occupation</label>
+   <input type="text" name="occupation">
+   
+   <!-- file browser -->
+   <label for="profile_pic">Upload a Photo of you</label>
+   <input type="file" name="profile_pic" accept="image/*">
+   </fieldset>
+   
+   <!-- sumbit button -->
+   <input type="button" id="submit_button" value="Next">
+   <input type="submit" id="form_submit" value="Submit">
+</form>
+</div>
+<!-- ^^footer-->
+<footer class="footer" role="contentinfo">
+  <div class="footer-logo">
+    <img src="images/logo.png" alt="Logo image">
+  </div>
+  <div class="footer-links">
+    <ul>
+      <li><h3>Content</h3></li>
+      <li><a href="javascript:void(0)">About</a></li>
+      <li><a href="javascript:void(0)">Find a Ride</a></li>
+      <li><a href="javascript:void(0)">Offer a Ride</a></li>
+    </ul>
+    <ul>
+      <li><h3>Follow Us</h3></li>
+      <li><a href="javascript:void(0)">Facebook</a></li>
+      <li><a href="javascript:void(0)">Twitter</a></li>
+      <li><a href="javascript:void(0)">YouTube</a></li>
+    </ul>
+    <ul>
+      <li><h3>Legal</h3></li>
+      <li><a href="javascript:void(0)">Terms and Conditions</a></li>
+      <li><a href="javascript:void(0)">Privacy Policy</a></li>
+    </ul>
+  </div>
+
+  <hr>
+
+
+  <p>copyright © 2015 Amrita Carpooling System.All Rights Reserved</p>
+</footer>
+</body>
+</html>
+
+

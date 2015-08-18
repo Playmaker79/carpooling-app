@@ -1,0 +1,17 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base/base";
+@import "parts/navigation";
+@import "normalize";
+@import "parts/footer";
+
+.login_box{
+    @include span-columns(6);
+    @include shift(3);
+}
+
+.footer{
+clear: both;
+}
+
+

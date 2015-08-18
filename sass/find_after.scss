@@ -1,0 +1,403 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base/base";
+@import "common";
+@import "parts/navigation";
+@import "normalize";
+@import "parts/datepicker/default";
+@import "parts/datepicker/default.date";
+@import "parts/footer";
+
+@mixin grid-item-columns($columns) {
+  width: (100% / 12) * $columns;
+}
+
+.grid-items-lines {
+  $base-background-color: white !default;
+  $dark-gray: #333 !default;
+  $light-gray: #DDD !default;
+  $medium-screen: em(640) !default;
+  $large-screen: em(860) !default;
+  $base-font-color: $dark-gray !default;
+  $grid-items-background: $base-background-color;
+  $grid-item-background: $base-background-color;
+  $grid-item-border: 1px solid transparentize($base-font-color, 0.8); 
+  $grid-item-columns: 4;
+  $grid-item-big-columns: 8;
+  $grid-item-color: $base-font-color;
+  $grid-item-height: 14em;
+
+  @include clearfix;
+  position: relative;
+    
+  .grid-item {
+    @include transition (all 0.2s ease-in-out);
+    background: $grid-item-background;
+    border-bottom: $grid-item-border;
+    border-right: $grid-item-border;
+    cursor: pointer;
+    float: left;
+    height: $grid-item-height;
+    overflow: hidden;
+    outline: none;
+    padding: 2em;
+    text-decoration: none;
+    width: 100%;
+
+    @include media($large-screen) {
+      @include grid-item-columns($grid-item-columns);
+    }
+  }
+
+  .grid-item img {
+      display: block;
+      height: 3.5em;
+      margin-bottom: 1.2em;
+      opacity: 5;
+      border-radius: 10% ;
+    }
+
+  .grid-item h1 {
+      color: $grid-item-color;
+      font-size: 1.3em;
+      margin-bottom: 0.4em;
+    }
+
+  .grid-item p {
+      color: transparentize($grid-item-color, 0.4);
+      line-height: 1.5em;
+      
+      @include media($medium-screen) {
+        max-width: 70%;
+      }
+    }
+
+  .grid-item-big {
+    @include media($large-screen) {
+      @include grid-item-columns($grid-item-big-columns);
+    }
+    p {
+      @include media($medium-screen) {
+        max-width: 60%;
+      }  
+    }
+  }
+
+  // this, below, might not be the most beautiful solution but it removes the outer borders by using the background color.
+  .bottom-cover {
+    background: $grid-items-background;
+    bottom: 10px;
+    height: 3px;
+    position: absolute;
+    width: 100%;
+  }
+
+  .right-cover {
+    background: $grid-items-background;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    width: 4px;
+  }
+}
+
+.signup{
+    @include span-columns(8);
+    @include shift(2);
+    @extend fieldset;
+    margin-bottom: em(100);
+    input{
+        margin-top: em(10);
+    }
+    input[type=submit]{
+       float: right; 
+    }
+}
+
+.footer{
+    clear: both;
+}
+
+.breadcrumb {   
+  $base-border-color: gainsboro !default;
+  $base-border-radius: 3px !default;
+  $base-background-color: white !default;
+  $base-spacing: 1.5em !default;
+  $action-color: #477DCA !default;
+  $medium-gray: #999 !default;
+  $light-gray: #DDD !default;
+  $medium-screen: em(640) !default;
+  $breadcrumb-border-color: $base-border-color;
+  $breadcrumb-border: 1px solid $breadcrumb-border-color;
+  $breadcrumb-height: $base-spacing * 1.5;
+  $breadcrumb-arrow-color: $breadcrumb-border-color;
+  $breadcrumb-background: $base-background-color;
+  $breadcrumb-inactive-hover-color: $breadcrumb-background;
+  $breadcrumb-color: $medium-gray;
+  $breadcrumb-color-hover: $action-color;
+  $breadcrumb-color-active: $breadcrumb-color;
+
+  display: inline-block;
+  margin-bottom: $base-spacing;
+  text-align: left;
+
+  a {
+    background-color: $breadcrumb-background;
+    border-left: 0;
+    border: $breadcrumb-border;
+    color: $breadcrumb-color;
+    display: inline-block;
+    font-size: 0.8em;
+    line-height: $breadcrumb-height;
+    margin-bottom: 2px;
+    margin-right: -5px;
+    padding: 0 ($breadcrumb-height / 4) 0 ($breadcrumb-height / 2);
+    position: relative;
+    text-decoration: none;
+
+    &:first-child {
+      border-bottom-left-radius: $base-border-radius;
+      border-left: $breadcrumb-border;
+      border-top-left-radius: $base-border-radius;
+      padding-left: $breadcrumb-height / 2;
+    }
+
+    &:last-child {
+      background-color: $breadcrumb-background;
+      border-bottom-right-radius: $base-border-radius;
+      border-top-right-radius: $base-border-radius;
+      color: $breadcrumb-color-active;
+      padding-right: $breadcrumb-height / 2;
+    }
+
+    &:focus,
+    &:hover {
+      background-color: $breadcrumb-inactive-hover-color;
+      color: $breadcrumb-color-hover;
+    }
+
+    &:after,
+    &:before {
+      @include position(absolute, 0px auto 0px 100%);
+      border-bottom: $breadcrumb-height / 2 solid transparent;
+      border-left: $breadcrumb-height / 4 solid transparent;
+      border-top: $breadcrumb-height / 2 solid transparent;
+      content: '';
+      display: block;
+      margin: auto;
+      z-index: 2;
+    }
+
+    &:last-child:after,
+    &:last-child:before {
+       border: none;
+    }
+
+    &:before {
+      border-left-color: $breadcrumb-arrow-color;
+      margin-left: 1px;
+      z-index: 1;
+    }
+    &:after {
+      border-left-color: $breadcrumb-background;
+    }
+
+    @include media($medium-screen) {
+      font-size: 1em;
+      padding: 0 ($breadcrumb-height / 2) 0 ($breadcrumb-height / 1.5);
+    }
+  }
+}
+.label-switch {  
+  $action-color: #477DCA !default;
+  $base-background-color: white !default;
+  $switch-width: 52px;
+  $switch-padding: 2px;
+  $switch-height: 32px;
+  $switch-radius: $switch-height;
+  $knob-size: $switch-height - ($switch-padding * 2);
+  $knob-radius: $switch-height - ($switch-padding * 2);
+  $knob-width: $knob-size;
+  $switch-background: $base-background-color;
+  $switch-border-background: darken($base-background-color, 9%);
+  $switch-shadow: 0 2px 5px transparentize(black, 0.6);
+
+  border-radius: $switch-radius;
+  cursor: pointer;
+  display: inline-block;
+  height: $switch-height;
+  position: relative;
+  width: $switch-width;
+
+  input[type="checkbox"] {
+    display: none;
+
+    + .checkbox {
+      @include transition(all 0.3s ease);
+      background: $switch-border-background;
+      border-radius: $switch-radius;
+      border: none;
+      cursor: pointer;
+      height: $switch-height;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      width: $switch-width;
+      z-index: 0;
+
+      &:before {
+        @include position(absolute, 2px 0 0 2px);
+        @include transform(scale(1));
+        @include transition(all 0.3s ease);
+        background: $switch-background;
+        border-radius: $switch-radius;
+        content: "";
+        height: $knob-radius;
+        width: $switch-width - ($switch-padding * 2);
+        z-index: 1;
+      }
+
+      &:after {
+        @include position(absolute, 2px 0 0 2px);
+        @include transition(all 0.3s ease);
+        @include size($knob-size);
+        background: $switch-background;
+        border-radius: $knob-radius;
+        box-shadow: $switch-shadow;
+        content: "";
+        z-index: 2;
+      }
+    }
+
+    &:checked {
+      + .checkbox {
+        background: $action-color;
+
+        &:before {
+          @include transform(scale(0));
+        }
+
+        &:after {
+          left: $switch-width - $knob-width - ($switch-padding);
+        }
+      }
+    }
+  }
+}
+
+//searchbar
+.search-tools {  
+  $base-border-color: gainsboro !default;
+  $base-border-radius: 3px !default;
+  $base-line-height: 1.5em !default;
+  $base-spacing: 1.5em !default;
+  $action-color: #477DCA !default;
+  
+  $dark-gray: #333 !default;
+  $large-screen: em(860) !default;
+  $base-font-color: $dark-gray !default;
+  $search-tools-border-color: $base-border-color;
+  $search-tools-background: lighten($search-tools-border-color, 10%);
+
+  @include display(flex);
+  @include justify-content(space-between);
+  @include clearfix;
+  background: $search-tools-background;
+  border-radius: $base-border-radius;
+  border: 1px solid $search-tools-border-color;
+  padding: $gutter ($gutter / 2);
+  width: 100%;
+
+  ol {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    font-size: 0.8em;
+    line-height: 1.5em;
+    list-style: none;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: $base-spacing / 4;
+  }
+
+  .filters {
+    @include display(flex);
+    @include flex-direction(column);
+    @include justify-content(space-between);
+    width: 100%;
+
+    @include media($large-screen) {
+      @include flex-direction(row);
+    }
+  }
+
+  .filter {
+    @include flex-shrink(1);
+    @include flex-grow(1);
+    margin: 0 0.2em 1em 0.2em;
+
+    @include media($large-screen) {
+      margin-bottom: 0;
+    }
+
+    > div {
+      @include box-sizing(border-box);
+      @include transition(border-color);
+      background-color: white;
+      border-radius: $base-border-radius;
+      border: 1px solid $base-border-color;
+      font-size: 1em;
+      margin-bottom: $base-spacing / 2;
+      padding: ($base-spacing / 3) ($base-spacing / 3);
+      position: relative;
+      width: 100%;
+
+      &:focus,
+      &:hover {
+        border-color: darken($base-border-color, 10%);
+      }
+
+      label {
+        cursor: pointer;
+        margin-bottom: 0;
+      }
+    }
+
+    ol {
+      margin-top: 1em;
+
+      label {
+        display: inline;
+      }
+    }
+
+    button.clear {
+      @include position(absolute, 5px 5px auto auto);
+      font-size: 0.7em;
+    }
+
+    .hide-options {
+      margin-bottom: 0;
+
+      ol, button {
+        display: none;
+      }
+    }
+  }
+
+  .trigger {
+    margin-top: 1.5em;
+    
+    button {
+      display: block;
+      width: 100%;
+      padding: .5em 1em;
+      text-align: center;
+    }
+  }
+}
