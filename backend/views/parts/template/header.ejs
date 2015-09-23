@@ -1,0 +1,36 @@
+<script>
+$(document).ready(function() {
+  $(window).keydown(function(event){
+    if(event.keyCode == 13) {
+      event.preventDefault();
+      return false;
+    }
+  });
+});
+</script>
+ <header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="/" class="logo">
+      <img src="/images/logo.png" alt="Logo Image">
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        <li class="nav-link"><a href="/find">Find a ride</a></li>
+        <li class="nav-link"><a href="/offer">Offer a ride</a></li>
+        <li class="nav-link"><a href="/about">About us</a></li>
+        <li class="nav-link"><a href="/login">Login</a></li>
+          </ul>
+    </nav>
+     
+     <%if (create == true){%>
+     <div class="navigation-tools">
+    <!-- <input type="submit" Value="Create an account"> -->
+      <div class="search-bar">
+       <div style="display:inline; "><a href="/account"><input type="submit" Value="Create an Account"> </a>
+       </div>    
+      </div>
+    </div>    
+    <%}%>
+    </div>
+</header>

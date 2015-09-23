@@ -1,0 +1,225 @@
+
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base/base";
+@import "parts/navigation";
+@import "normalize";
+@import "parts/footer";
+
+.offer_nav{
+@include linear-gradient(to top, $light-yellow,$yellow);
+border-radius: em(10);
+border:1px solid $light-yellow;
+box-shadow: none;
+padding: 0.75em 1.5em;
+color:#fff;
+vertical-align:super;
+}
+
+
+.user_controls li{
+    display: inline;
+    img{
+        float:right;
+    }
+  .user_icon{
+       width: em(50);
+       height: em(50);
+       
+  }
+.profile_pic{
+     width: em(50);
+     height: em(50);
+     border-radius: em(25);
+     vertical-align: baseline;
+}
+.profile_pic:hover{
+    border: em(2) solid white; 
+}
+}
+
+.feature{
+@include span-columns(12);
+background: red;    
+}
+
+fieldset{
+    @include span-columns(6);
+    @include shift(3);
+}
+
+h2{
+    text-align: center;
+}
+
+#action_boxes{
+    //@include outer-container;
+    @include span-columns(12);
+    background: url(../images/city.jpg);
+    background-size: contain;
+    padding: em(100);
+    //background-repeat: repeat-x;
+    legend{
+        //text-align: center;
+        font-family: $heading-font-family;
+        font-size: em(20);
+    }
+    label{
+        text-align: center;
+    }
+    .find{
+        float: right;
+        background: #ec7b5d;
+        color:#f3f3f3;
+    }
+}
+
+@mixin grid-item-columns($columns) {
+  width: (100% / 12) * $columns;
+}
+
+.grid-items-lines {
+  $base-background-color: white !default;
+  $dark-gray: #333 !default;
+  $light-gray: #DDD !default;
+  $medium-screen: em(640) !default;
+  $large-screen: em(860) !default;
+  $base-font-color: $dark-gray !default;
+  $grid-items-background: $base-background-color;
+  $grid-item-background: $base-background-color;
+  $grid-item-border: 1px solid transparentize($base-font-color, 0.8); 
+  $grid-item-columns: 4;
+  $grid-item-big-columns: 8;
+  $grid-item-color: $base-font-color;
+  $grid-item-height: 14em;
+
+  @include clearfix;
+  position: relative;
+    
+  .grid-item {
+    @include transition (all 0.2s ease-in-out);
+    background: $grid-item-background;
+    border-bottom: $grid-item-border;
+    border-right: $grid-item-border;
+    cursor: pointer;
+    float: left;
+    height: $grid-item-height;
+    overflow: hidden;
+    outline: none;
+    padding: 2em;
+    text-decoration: none;
+    width: 100%;
+
+    @include media($large-screen) {
+      @include grid-item-columns($grid-item-columns);
+    }
+  }
+
+  .grid-item img {
+      display: block;
+      height: 2.5em;
+      margin-bottom: 1.2em;
+      opacity: 0.2;
+    }
+
+  .grid-item h1 {
+      color: $grid-item-color;
+      font-size: 1.3em;
+      margin-bottom: 0.4em;
+    }
+
+  .grid-item p {
+      color: transparentize($grid-item-color, 0.4);
+      line-height: 1.5em;
+      
+      @include media($medium-screen) {
+        max-width: 70%;
+      }
+    }
+
+  .grid-item-big {
+    @include media($large-screen) {
+      @include grid-item-columns($grid-item-big-columns);
+    }
+    p {
+      @include media($medium-screen) {
+        max-width: 60%;
+      }  
+    }
+  }
+
+  // this, below, might not be the most beautiful solution but it removes the outer borders by using the background color.
+  .bottom-cover {
+    background: $grid-items-background;
+    bottom: 0px;
+    height: 3px;
+    position: absolute;
+    width: 100%;
+  }
+
+  .right-cover {
+    background: $grid-items-background;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    width: 4px;
+  }
+}
+
+.signup{
+    @include span-columns(8);
+    @include shift(2);
+    @extend fieldset;
+    margin-bottom: em(100);
+    input{
+        margin-top: em(10);
+    }
+    input[type=submit]{
+       float: right; 
+    }
+}
+
+.footer{
+    clear: both;
+}
+
+$base-spacing: 1.5em !default;
+$alert-color: #fff6bf !default;
+$error-color: #fbe3e4 !default;
+$notice-color: #e5edf8 !default;
+$success-color: #e6efc2 !default;
+
+@mixin flash($color) {
+  background-color: $color;
+  color: darken($color, 60%);
+  display: block;
+  margin-bottom: $base-spacing / 2;
+  padding: $base-spacing / 2;
+  text-align: center;
+
+  a {
+    color: darken($color, 70%);
+    text-decoration: underline;
+
+    &:focus,
+    &:hover {
+      color: darken($color, 90%);
+    }
+  }
+}
+
+.flash-alert {
+  @include flash($alert-color);
+}
+
+.flash-error {
+  @include flash($error-color);
+}
+
+.flash-notice {
+  @include flash($notice-color);
+}
+
+.flash-success {
+  @include flash($success-color);
+}

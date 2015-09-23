@@ -1,0 +1,26 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base/base";
+@import "parts/navigation";
+@import "normalize";
+
+.setup_form{
+    @include outer-container;    
+    h2{
+        text-align: center;
+        font-size: em(24); 
+    }
+    input[type='file']{
+        @extend fieldset;
+        border-radius: em(10);
+    }
+    input.upload{
+        @extend button;
+    }
+}
+
+#pro-pic-preview{
+        width:em(200);
+        height: em(200);
+        margin: 0 auto;
+    }

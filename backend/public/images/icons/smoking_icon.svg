@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1137px" height="1137px" viewBox="0 0 1137 1137" style="enable-background:new 0 0 1137 1137;" xml:space="preserve">
+<path style="fill:#41526B;" d="M1112.039,562.08c0,9.5-0.239,18.95-0.72,28.33c-14.739,288.96-253.71,518.729-546.34,518.729
+	c-5.81,0-11.59-0.09-17.36-0.27c-294.089-9.17-529.699-250.47-529.699-546.79c0-302.13,244.93-547.06,547.06-547.06
+	C867.11,15.02,1112.039,259.95,1112.039,562.08z"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="524.9934" y1="636.3857" x2="902.9183" y2="186.4758" gradientTransform="matrix(1 0 0 -1 -0.02 1136.0947)">
+	<stop  offset="0" style="stop-color:#223449"/>
+	<stop  offset="0.1182" style="stop-color:#293B50"/>
+	<stop  offset="0.3145" style="stop-color:#304258"/>
+	<stop  offset="0.5581" style="stop-color:#35475C"/>
+	<stop  offset="0.9892" style="stop-color:#36485E"/>
+</linearGradient>
+<path style="fill:url(#SVGID_1_);" d="M1111.32,590.41c-14.74,288.96-253.71,518.729-546.34,518.729c-5.81,0-11.59-0.09-17.36-0.27
+	L307.57,847.6l-0.18-0.188L301.5,841l4.18-4.521l474.96-512.72l14.88-16.06l16.74-18.07l0.891,0.9L1111.32,590.41z"/>
+<g>
+	
+		<rect x="174.185" y="526.453" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1316.9126 582.7656)" style="fill:#FFFFFF;" width="727.153" height="75.343"/>
+	
+		<ellipse transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 1142.0939 1085.2583)" style="fill:#664219;" cx="795.811" cy="306.094" rx="37.671" ry="23.255"/>
+	<path style="fill:#E8AB48;" d="M419.329,629.35c-0.109,0.07-0.22,0.16-0.31,0.25l0.28-0.278L419.329,629.35z"/>
+	<path style="fill:#E8AB48;" d="M472.21,682.96L307.32,847.85l-53.279-53.27L419.02,629.6c-3.29,3.28,5.98,17.87,20.69,32.58
+		C454.3,676.771,468.76,686,472.21,682.96z"/>
+	<path style="fill:#E8AB48;" d="M472.57,682.6l-0.189,0.19c0.06-0.061,0.12-0.14,0.17-0.21L472.57,682.6z"/>
+	
+		<ellipse transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -99.1364 1599.3367)" style="fill:#E8AB48;" cx="281.665" cy="820.2" rx="37.671" ry="8.409"/>
+</g>
+<g id="Layer_2">
+</g>
+</svg>

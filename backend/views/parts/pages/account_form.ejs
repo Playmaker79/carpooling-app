@@ -1,0 +1,54 @@
+<div class="signup">
+<h1>Create a New Account</h1>
+<form action="/account" method="POST">
+   <fieldset id="account_step1">
+   <!-- first name-->
+   <label for="first_name">First Name</label>
+   <input type="text" name="first_name" value="10"/>
+   <!-- Last name-->
+   <label for="last_name">Last Name</label>
+   <input type="text" name="last_name"/>
+   
+   <!--Username -->
+   <label for="password">Password</label>
+   <input type="password" name="password">
+   <label for="password_confirm">Confirm Password</label>
+   <input type="password" name="password_confirm">
+   </fieldset>
+   
+    <fieldset id="account_step2">
+    <!-- Gender-->
+   <div id="signup_gender">
+       <label for="gender_select">Gender</label>
+   
+   <span for="gender_male">Male</span>
+   <input type="radio" name="gender_select" value="m"/>
+   
+    <span for="gender_female">FeMale</span>
+   <input type="radio" name="gender_select" value="f"/>
+   
+    <span for="gender_others">Others</span>
+   <input type="radio" name="gender_select" value="o"/>
+   </div>
+   
+   <!-- Date of birth-->
+   <label for="date_picker">Date of birth</label>
+   <input type="text" class="date_picker" name="date_picker"/>
+   
+   <!-- Email id -->
+   <label for="email_id">Email</label>
+   <input type="text" name="email_id">
+   
+   <!--Occupation -->
+   <label for="occupation">Occupation</label>
+   <input type="text" name="occupation">
+   
+   <!-- file browser -->
+   
+   </fieldset>
+   
+   <!-- sumbit button -->
+   <input type="button" id="submit_button" value="Next">
+   <input type="submit" id="form_submit" value="Submit">
+</form>
+</div>

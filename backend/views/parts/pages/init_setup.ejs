@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <% include ../template/head.ejs %>
+    <link rel="stylesheet" href="/stylesheets/init_setup.css" type="text/css">
+  </head>
+  <body>
+   <style>
+       
+    </style>
+    <!-- menu section -->
+    <% include ../template/header.ejs%>
+          <form action="/user/setup" method="post" enctype="multipart/form-data" class="setup_form">
+         <fieldset>
+          <h2>Add a profile picture</h2>
+          <div id="picture-preview">
+              <img src="#" alt="profile picture" id="pro-pic-preview">
+          </div>
+          <input type="file" name="pic" accept="image/*" id="img-input">
+          <input type="submit" value="upload">
+          </fieldset>
+          </form>
+          
+          <script type="text/javascript">
+      
+              function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function (e) {
+                $('#pro-pic-preview').attr('src', e.target.result);
+            }
+            
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+              
+              $("#img-input").change(function(){
+                readURL(this);
+            });
+          </script>
+      <!-- footer section -->
+      <% include ../template/footer.ejs%>
+  </body>
+</html>
