@@ -40,7 +40,9 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use(cookieParser());
-app.use(session({secret: 'qwerty123'}));
+app.use(session({secret: 'qwerty124',
+                 saveUninitialized: true
+                }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static('uploads/profile_pics'));
 app.use(express.static('uploads/car_pics'));
