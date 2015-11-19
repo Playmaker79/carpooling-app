@@ -41,6 +41,7 @@ app.use(bodyParser.urlencoded({
 
 app.use(cookieParser());
 app.use(session({secret: 'qwerty124',
+                 resave: true,
                  saveUninitialized: true
                 }));
 app.use(express.static(path.join(__dirname, 'public')));
@@ -68,6 +69,7 @@ app.post('/account', function (req, res) {
 
 
 /*handle login page*/
+/*handle login page*/
 app.post('/login', function (req, res){
     var values = req.body;
     var password_db;
@@ -77,48 +79,47 @@ app.post('/login', function (req, res){
     dbconnect.connection.query('SELECT * FROM `users` WHERE `email`=?', [values.email],
         function (err, rows, fields) {
             console.log(rows);
-           if (err){
+            if (err){
                 res.redirect("/test");
                 res.end();
             }
             if (!err) {
-              password_db =  rows[0].password_hash;
-              current_user = rows[0].id;
+                password_db =  rows[0].password_hash;
+                current_user = rows[0].id;
             }
-        
-    /* compare enterd password with hashed password in database*/
-    var x = bcrypt.compareSync(password_user,password_db);
-    console.log("sync" + x);
-    if (x == true) {
-        sess = req.session;
-        sess.current_user = current_user;
-        
-        /*redirect to initial profile pic upload page*/
-        if(sess.updateprofile == true && sess.current_user){
-            res.redirect("/user/setup");
-        }
-        else{
-        res.redirect("/find");
-        res.end();
-        }
-        }
-        else{
-            res.redirect("/login");
-            res.end();
-        }
-        }
-    //checking the password for now
 
-    //var insert = dbconnect.createaccount(values,password,res);   
-                              );});
+            /* compare enterd password with hashed password in database*/
+            var x = bcrypt.compareSync(password_user,password_db);
+            console.log("sync" + x);
+            if (x == true) {
+                sess = req.session;
+                sess.current_user = current_user;
 
+                /*redirect to initial profile pic upload page*/
+                if(sess.updateprofile == true && sess.current_user){
+                    res.redirect("/user/setup");
+                }
+                else{
+                    res.redirect("/find");
+                    res.end();
+                }
+            }
+            else{
+                res.redirect("/login");
+                res.end();
+            }
+        }
+        //checking the password for now
+
+        //var insert = dbconnect.createaccount(values,password,res);
+    );});
 
 //handle profile pic upload 
 app.post('/user/setup', profile_pic_location.single('pic'), function (req, res, next){
     sess = req.session;
     
-    /*upload profiles only when redirected and or when the user is logged in*/ 
-    
+    /*upload profiles only when redirected and or when the user is logged in*/
+    /* second param : if the profile is needed to be updated manually*/
     if(sess.current_user&&sess.updateprofile || sess.current_user){
     var current_user = sess.current_user;
     console.log("profile upload");
@@ -128,7 +129,6 @@ app.post('/user/setup', profile_pic_location.single('pic'), function (req, res, 
     console.log(filepath);
     dbconnect.uploadprofile(filepath,current_user,res,sess);
     }
-    /*if the profile is needed to be updated manually*/
     /*worst case - redirect to login page*/
     else{
         res.redirect('/login');
@@ -148,6 +148,7 @@ app.post('/offer',vehicle_picture.single('vehicle_picture'), function (req, res,
     if(sess.current_user){
     var current_user = sess.current_user;
     var data = req.body;
+    console.log(req.body);
     var file = req.file;
         dbconnect.offeraride(data,file,req,res);
     }

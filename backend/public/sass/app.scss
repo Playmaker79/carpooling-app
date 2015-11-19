@@ -167,9 +167,11 @@ h2{
 }
 
 .signup{
-    @include span-columns(8);
-    @include shift(2);
-    @extend fieldset;
+
+    @include span-columns(10);
+    @include shift(1);
+   z-index: 100 !important;
+  position: relative;
     margin-bottom: em(100);
     input{
         margin-top: em(10);
@@ -177,7 +179,28 @@ h2{
     input[type=submit]{
        float: right; 
     }
+
+  .map{
+    @include span-columns(5);
+    @include row();
+    display: table;
+  }
+
+ .ride_planner{
+   @include  span-columns(5);
+   @include row();
+   margin-bottom : em(10);
+ }
+
+  #add_stop{
+    float: right;
+ }
+  #ride_map,.ride_planner{
+    display: inline-block;
+    position: relative;
+  }
 }
+
 
 .footer{
     clear: both;

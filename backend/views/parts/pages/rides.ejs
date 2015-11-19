@@ -71,8 +71,10 @@
   </div>
   
    <a href="javascript:void(0)" class="grid-item grid-item-big">
-   
-    <h1><%= ride_data.travel_date %></h1>
+   <%var travel_date = ride_data.travel_date.toString()%>
+   <% var date = travel_date.split("00:");%>
+    <h1><%= date[0]%></h1>
+    <% console.log(date)%>
     <h2>Time<span class="arrow"><%= ride_data.travel_time.toString() %></span></h2>
     <h2><%= ride_data.source %><span class="arrow">&#8594;</span><%= ride_data.destination %></h2>
        <h2> rate per traveller:<span class="arrow">₹<%= ride_data.Rate%></span></h2>

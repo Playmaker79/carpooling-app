@@ -68,8 +68,8 @@ exports.offeraride = function (data, file, req, res) {
         }
         var vehicle_picture = file.filename;
         var current_user = sess.current_user;
-        var date_travel = new Date(""+data.travel_date);
-        var date_return = new Date(""+data.return_date);
+        var date_travel = new Date(data.date_travel);
+        var date_return = new Date(data.date_return);
         console.log(data.travel_date);
         console.log(data.return_date);
         var values = [data.source, data.destination, date_travel, data.time_travel, data.purpose,date_return, data.time_return, data.vechicle_model, vehicle_picture, data.drinking, data.smoking, data.music, data.gender_select, current_user,data.rider_rate,data.ride_phone];

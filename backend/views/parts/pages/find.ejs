@@ -5,6 +5,7 @@
          display:none;
      }
  </style>
+
  <div class="grid-items-lines">
   
    <a href="javascript:void(0)" class="grid-item user_info">
@@ -32,6 +33,7 @@
             google.maps.event.addListener(places, 'place_changed', function () {
                 var place = places.getPlace();
                 var address = place.formatted_address;
+
             });
             
             google.maps.event.addListener(places2, 'place_changed', function () {

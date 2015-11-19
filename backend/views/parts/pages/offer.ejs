@@ -22,23 +22,106 @@
            height:18em !important;
        }
 </style>
-<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places"></script>
-    <script type="text/javascript">
-        google.maps.event.addDomListener(window, 'load', function () {
-            var places = new google.maps.places.Autocomplete(document.getElementById('source_addr'));
-            var places2 = new google.maps.places.Autocomplete(document.getElementById('dest_addr'));
-            google.maps.event.addListener(places, 'place_changed', function () {
-                var place = places.getPlace();
-                var address = place.formatted_address;
-            });
-            
-            google.maps.event.addListener(places2, 'place_changed', function () {
-                var place = places.getPlace();
-                var address = place.formatted_address;
-            });
-            
-        });
-    </script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgv2PpFkhSN92tgs0g82VfU7nybuE-8Eg&signed_in=true&libraries=places&callback=initMap"
+		   async defer></script>
+<!-- gmaps-->
+   <script>
+
+
+	var waypts = [];
+	var add_points = true;
+
+
+	function initMap() {
+
+		/*auto complete*/
+		google.maps.event.addDomListener(window, 'load', function () {
+			var places = new google.maps.places.Autocomplete(document.getElementById('source_addr'));
+			var places2 = new google.maps.places.Autocomplete(document.getElementById('dest_addr'));
+			var places3 = new google.maps.places.Autocomplete(document.getElementById('stop_points'));
+			google.maps.event.addListener(places, 'place_changed', function () {
+				var place = places.getPlace();
+				var address = place.formatted_address;
+				calculateAndDisplayRoute(directionsService, directionsDisplay,waypts);
+
+			});
+
+			google.maps.event.addListener(places2, 'place_changed', function () {
+				var place = places.getPlace();
+				var address = place.formatted_address;
+				calculateAndDisplayRoute(directionsService, directionsDisplay,waypts);
+			});
+
+		});
+		/*end auto complete*/
+		var directionsService = new google.maps.DirectionsService;
+		var directionsDisplay = new google.maps.DirectionsRenderer;
+		var map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 10,
+					center: {lat: 41.85, lng: -87.65}
+				}
+		);
+		directionsDisplay.setMap(map);
+		var onChangeHandler = function() {
+			calculateAndDisplayRoute(directionsService, directionsDisplay,waypts);
+		};
+
+		var onClickHandler = function(){
+			var stop  = $("#stop_points");
+			if(stop.val().length>1 && add_points == true){
+				waypts.push({location:stop.val()});
+				stop.value = "";
+				$("<span class='col-md-3 label label-warning stop_tag_item' stop-point='"+stop.val()+"'>"+stop.val()+"</span>")
+						.appendTo($('#stop_tags')).hide().slideDown();
+				$(".stop_tag_item").click(function(){
+							add_points = true;
+							$(this).fadeOut();
+							var current_tag = $(this).attr("stop-point");
+							console.log(current_tag);
+							for(var i = 0; i < waypts.length; i++) {
+								if (waypts[i].location == current_tag) {
+									waypts.splice(i, 1);
+									calculateAndDisplayRoute(directionsService, directionsDisplay,waypts);
+									break;
+								}
+							}
+						}
+
+				);
+			}
+			calculateAndDisplayRoute(directionsService, directionsDisplay,waypts);
+		}
+
+
+		document.getElementById('source_addr').addEventListener('change', onChangeHandler);
+		document.getElementById('dest_addr').addEventListener('change', onChangeHandler);
+		document.getElementById('add_stop').addEventListener('click', onClickHandler);
+
+
+	}
+
+
+	function calculateAndDisplayRoute(directionsService, directionsDisplay,waypts) {
+		directionsService.route({
+			origin: document.getElementById('source_addr').value,
+			destination: document.getElementById('dest_addr').value,
+			travelMode: google.maps.TravelMode.DRIVING,
+			waypoints : waypts
+		}, function(response, status) {
+			if(status === google.maps.DirectionsStatus.MAX_WAYPOINTS_EXCEEDED){
+				add_points = false;
+				alert("dude im not paying for google maps");
+			}
+			if (status === google.maps.DirectionsStatus.OK) {
+				directionsDisplay.setDirections(response);
+			} else {
+				window.alert('Directions request failed due to ' + status);
+			}
+		});
+	}
+
+</script>
+   <!-- gmaps end-->
 <div class="grid-items-lines">
    <a href="javascript:void(0)" class="grid-item">
     <img src="<%= profile_pic %>" alt="pro-pic" id="pro-pic">
@@ -59,16 +142,26 @@
 <div class="signup">
 <h1>Offer a Ride</h1>
 <form action="/offer" method="post" enctype="multipart/form-data">
-   <!-- from-->
-   <label for="source">From</label>
-   <input type="text" name="source" placeholder="enter your starting point" id="source_addr"/>
-   
-   <!-- to-->
-   <label for="destination">To</label>
-   <input type="text" name="destination" placeholder="enter your destination" id="dest_addr"/>
-    
+   <div class="ride_planner">
+	   <!-- from-->
+	   <label for="source">From</label>
+	   <input type="text" name="source" placeholder="enter your starting point" id="source_addr"/>
 
-   
+	   <!-- to-->
+	   <label for="destination">To</label>
+	   <input type="text" name="destination" placeholder="enter your destination" id="dest_addr"/>
+
+	   <!-- In bettween routes-->
+	   <label for="stops">Stop points</label>
+	   <input type="text" name="destination" placeholder="enter your destination" id="stop_points"/>
+	   <input type="button" id="add_stop" value="add"/>
+	   <div id="stop_tags">
+		   <div class="clearfix"></div>
+	   </div>
+   </div>
+
+	<div id="map">
+	</div>
    <!-- Date Travel-->
    <label for="date_travel">Date of travel</label>
    <input type="text" class="date_picker" name="date_travel"/>
