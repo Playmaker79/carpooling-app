@@ -1,33 +1,29 @@
 
-   <style>
-    .grid-items-lines p {
-        text-align:center;
-        margin-left:50px;
-    }
-    #pro-pic{
-        margin:0 auto;
-        opacity:1;
-        width: 6.5em;
-        height:5.5em;
-    }
-    
-    .grid-item:hover{
-        background:#f4f4f4;
-    }
-    hr{
-        padding:0px;
-        margin:0px;
-    }
-       .grid-items-lines{
-           height:18em !important;
-       }
+<style>
+	.grid-items-lines p {
+		text-align:center;
+		margin-left:50px;
+	}
+	#pro-pic{
+		margin:0 auto;
+		opacity:1;
+		width: 6.5em;
+		height: 100px;
+		BORDER-RADIUS: 50PX;
+	}
+
+	.grid-item:hover{
+		background:#f4f4f4;
+	}
+	hr{
+		padding:0px;
+		margin:0px;
+	}
 </style>
-   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgv2PpFkhSN92tgs0g82VfU7nybuE-8Eg&signed_in=true&libraries=places&callback=initMap"
-		   async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgv2PpFkhSN92tgs0g82VfU7nybuE-8Eg&signed_in=false&libraries=places&callback=initMap"
+		async defer></script>
 <!-- gmaps-->
-   <script>
-
-
+<script>
 	var waypts = [];
 	var add_points = true;
 
@@ -65,17 +61,19 @@
 		var onChangeHandler = function() {
 			calculateAndDisplayRoute(directionsService, directionsDisplay,waypts);
 		};
-
+		var ontagclose = function(){
+			this.hide();
+		};
 		var onClickHandler = function(){
 			var stop  = $("#stop_points");
 			if(stop.val().length>1 && add_points == true){
 				waypts.push({location:stop.val()});
-				stop.value = "";
-				$("<span class='col-md-3 label label-warning stop_tag_item' stop-point='"+stop.val()+"'>"+stop.val()+"</span>")
+				$("<span class='col-md-3 badge-alert stop_tag_item' stop-point='"+stop.val()+"'>"+stop.val()+"<span class='stop_close'>x</span>"+"</span>")
 						.appendTo($('#stop_tags')).hide().slideDown();
+				stop.val("");
 				$(".stop_tag_item").click(function(){
 							add_points = true;
-							$(this).fadeOut();
+							$(this).remove().fadeOut();
 							var current_tag = $(this).attr("stop-point");
 							console.log(current_tag);
 							for(var i = 0; i < waypts.length; i++) {
@@ -112,321 +110,344 @@
 				add_points = false;
 				alert("dude im not paying for google maps");
 			}
-			if (status === google.maps.DirectionsStatus.OK) {
+			else if (status === google.maps.DirectionsStatus.OK) {
 				directionsDisplay.setDirections(response);
-			} else {
+			}
+			else if(status === google.maps.DirectionsStatus.ZERO_RESULTS){
+				$(".stop_tag_item").last().remove();
+				waypts.pop();
+			}
+			else {
 				window.alert('Directions request failed due to ' + status);
 			}
 		});
 	}
 
+	function processUpdate(){
+		for(i=0;i<waypts.length;i++){
+			$('<input>').attr({
+				type: 'hidden',
+				name: 'waypts',
+				value: waypts[i].location,
+			}).appendTo('#offer_form');
+		}
+		$('#offer_form').submit();
+	}
 </script>
-   <!-- gmaps end-->
+<!-- gmaps end-->
 <div class="grid-items-lines">
-   <a href="javascript:void(0)" class="grid-item">
-    <img src="<%= profile_pic %>" alt="pro-pic" id="pro-pic">
-    <h1><%= name%> <%= lastname%></h1>
-    <p><%= occupation%></p>
-  </a>
-   <a href="javascript:void(0)" class="grid-item grid-item-big">
-    <h1>Amrita Car pooling System</h1>
-    <p>put insights of user here</p>
-  </a>
-     
-    <div class="right-cover"></div>
-  <div class="bottom-cover"></div>
+	<a href="javascript:void(0)" class="grid-item">
+		<img src="<%= profile_pic %>" alt="pro-pic" id="pro-pic">
+		<h1><%= name%> <%= lastname%></h1>
+		<p><%= occupation%></p>
+	</a>
+	<a href="javascript:void(0)" class="grid-item grid-item-big">
+		<h1>Amrita Car pooling System</h1>
+		<p>put insights of user here</p>
+	</a>
+
+	<div class="right-cover"></div>
+	<div class="bottom-cover"></div>
 </div>
-  <hr>
-   <!--Offer a ride-->
-   <br>
+<hr>
+<!--Offer a ride-->
+<br>
 <div class="signup">
-<h1>Offer a Ride</h1>
-<form action="/offer" method="post" enctype="multipart/form-data">
-   <div class="ride_planner">
-	   <!-- from-->
-	   <label for="source">From</label>
-	   <input type="text" name="source" placeholder="enter your starting point" id="source_addr"/>
+	<h1>Offer a Ride</h1>
+	<form action="/offer" method="post" enctype="multipart/form-data" id="offer_form">
+		<div class="ride_planner">
+			<!-- from-->
+			<label for="source">From</label>
+			<input type="text" name="source" placeholder="enter your starting point" id="source_addr"/>
 
-	   <!-- to-->
-	   <label for="destination">To</label>
-	   <input type="text" name="destination" placeholder="enter your destination" id="dest_addr"/>
+			<!-- to-->
+			<label for="destination">To</label>
+			<input type="text" name="destination" placeholder="enter your destination" id="dest_addr"/>
 
-	   <!-- In bettween routes-->
-	   <label for="stops">Stop points</label>
-	   <input type="text" name="destination" placeholder="enter your destination" id="stop_points"/>
-	   <input type="button" id="add_stop" value="add"/>
-	   <div id="stop_tags">
-		   <div class="clearfix"></div>
-	   </div>
-   </div>
+			<!-- In bettween routes-->
+			<label for="stops">Stop points</label>
+			<input type="text" name="destination" placeholder="Enter in bettween locations" id="stop_points"/>
+			<input type="button" id="add_stop" value="add"/>
+			<div id="stop_tags">
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div id="map">
 
-	<div id="map">
-	</div>
-   <!-- Date Travel-->
-   <label for="date_travel">Date of travel</label>
-   <input type="text" class="date_picker" name="date_travel"/>
-   
-   <!--time-->
-    <label for="time_travel">Time</label>
-   <select name="time_travel" id="time_travel">
-	<option value="5:00 AM">5:00 AM</option>
-	<option value="5:15 AM">5:15 AM</option>
-	<option value="5:30 AM">5:30 AM</option>
-	<option value="5:45 AM">5:45 AM</option>
- 
-	<option value="6:00 AM">6:00 AM</option>
-	<option value="6:15 AM">6:15 AM</option>
-	<option value="6:30 AM">6:30 AM</option>
-	<option value="6:45 AM">6:45 AM</option>
- 
-	<option value="7:00 AM">7:00 AM</option>
-	<option value="7:15 AM">7:15 AM</option>
-	<option value="7:30 AM">7:30 AM</option>
-	<option value="7:45 AM">7:45 AM</option>
- 
-	<option value="8:00 AM">8:00 AM</option>
-	<option value="8:15 AM">8:15 AM</option>
-	<option value="8:30 AM">8:30 AM</option>
-	<option value="8:45 AM">8:45 AM</option>
- 
-	<option value="9:00 AM">9:00 AM</option>
-	<option value="9:15 AM">9:15 AM</option>
-	<option value="9:30 AM">9:30 AM</option>
-	<option value="9:45 AM">9:45 AM</option>
- 
-	<option value="10:00 AM">10:00 AM</option>
-	<option value="10:15 AM">10:15 AM</option>
-	<option value="10:30 AM">10:30 AM</option>
-	<option value="10:45 AM">10:45 AM</option>
- 
-	<option value="11:00 AM">11:00 AM</option>
-	<option value="11:15 AM">11:15 AM</option>
-	<option value="11:30 AM">11:30 AM</option>
-	<option value="11:45 AM">11:45 AM</option>
- 
-	<option value="12:00 PM">12:00 PM</option>
-	<option value="12:15 PM">12:15 PM</option>
-	<option value="12:30 PM">12:30 PM</option>
-	<option value="12:45 PM">12:45 PM</option>
- 
-	<option value="1:00 PM">1:00 PM</option>
-	<option value="1:15 PM">1:15 PM</option>
-	<option value="1:30 PM">1:30 PM</option>
-	<option value="1:45 PM">1:45 PM</option>
- 
-	<option value="2:00 PM">2:00 PM</option>
-	<option value="2:15 PM">2:15 PM</option>
-	<option value="2:30 PM">2:30 PM</option>
-	<option value="2:45 PM">2:45 PM</option>
- 
-	<option value="3:00 PM">3:00 PM</option>
-	<option value="3:15 PM">3:15 PM</option>
-	<option value="3:30 PM">3:30 PM</option>
-	<option value="3:45 PM">3:45 PM</option>
- 
-	<option value="4:00 PM">4:00 PM</option>
-	<option value="4:15 PM">4:15 PM</option>
-	<option value="4:30 PM">4:30 PM</option>
-	<option value="4:45 PM">4:45 PM</option>
- 
-	<option value="5:00 PM">5:00 PM</option>
-	<option value="5:15 PM">5:15 PM</option>
-	<option value="5:30 PM">5:30 PM</option>
-	<option value="5:45 PM">5:45 PM</option>
- 
-	<option value="6:00 PM">6:00 PM</option>
-	<option value="6:15 PM">6:15 PM</option>
-	<option value="6:30 PM">6:30 PM</option>
-	<option value="6:45 PM">6:45 PM</option>
- 
-	<option value="7:00 PM">7:00 PM</option>
-	<option value="7:15 PM">7:15 PM</option>
-	<option value="7:30 PM">7:30 PM</option>
-	<option value="7:45 PM">7:45 PM</option>
- 
-	<option value="8:00 PM">8:00 PM</option>
-	<option value="8:15 PM">8:15 PM</option>
-	<option value="8:30 PM">8:30 PM</option>
-	<option value="8:45 PM">8:45 PM</option>
- 
-	<option value="9:00 PM">9:00 PM</option>
-	<option value="9:15 PM">9:15 PM</option>
-	<option value="9:30 PM">9:30 PM</option>
-	<option value="9:45 PM">9:45 PM</option>
- 
-	<option value="10:00 PM">10:00 PM</option>
-	<option value="10:15 PM">10:15 PM</option>
-	<option value="10:30 PM">10:30 PM</option>
-	<option value="10:45 PM">10:45 PM</option>
- 
-	<option value="11:00 PM">11:00 PM</option>
-	<option value="11:15 PM">11:15 PM</option>
-	<option value="11:30 PM">11:30 PM</option>
-	<option value="11:45 PM">11:45 PM</option>
-</select>
-   <br>
-   
-   <!--Purpose of ride-->
-   <label>Purpose of ride</label>
-    <textarea placeholder="Min 50 words discription" rows="7" cols="50" name="purpose"></textarea>
-    <br>  
-    <!-- Date Travel-->
-   <label for="date_return">Date of Return</label>
-   <input type="date" class="date_picker" name="date_return" >
-   
-   <!--Time of return-->
-   <label for="time_return">Time of return</label>
-   <select name="time_return" id="time_return">
-	<option value="5:00 AM">5:00 AM</option>
-	<option value="5:15 AM">5:15 AM</option>
-	<option value="5:30 AM">5:30 AM</option>
-	<option value="5:45 AM">5:45 AM</option>
- 
-	<option value="6:00 AM">6:00 AM</option>
-	<option value="6:15 AM">6:15 AM</option>
-	<option value="6:30 AM">6:30 AM</option>
-	<option value="6:45 AM">6:45 AM</option>
- 
-	<option value="7:00 AM">7:00 AM</option>
-	<option value="7:15 AM">7:15 AM</option>
-	<option value="7:30 AM">7:30 AM</option>
-	<option value="7:45 AM">7:45 AM</option>
- 
-	<option value="8:00 AM">8:00 AM</option>
-	<option value="8:15 AM">8:15 AM</option>
-	<option value="8:30 AM">8:30 AM</option>
-	<option value="8:45 AM">8:45 AM</option>
- 
-	<option value="9:00 AM">9:00 AM</option>
-	<option value="9:15 AM">9:15 AM</option>
-	<option value="9:30 AM">9:30 AM</option>
-	<option value="9:45 AM">9:45 AM</option>
- 
-	<option value="10:00 AM">10:00 AM</option>
-	<option value="10:15 AM">10:15 AM</option>
-	<option value="10:30 AM">10:30 AM</option>
-	<option value="10:45 AM">10:45 AM</option>
- 
-	<option value="11:00 AM">11:00 AM</option>
-	<option value="11:15 AM">11:15 AM</option>
-	<option value="11:30 AM">11:30 AM</option>
-	<option value="11:45 AM">11:45 AM</option>
- 
-	<option value="12:00 PM">12:00 PM</option>
-	<option value="12:15 PM">12:15 PM</option>
-	<option value="12:30 PM">12:30 PM</option>
-	<option value="12:45 PM">12:45 PM</option>
- 
-	<option value="1:00 PM">1:00 PM</option>
-	<option value="1:15 PM">1:15 PM</option>
-	<option value="1:30 PM">1:30 PM</option>
-	<option value="1:45 PM">1:45 PM</option>
- 
-	<option value="2:00 PM">2:00 PM</option>
-	<option value="2:15 PM">2:15 PM</option>
-	<option value="2:30 PM">2:30 PM</option>
-	<option value="2:45 PM">2:45 PM</option>
- 
-	<option value="3:00 PM">3:00 PM</option>
-	<option value="3:15 PM">3:15 PM</option>
-	<option value="3:30 PM">3:30 PM</option>
-	<option value="3:45 PM">3:45 PM</option>
- 
-	<option value="4:00 PM">4:00 PM</option>
-	<option value="4:15 PM">4:15 PM</option>
-	<option value="4:30 PM">4:30 PM</option>
-	<option value="4:45 PM">4:45 PM</option>
- 
-	<option value="5:00 PM">5:00 PM</option>
-	<option value="5:15 PM">5:15 PM</option>
-	<option value="5:30 PM">5:30 PM</option>
-	<option value="5:45 PM">5:45 PM</option>
- 
-	<option value="6:00 PM">6:00 PM</option>
-	<option value="6:15 PM">6:15 PM</option>
-	<option value="6:30 PM">6:30 PM</option>
-	<option value="6:45 PM">6:45 PM</option>
- 
-	<option value="7:00 PM">7:00 PM</option>
-	<option value="7:15 PM">7:15 PM</option>
-	<option value="7:30 PM">7:30 PM</option>
-	<option value="7:45 PM">7:45 PM</option>
- 
-	<option value="8:00 PM">8:00 PM</option>
-	<option value="8:15 PM">8:15 PM</option>
-	<option value="8:30 PM">8:30 PM</option>
-	<option value="8:45 PM">8:45 PM</option>
- 
-	<option value="9:00 PM">9:00 PM</option>
-	<option value="9:15 PM">9:15 PM</option>
-	<option value="9:30 PM">9:30 PM</option>
-	<option value="9:45 PM">9:45 PM</option>
- 
-	<option value="10:00 PM">10:00 PM</option>
-	<option value="10:15 PM">10:15 PM</option>
-	<option value="10:30 PM">10:30 PM</option>
-	<option value="10:45 PM">10:45 PM</option>
- 
-	<option value="11:00 PM">11:00 PM</option>
-	<option value="11:15 PM">11:15 PM</option>
-	<option value="11:30 PM">11:30 PM</option>
-	<option value="11:45 PM">11:45 PM</option>
-</select>
-   <br>
-  
-   
-    <!-- car-->
-   <div id="signup_gender">
-       <label for="vechicle_model">Vehicle model</label>
-       <input type="text" name="vechicle_model" placeholder="example: Toyota Innova">
-   </div>
-   <br>
-  
-   <!-- file browser -->
-   <label for="vechicle_picture">Upload a Photo of your vehicle</label>
-   <input type="file" name="vehicle_picture" accept="image/*">
-   <br>
-     <br>
-     
-      <!-- car-->
-   <div id="signup_gender">
-       <label for="gender_select">Restrictions to Co-travallers:</label>
-   
+		</div>
+		<!-- Date Travel-->
+		<label for="date_travel">Date of travel</label>
+		<input type="text" class="date_picker" name="date_travel"/>
 
-  <span>Smoking</span> <input type="checkbox" name="smoking" value="1">
-   
-    
-  <span>Drinking</span><input type="checkbox" name="drinking" value="1">
-   
- <span>Music</span><input type="checkbox" name="music" value="1">
-   
-   </div>
-      <br>
-       <!-- Gender-->
-   <div id="signup_gender">
-       <label for="gender_select">Enter your priority of Co-travalers:</label>
-   
-   <span for="gender_male">Male</span>
-   <input type="radio" name="gender_select" value="m"/>
-   
-    <span for="gender_female">Female</span>
-   <input type="radio" name="gender_select" value= "f"/>
-   
-    <span for="gender_others">Others</span>
-   <input type="radio" name="gender_select" value="o"/>
-   </div>
-   
-   <div id="ride_cost">
-       <label for="rider_rate">Rate per passenger:</label>
-       <input type="number" name="rider_rate"/>
-   </div>
-    
-    <div id="ride_phone">
-       <label for="ride_phone">Contact phone number:</label>
-       <input type="number" name="ride_phone"/>
-   </div>
-   
-   <!-- sumbit button -->
-   <input type="submit" class="submit_button" >
-</form>
+		<!--time-->
+		<label for="time_travel">Time</label>
+		<select name="time_travel" id="time_travel">
+			<option value="5:00 AM">5:00 AM</option>
+			<option value="5:15 AM">5:15 AM</option>
+			<option value="5:30 AM">5:30 AM</option>
+			<option value="5:45 AM">5:45 AM</option>
+
+			<option value="6:00 AM">6:00 AM</option>
+			<option value="6:15 AM">6:15 AM</option>
+			<option value="6:30 AM">6:30 AM</option>
+			<option value="6:45 AM">6:45 AM</option>
+
+			<option value="7:00 AM">7:00 AM</option>
+			<option value="7:15 AM">7:15 AM</option>
+			<option value="7:30 AM">7:30 AM</option>
+			<option value="7:45 AM">7:45 AM</option>
+
+			<option value="8:00 AM">8:00 AM</option>
+			<option value="8:15 AM">8:15 AM</option>
+			<option value="8:30 AM">8:30 AM</option>
+			<option value="8:45 AM">8:45 AM</option>
+
+			<option value="9:00 AM">9:00 AM</option>
+			<option value="9:15 AM">9:15 AM</option>
+			<option value="9:30 AM">9:30 AM</option>
+			<option value="9:45 AM">9:45 AM</option>
+
+			<option value="10:00 AM">10:00 AM</option>
+			<option value="10:15 AM">10:15 AM</option>
+			<option value="10:30 AM">10:30 AM</option>
+			<option value="10:45 AM">10:45 AM</option>
+
+			<option value="11:00 AM">11:00 AM</option>
+			<option value="11:15 AM">11:15 AM</option>
+			<option value="11:30 AM">11:30 AM</option>
+			<option value="11:45 AM">11:45 AM</option>
+
+			<option value="12:00 PM">12:00 PM</option>
+			<option value="12:15 PM">12:15 PM</option>
+			<option value="12:30 PM">12:30 PM</option>
+			<option value="12:45 PM">12:45 PM</option>
+
+			<option value="1:00 PM">1:00 PM</option>
+			<option value="1:15 PM">1:15 PM</option>
+			<option value="1:30 PM">1:30 PM</option>
+			<option value="1:45 PM">1:45 PM</option>
+
+			<option value="2:00 PM">2:00 PM</option>
+			<option value="2:15 PM">2:15 PM</option>
+			<option value="2:30 PM">2:30 PM</option>
+			<option value="2:45 PM">2:45 PM</option>
+
+			<option value="3:00 PM">3:00 PM</option>
+			<option value="3:15 PM">3:15 PM</option>
+			<option value="3:30 PM">3:30 PM</option>
+			<option value="3:45 PM">3:45 PM</option>
+
+			<option value="4:00 PM">4:00 PM</option>
+			<option value="4:15 PM">4:15 PM</option>
+			<option value="4:30 PM">4:30 PM</option>
+			<option value="4:45 PM">4:45 PM</option>
+
+			<option value="5:00 PM">5:00 PM</option>
+			<option value="5:15 PM">5:15 PM</option>
+			<option value="5:30 PM">5:30 PM</option>
+			<option value="5:45 PM">5:45 PM</option>
+
+			<option value="6:00 PM">6:00 PM</option>
+			<option value="6:15 PM">6:15 PM</option>
+			<option value="6:30 PM">6:30 PM</option>
+			<option value="6:45 PM">6:45 PM</option>
+
+			<option value="7:00 PM">7:00 PM</option>
+			<option value="7:15 PM">7:15 PM</option>
+			<option value="7:30 PM">7:30 PM</option>
+			<option value="7:45 PM">7:45 PM</option>
+
+			<option value="8:00 PM">8:00 PM</option>
+			<option value="8:15 PM">8:15 PM</option>
+			<option value="8:30 PM">8:30 PM</option>
+			<option value="8:45 PM">8:45 PM</option>
+
+			<option value="9:00 PM">9:00 PM</option>
+			<option value="9:15 PM">9:15 PM</option>
+			<option value="9:30 PM">9:30 PM</option>
+			<option value="9:45 PM">9:45 PM</option>
+
+			<option value="10:00 PM">10:00 PM</option>
+			<option value="10:15 PM">10:15 PM</option>
+			<option value="10:30 PM">10:30 PM</option>
+			<option value="10:45 PM">10:45 PM</option>
+
+			<option value="11:00 PM">11:00 PM</option>
+			<option value="11:15 PM">11:15 PM</option>
+			<option value="11:30 PM">11:30 PM</option>
+			<option value="11:45 PM">11:45 PM</option>
+		</select>
+		<br>
+
+		<!--Purpose of ride-->
+		<label>Purpose of ride</label>
+		<textarea placeholder="Min 50 words discription" rows="7" cols="50" name="purpose"></textarea>
+		<br>
+		<!-- Date Travel-->
+		<label for="date_return">Date of Return</label>
+		<input type="date" class="date_picker" name="date_return" >
+
+		<!--Time of return-->
+		<label for="time_return">Time of return</label>
+		<select name="time_return" id="time_return">
+			<option value="5:00 AM">5:00 AM</option>
+			<option value="5:15 AM">5:15 AM</option>
+			<option value="5:30 AM">5:30 AM</option>
+			<option value="5:45 AM">5:45 AM</option>
+
+			<option value="6:00 AM">6:00 AM</option>
+			<option value="6:15 AM">6:15 AM</option>
+			<option value="6:30 AM">6:30 AM</option>
+			<option value="6:45 AM">6:45 AM</option>
+
+			<option value="7:00 AM">7:00 AM</option>
+			<option value="7:15 AM">7:15 AM</option>
+			<option value="7:30 AM">7:30 AM</option>
+			<option value="7:45 AM">7:45 AM</option>
+
+			<option value="8:00 AM">8:00 AM</option>
+			<option value="8:15 AM">8:15 AM</option>
+			<option value="8:30 AM">8:30 AM</option>
+			<option value="8:45 AM">8:45 AM</option>
+
+			<option value="9:00 AM">9:00 AM</option>
+			<option value="9:15 AM">9:15 AM</option>
+			<option value="9:30 AM">9:30 AM</option>
+			<option value="9:45 AM">9:45 AM</option>
+
+			<option value="10:00 AM">10:00 AM</option>
+			<option value="10:15 AM">10:15 AM</option>
+			<option value="10:30 AM">10:30 AM</option>
+			<option value="10:45 AM">10:45 AM</option>
+
+			<option value="11:00 AM">11:00 AM</option>
+			<option value="11:15 AM">11:15 AM</option>
+			<option value="11:30 AM">11:30 AM</option>
+			<option value="11:45 AM">11:45 AM</option>
+
+			<option value="12:00 PM">12:00 PM</option>
+			<option value="12:15 PM">12:15 PM</option>
+			<option value="12:30 PM">12:30 PM</option>
+			<option value="12:45 PM">12:45 PM</option>
+
+			<option value="1:00 PM">1:00 PM</option>
+			<option value="1:15 PM">1:15 PM</option>
+			<option value="1:30 PM">1:30 PM</option>
+			<option value="1:45 PM">1:45 PM</option>
+
+			<option value="2:00 PM">2:00 PM</option>
+			<option value="2:15 PM">2:15 PM</option>
+			<option value="2:30 PM">2:30 PM</option>
+			<option value="2:45 PM">2:45 PM</option>
+
+			<option value="3:00 PM">3:00 PM</option>
+			<option value="3:15 PM">3:15 PM</option>
+			<option value="3:30 PM">3:30 PM</option>
+			<option value="3:45 PM">3:45 PM</option>
+
+			<option value="4:00 PM">4:00 PM</option>
+			<option value="4:15 PM">4:15 PM</option>
+			<option value="4:30 PM">4:30 PM</option>
+			<option value="4:45 PM">4:45 PM</option>
+
+			<option value="5:00 PM">5:00 PM</option>
+			<option value="5:15 PM">5:15 PM</option>
+			<option value="5:30 PM">5:30 PM</option>
+			<option value="5:45 PM">5:45 PM</option>
+
+			<option value="6:00 PM">6:00 PM</option>
+			<option value="6:15 PM">6:15 PM</option>
+			<option value="6:30 PM">6:30 PM</option>
+			<option value="6:45 PM">6:45 PM</option>
+
+			<option value="7:00 PM">7:00 PM</option>
+			<option value="7:15 PM">7:15 PM</option>
+			<option value="7:30 PM">7:30 PM</option>
+			<option value="7:45 PM">7:45 PM</option>
+
+			<option value="8:00 PM">8:00 PM</option>
+			<option value="8:15 PM">8:15 PM</option>
+			<option value="8:30 PM">8:30 PM</option>
+			<option value="8:45 PM">8:45 PM</option>
+
+			<option value="9:00 PM">9:00 PM</option>
+			<option value="9:15 PM">9:15 PM</option>
+			<option value="9:30 PM">9:30 PM</option>
+			<option value="9:45 PM">9:45 PM</option>
+
+			<option value="10:00 PM">10:00 PM</option>
+			<option value="10:15 PM">10:15 PM</option>
+			<option value="10:30 PM">10:30 PM</option>
+			<option value="10:45 PM">10:45 PM</option>
+
+			<option value="11:00 PM">11:00 PM</option>
+			<option value="11:15 PM">11:15 PM</option>
+			<option value="11:30 PM">11:30 PM</option>
+			<option value="11:45 PM">11:45 PM</option>
+		</select>
+		<br>
+
+
+		<!-- car-->
+		<div id="signup_gender">
+			<label for="vechicle_model">Vehicle model</label>
+			<input type="text" name="vechicle_model" placeholder="example: Toyota Innova">
+		</div>
+		<br>
+
+		<!-- file browser -->
+		<label for="vechicle_picture">Upload a Photo of your vehicle</label>
+		<input type="file" name="vehicle_picture" accept="image/*">
+		<br>
+		<br>
+        <!-- number of seats -->
+		<div id="vechicle_seat">
+			<label for="seat_value">Number of seats available</label>
+			<input type="text" name="seat_value"/>
+		</div>
+		<!-- number of seats -->
+
+		<!-- car-->
+		<div id="signup_gender">
+			<label for="gender_select">Restrictions to Co-travallers:</label>
+
+
+			<span>Smoking</span> <input type="checkbox" name="smoking" value="1">
+
+
+			<span>Drinking</span><input type="checkbox" name="drinking" value="1">
+
+			<span>Music</span><input type="checkbox" name="music" value="1">
+
+		</div>
+
+
+		<br>
+		<!-- Gender-->
+		<div id="signup_gender">
+			<label for="gender_select">Enter your priority of Co-travalers:</label>
+
+			<span for="gender_male">Male</span>
+			<input type="radio" name="gender_select" value="m"/>
+
+			<span for="gender_female">Female</span>
+			<input type="radio" name="gender_select" value= "f"/>
+
+			<span for="gender_others">Others</span>
+			<input type="radio" name="gender_select" value="o"/>
+		</div>
+
+		<div id="ride_cost">
+			<label for="rider_rate">Rate per passenger:</label>
+			<input type="number" name="rider_rate"/>
+		</div>
+
+		<div id="ride_phone">
+			<label for="ride_phone">Contact phone number:</label>
+			<input type="number" name="ride_phone"/>
+		</div>
+
+		<!-- sumbit button -->
+		<input type="button" class="submit_button" value="submit" onclick="processUpdate();">
+	</form>
 </div>
