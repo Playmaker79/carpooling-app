@@ -72,9 +72,9 @@ exports.offeraride = function (data, file, req, res) {
         var date_return = new Date(data.date_return);
         console.log(data.travel_date);
         console.log(data.return_date);
-        var values = [data.source, data.destination, date_travel, data.time_travel, data.purpose,date_return, data.time_return, data.vechicle_model, vehicle_picture, data.drinking, data.smoking, data.music, data.gender_select, current_user,data.rider_rate,data.ride_phone];
+        var values = [data.source, data.destination,data.waypts, date_travel, data.time_travel, data.purpose,date_return, data.time_return, data.vechicle_model, vehicle_picture, data.drinking, data.smoking, data.music, data.gender_select, current_user,data.rider_rate,data.ride_phone];
         console.log(values);
-        connection.query('INSERT INTO `rides`(`source`, `destination`, `travel_date`, `travel_time`, `purpose`, `return_date`, `return_time`, `car_name`, `car_photo`, `drinking`, `smoking`, `music`, `passenger`, `rider_id`,`Rate`,`phone`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values, function (err, result) {
+        connection.query('INSERT INTO `rides`(`source`, `destination`,`waypoints`,`travel_date`, `travel_time`, `purpose`, `return_date`, `return_time`, `car_name`, `car_photo`, `drinking`, `smoking`, `music`, `passenger`, `rider_id`,`Rate`,`phone`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values, function (err, result) {
                    if(err) throw err;
                    if(!err){
                        res.redirect('/find');
