@@ -30,11 +30,15 @@
 
 	function initMap() {
 
-		/*auto complete*/
+		/*auto complete for text box*/
 		google.maps.event.addDomListener(window, 'load', function () {
 			var places = new google.maps.places.Autocomplete(document.getElementById('source_addr'));
 			var places2 = new google.maps.places.Autocomplete(document.getElementById('dest_addr'));
 			var places3 = new google.maps.places.Autocomplete(document.getElementById('stop_points'));
+			/*end auto complete*/
+
+			/* insert place to google map as soon as control from text box is changed to next*/
+			/*add place to map for source textbox*/
 			google.maps.event.addListener(places, 'place_changed', function () {
 				var place = places.getPlace();
 				var address = place.formatted_address;
@@ -42,14 +46,16 @@
 
 			});
 
+			/*add place to map for destination textbox*/
 			google.maps.event.addListener(places2, 'place_changed', function () {
-				var place = places.getPlace();
-				var address = place.formatted_address;
+				var place = places2.getPlace();
+				var address2 = place.formatted_address;
 				calculateAndDisplayRoute(directionsService, directionsDisplay,waypts);
 			});
 
 		});
-		/*end auto complete*/
+
+
 		var directionsService = new google.maps.DirectionsService;
 		var directionsDisplay = new google.maps.DirectionsRenderer;
 		var map = new google.maps.Map(document.getElementById('map'), {
@@ -65,12 +71,13 @@
 			this.hide();
 		};
 		var onClickHandler = function(){
-			var stop  = $("#stop_points");
-			if(stop.val().length>1 && add_points == true){
-				waypts.push({location:stop.val()});
-				$("<span class='col-md-3 badge-alert stop_tag_item' stop-point='"+stop.val()+"'>"+stop.val()+"<span class='stop_close'>x</span>"+"</span>")
+			var stop  = $("#stop_points").val().split(',');
+			stop = stop[0];
+			if(stop.length>1 && add_points == true){
+				waypts.push({location:stop});
+				$("<span class='col-md-3 badge-alert stop_tag_item' stop-point='"+stop+"'>"+stop+"<span class='stop_close'>x</span>"+"</span>")
 						.appendTo($('#stop_tags')).hide().slideDown();
-				stop.val("");
+				$("#stop_points").val("");
 				$(".stop_tag_item").click(function(){
 							add_points = true;
 							$(this).remove().fadeOut();
@@ -98,6 +105,10 @@
 
 	}
 
+	function popNonvalidplace(){
+		$(".stop_tag_item").last().remove();
+		waypts.pop();
+	}
 
 	function calculateAndDisplayRoute(directionsService, directionsDisplay,waypts) {
 		directionsService.route({
@@ -109,13 +120,13 @@
 			if(status === google.maps.DirectionsStatus.MAX_WAYPOINTS_EXCEEDED){
 				add_points = false;
 				alert("dude im not paying for google maps");
+				popNonvalidplace();
 			}
 			else if (status === google.maps.DirectionsStatus.OK) {
 				directionsDisplay.setDirections(response);
 			}
 			else if(status === google.maps.DirectionsStatus.ZERO_RESULTS){
-				$(".stop_tag_item").last().remove();
-				waypts.pop();
+				popNonvalidplace();
 			}
 			else {
 				window.alert('Directions request failed due to ' + status);
@@ -400,7 +411,7 @@
 		<input type="file" name="vehicle_picture" accept="image/*">
 		<br>
 		<br>
-        <!-- number of seats -->
+		<!-- number of seats -->
 		<div id="vechicle_seat">
 			<label for="seat_value">Number of seats available</label>
 			<input type="text" name="seat_value"/>
@@ -420,7 +431,6 @@
 			<span>Music</span><input type="checkbox" name="music" value="1">
 
 		</div>
-
 
 		<br>
 		<!-- Gender-->

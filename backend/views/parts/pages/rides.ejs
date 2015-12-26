@@ -28,9 +28,16 @@
     #rider_info p{
         margin:0 auto;
     }
+
     #rider_info h1{
         font-size:1.5em;
     }
+
+    .ride_location {
+        font-size: 1.5em;
+        font-family: open sans light;
+    }
+
     .grid-items-lines .grid-item {
         height: 35em !important;
         margin-top:1em;
@@ -70,49 +77,63 @@
         <!-- date calc -->
   </div>
   
-   <a href="javascript:void(0)" class="grid-item grid-item-big">
+   <div href="javascript:void(0)" class="grid-item grid-item-big">
    <%var travel_date = ride_data.travel_date.toString()%>
    <% var date = travel_date.split("00:");%>
-    <h1><%= date[0]%></h1>
+       <div id="ride_date_time">
+           <h1 class="text-left"><%= date[0]%></h1>
+           <h1 class="text-right"><%= ride_data.travel_time.toString() %></h1>
+       </div>
     <% console.log(date)%>
-    <h2>Time<span class="arrow"><%= ride_data.travel_time.toString() %></span></h2>
-    <h2><%= ride_data.source %><span class="arrow">&#8594;</span><%= ride_data.destination %></h2>
-       <h2> rate per traveller:<span class="arrow">₹<%= ride_data.Rate%></span></h2>
+    <h2 class="ride_location"><%= ride_data.source %><span class="arrow">&#8594;</span><%= ride_data.destination %></h2>
+
+       <!-- waypoints-->
+
+        <% var splittedWaypoints = ride_data.waypoints.split(",")%>
+
+       <span id="waypointbox">
+           <% splittedWaypoints.forEach(function(waypoint){%>
+           <span class="badge-alert waypoint"><%= waypoint %></span>
+           <%});%>
+       </span>
+       <!--end waypoints-->
+       <span class="ride_info">
+           <h2> rate per traveller:<span class="arrow">₹<%= ride_data.Rate%></span></h2>
        <h2>call:<span class="arrow"><%=ride_data.phone%></span></h2>
        <div id="co-passenger">
-            <% if(ride_data.passenger== 'm' ) {%>
-             <h2>Co-passenger preference:<span class="arrow">Male</span></h2>
-            <% }%>
-            <% if(ride_data.passenger== 'f' ) {%>
-             <h2>Co-passenger preference:<span class="arrow">Female</span></h2>
-            <% }%>
-            <% if(ride_data.passenger== 'o' ) {%>
-             <h2>Co-passenger preference:<span class="arrow">Any</span></h2>
-            <% }%>
-        </div>
+           <% if(ride_data.passenger== 'm' ) {%>
+           <h2>Co-passenger preference:<span class="arrow">Male</span></h2>
+           <% }%>
+           <% if(ride_data.passenger== 'f' ) {%>
+           <h2>Co-passenger preference:<span class="arrow">Female</span></h2>
+           <% }%>
+           <% if(ride_data.passenger== 'o' ) {%>
+           <h2>Co-passenger preference:<span class="arrow">Any</span></h2>
+           <% }%>
+       </div>
         <div id="restrictions">
             <% if(ride_data.drinking ==1) {%>
-           <img src="/images/icons/drinking_icon.svg" alt="Drinking">
-       <%}%>
-       <% if(ride_data.smoking ==1) {%>
-           <img src="/images/icons/smoking_icon.svg" alt="Smoking">
-       <%}%>
-       <% if(ride_data.music ==1) {%>
-           <img src="/images/icons/music_icon.svg" alt="Music">
-       <%}%>
-       
-       <!-- restriction -->
-       <% if(ride_data.drinking ==0) {%>
-           <img src="/images/icons/no Liquor -01.svg" alt="No Drinking">
-       <%}%>
-       <% if(ride_data.smoking ==0) {%>
-           <img src="/images/icons/no cigarettes-01.svg" alt="No Smoking">
-       <%}%>
-       <% if(ride_data.music ==0) {%>
-           <img src="/images/icons/no music-01.svg" alt="No Music">
-       <%}%>
+            <img src="/images/icons/drinking_icon.svg" alt="Drinking">
+            <%}%>
+            <% if(ride_data.smoking ==1) {%>
+            <img src="/images/icons/smoking_icon.svg" alt="Smoking">
+            <%}%>
+            <% if(ride_data.music ==1) {%>
+            <img src="/images/icons/music_icon.svg" alt="Music">
+            <%}%>
+
+            <!-- restriction -->
+            <% if(ride_data.drinking ==0) {%>
+            <img src="/images/icons/no Liquor -01.svg" alt="No Drinking">
+            <%}%>
+            <% if(ride_data.smoking ==0) {%>
+            <img src="/images/icons/no cigarettes-01.svg" alt="No Smoking">
+            <%}%>
+            <% if(ride_data.music ==0) {%>
+            <img src="/images/icons/no music-01.svg" alt="No Music">
+            <%}%>
+       </span>
         </div>
-  </a>
 </div>
 <% }); %>
 <%}%>

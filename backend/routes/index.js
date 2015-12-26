@@ -42,7 +42,7 @@ router.get('/find', function (req, res, next) {
     dbconnect.connection.query('SELECT * FROM `rides`,`users` WHERE `rides`.`rider_id`=`users`.`id`',
         function (err, rows, fields) {
             var data = rows;
-            /*console.log(data);*/
+            console.log(data);
             if (err) throw err;
             else {
                 res.render('find', {

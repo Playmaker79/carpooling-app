@@ -1,5 +1,6 @@
+/* do not compile */
 @charset "UTF-8";
-@import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
 html {
   box-sizing: border-box; }
 
@@ -324,7 +325,7 @@ header.navigation {
         .device-background .device .screen {
           height: 25em;
           width: 14em;
-          background-image: url("../images/app.jpg");
+          background-image: url("https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/cosmin_capitanu_screen.jpg");
           background-size: cover;
           border-radius: 0.2em;
           box-shadow: inset 0 1px 8px rgba(0, 0, 0, 0.5);
@@ -721,7 +722,7 @@ th {
     border-radius: 50%;
     float: left;
     height: 3.5em;
-    padding: 0em;
+    padding: 3.5em;
     width: 3.5em; }
   .bullets .bullet-icon-1 {
     background: #477DCA; }
@@ -958,7 +959,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Arvo", serif;
+  font-family: "Roboto slab", serif;
   font-size: 1em;
   line-height: 1.2;
   margin: 0 0 0.75em; }
@@ -985,7 +986,59 @@ picture {
   margin: 0;
   max-width: 100%; }
 
+#waypointbox {
+  margin: 0 auto;
+  width: 100px;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-left: -25.58941%;
+  margin-left: 25.58941%;
+  display: block;
+  clear: both; }
+  #waypointbox:last-child {
+    margin-right: 0; }
+
+.ride_info {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .ride_info:last-child {
+    margin-right: 0; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
+#ride_date_time {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  #ride_date_time:last-child {
+    margin-right: 0; }
+  #ride_date_time h1 {
+    display: inline;
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    #ride_date_time h1:last-child {
+      margin-right: 0; }
+
+.gird-item-lines {
+  opacity: 2 !important; }
+
 .hero {
   background: url("../images/cover.jpg"); }
+
+
+.find_box{
+  margin-left: 25%;
+}
 
 /*# sourceMappingURL=main.css.map */
