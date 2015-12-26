@@ -7,7 +7,6 @@ var connection = mysql.createConnection({
     password: 'admin',
     database: 'carpooling'
 });
-
 connection.connect(function (err) {
     if (err) {
         console.error('error connecting:' + err.stack);
@@ -16,7 +15,7 @@ connection.connect(function (err) {
     console.log('connected as id yes' + connection.threadId);
 });
 
-/* insert user data into the user table --Explicit DB insert*/
+
 exports.createaccount = function (values, password, res, req) {
     sess = req.session;
     var dob = new Date(values.date_picker);
@@ -35,7 +34,9 @@ exports.createaccount = function (values, password, res, req) {
         });
     return success
 }
-/* update profile pic data to database*/
+
+
+
 exports.uploadprofile = function (path, id, res, sess) {
     var sess = sess;
     connection.query('UPDATE `users` SET  `profile_pic`= ? WHERE id = ?', [path, id],
@@ -51,6 +52,7 @@ exports.uploadprofile = function (path, id, res, sess) {
             }
         });
 }
+
 
 exports.offeraride = function (data, file, req, res) {
     var sess = req.session;
@@ -68,19 +70,16 @@ exports.offeraride = function (data, file, req, res) {
         var current_user = sess.current_user;
         var date_travel = new Date(data.date_travel);
         var date_return = new Date(data.date_return);
-        console.log("waypoints"+ data.waypts);
-        var waypoints = data.waypts.toString();
-        console.log(date_travel);
-        console.log(date_return);
-        console.log("current user is"+current_user);
-        var values = [data.source, data.destination.toString(),waypoints, date_travel, data.time_travel, data.purpose,date_return, data.time_return, data.vechicle_model, vehicle_picture, data.drinking, data.smoking, data.music, data.gender_select, current_user,data.rider_rate,data.ride_phone];
+        console.log(data.travel_date);
+        console.log(data.return_date);
+        var values = [data.source, data.destination,data.waypts, date_travel, data.time_travel, data.purpose,date_return, data.time_return, data.vechicle_model, vehicle_picture, data.drinking, data.smoking, data.music, data.gender_select, current_user,data.rider_rate,data.ride_phone];
         console.log(values);
-        connection.query('INSERT INTO `rides`(`source`,`destination`,`waypoints`,`travel_date`, `travel_time`, `purpose`, `return_date`,`return_time`,`car_name`, `car_photo`, `drinking`, `smoking`, `music`, `passenger`,`rider_id`,`rate`,`phone`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values, function (err, result) {
+        connection.query('INSERT INTO `rides`(`source`, `destination`,`waypoints`,`travel_date`, `travel_time`, `purpose`, `return_date`, `return_time`, `car_name`, `car_photo`, `drinking`, `smoking`, `music`, `passenger`, `rider_id`,`Rate`,`phone`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values, function (err, result) {
                    if(err) throw err;
                    if(!err){
                        res.redirect('/find');
                    }
-        });
+        })
     }
 }
 
