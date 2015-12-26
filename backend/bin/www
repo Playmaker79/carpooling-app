@@ -14,6 +14,8 @@ var http = require('http');
 
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
+console.log(port);
+
 
 /**
  * Create HTTP server.
@@ -28,6 +30,7 @@ var server = http.createServer(app);
 server.listen(port);
 server.on('error', onError);
 server.on('listening', onListening);
+
 
 /**
  * Normalize a port into a number, string, or false.
@@ -82,6 +85,7 @@ function onError(error) {
  */
 
 function onListening() {
+  console.log("The express app is running on port "+process.env.PORT);
   var addr = server.address();
   var bind = typeof addr === 'string'
     ? 'pipe ' + addr
