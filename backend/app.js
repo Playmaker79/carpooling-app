@@ -10,6 +10,10 @@ var routes = require('./routes/index');
 var app = express();
 var multer = require('multer');
 var session = require('express-session');
+var state = require('express-state');
+
+
+state.extend(app);
 
 var profile_pic_location = multer({
     dest: 'uploads/profile_pics/',
@@ -55,7 +59,15 @@ app.use('/user/setup', routes);
 app.use('/login', routes);
 app.use('/find',routes);
 app.use('/offer',routes);
+app.use('/logout',routes);
 
+
+/*generate menu view for current user globally accesible in all pages wherever the user is logged in*/
+app.use(function(req, res, next){
+    res.locals.loggedUserName = app.locals.loggedUserName;
+    res.locals.loggedUserPic = app.locals.loggedUserPic;
+    next();
+});
 /*handle account creation */
 app.post('/account', function (req, res) {
     var values = req.body;
@@ -78,35 +90,44 @@ app.post('/login', function (req, res){
     //console.log("bcr" + bcrypt);
     dbconnect.connection.query('SELECT * FROM `users` WHERE `email`=?', [values.email],
         function (err, rows, fields) {
-            console.log(rows);
-            if (err){
-                res.redirect("/test");
+            console.log("rows\t")
+            if(rows.length == 0){
+                /*when an account is not found*/
+                res.render("login",{create:false,title:'Login to your Account',status:'invalidAccount'});
                 res.end();
             }
-            if (!err) {
-                password_db =  rows[0].password_hash;
-                current_user = rows[0].id;
+            else if (err){
+                res.end();
             }
+            else if (!err) {
+                password_db = rows[0].password_hash;
+                current_user = rows[0].id;
 
-            /* compare enterd password with hashed password in database*/
-            var x = bcrypt.compareSync(password_user,password_db);
-            console.log("sync" + x);
-            if (x == true) {
-                sess = req.session;
-                sess.current_user = current_user;
 
-                /*redirect to initial profile pic upload page*/
-                if(sess.updateprofile == true && sess.current_user){
-                    res.redirect("/user/setup");
+                /* compare enterd password with hashed password in database*/
+                var x = bcrypt.compareSync(password_user, password_db);
+               // console.log("sync" + x);
+                if (x == true) {
+                    sess = req.session;
+                    sess.current_user = current_user;
+                    app.locals.loggedUserName = rows[0].name;
+                    app.locals.loggedUserPic = rows[0].profile_pic;
+
+
+
+                    /*redirect to initial profile pic upload page*/
+                    if (sess.updateprofile == true && sess.current_user) {
+                        res.redirect("/user/setup");
+                    }
+                    else {
+                        res.redirect("/find");
+                        res.end();
+                    }
                 }
-                else{
-                    res.redirect("/find");
+                else {
+                    res.redirect("/login");
                     res.end();
                 }
-            }
-            else{
-                res.redirect("/login");
-                res.end();
             }
         }
         //checking the password for now
@@ -116,6 +137,7 @@ app.post('/login', function (req, res){
 
 //handle profile pic upload 
 app.post('/user/setup', profile_pic_location.single('pic'), function (req, res, next){
+    console.log(app.locals.loggedUserName);
     sess = req.session;
     
     /*upload profiles only when redirected and or when the user is logged in*/
@@ -136,8 +158,6 @@ app.post('/user/setup', profile_pic_location.single('pic'), function (req, res, 
         console.log(sess);
     }
     });
-
-
 
 //offer a ride
 
@@ -200,6 +220,7 @@ app.use(function (req, res, next) {
 // will print stacktrace
 if (app.get('env') === 'development') {
     app.use(function (err, req, res, next) {
+        console.log(err);
         res.status(err.status || 500);
         res.render('error', {
             message: err.message,

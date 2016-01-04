@@ -19,16 +19,19 @@ $(document).ready(function() {
         <li class="nav-link"><a href="/find">Find a ride</a></li>
         <li class="nav-link"><a href="/offer">Offer a ride</a></li>
         <li class="nav-link"><a href="/about">About us</a></li>
-        <li class="nav-link"><a href="/login">Login</a></li>
           </ul>
     </nav>
-     
+      <!-- user profile_data -->
+      <%if (typeof loggedUserName !== 'undefined' && create == false){%>
+      <% include logged.ejs%>
+      <%}%>
+
      <%if (create == true){%>
      <div class="navigation-tools">
     <!-- <input type="submit" Value="Create an account"> -->
-      <div class="search-bar">
-       <div style="display:inline; "><a href="/account"><input type="submit" Value="Create an Account"> </a>
-       </div>    
+
+         <a href="/account"> <input type="submit" Value="Signup"></a>
+         <a href="/login"> <input type="submit" Value="Login"></a>
       </div>
     </div>    
     <%}%>

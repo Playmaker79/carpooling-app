@@ -10,20 +10,46 @@
             .form1 form > a{
                 margin-left:10px;
             }
+            .invalidAccount{
+                display:none;
+            }
+
+            .form1{
+                background: white;
+                padding:  10px 50px;
+            }
+            .login-message{
+                font-size: 36px;
+                text-align: center;
+                font-weight: 100;
+            }
         </style>
         <div class="form1">
-           <h1 align="center"><b>LOGIN</b></h1>
             <form action="/login" method="post">
+                <h1 class="login-message">Welcome Back!</h1>
                 Username:
                 <br>
                 <input type="email" name="email" placeholder="abd1@gmail.com">
                 <br> Password:
                 <br>
                 <input type="password" name="password" placeholder="*****">
+                <% if (typeof  status == 'undefined') { %>
+                <br/>
+                <% } else if( status == 'invalidAccount') {%>
+                <span class="flash-error invalidAccount">That password username combo doesnt seem to work :)</span>
+                <%}%>
                 <br>
                 <br>
                 <input type="submit" value="Login">
                 <a href=""> Forgot password?</a>
             </form>
         </div>
+
+    <script>
+        $('document').ready(function(){
+            setTimeout(function(){
+                $('.invalidAccount').slideDown();
+            },500);
+        });
+    </script>
 </div>

@@ -1,10 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/backend/app.js" mnemonic="O" />
+    <bookmark url="file://$PROJECT_DIR$/backend/app.js" line="84" mnemonic="I" />
+    <bookmark url="file://$PROJECT_DIR$" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f7fd94be-981c-4584-81e9-cc708cc4ca11" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Arjun_sreekumar.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Arjun_sreekumar.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/parts/template/logged.ejs" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\node_modules\mysql\node_modules\readable-stream\node_modules\core-util-is\util.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\npm-debug.log" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/.npmignore" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/string_decoder/.npmignore" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/string_decoder/.npmignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/bignumber.js/.travis.yml" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/bignumber.js/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/bignumber.js/doc/API.html" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/bignumber.js/doc/API.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/Auth.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/Auth.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/sequences/ChangeUser.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/sequences/ChangeUser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/Changes.md" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/Changes.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/ClientAuthenticationPacket.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/ClientAuthenticationPacket.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/ComChangeUserPacket.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/ComChangeUserPacket.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/ComPingPacket.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/ComPingPacket.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/ComQueryPacket.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/ComQueryPacket.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/ComQuitPacket.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/ComQuitPacket.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/ComStatisticsPacket.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/ComStatisticsPacket.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/Connection.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/Connection.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/ConnectionConfig.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/ConnectionConfig.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/EmptyPacket.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/EmptyPacket.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/EofPacket.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/EofPacket.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/ErrorPacket.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/ErrorPacket.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/Field.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/Field.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/FieldPacket.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/FieldPacket.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/sequences/Handshake.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/sequences/Handshake.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/HandshakeInitializationPacket.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/HandshakeInitializationPacket.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/LICENSE" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/inherits/LICENSE" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/inherits/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/string_decoder/LICENSE" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/string_decoder/LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/License" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/License" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/LocalDataFilePacket.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/LocalDataFilePacket.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/OkPacket.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/OkPacket.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/OldPasswordPacket.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/OldPasswordPacket.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/PacketHeader.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/PacketHeader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/PacketWriter.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/PacketWriter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/Parser.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/Parser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/sequences/Ping.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/sequences/Ping.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/Pool.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/Pool.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/PoolCluster.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/PoolCluster.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/PoolConfig.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/PoolConfig.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/PoolConnection.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/PoolConnection.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/PoolNamespace.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/PoolNamespace.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/PoolSelector.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/PoolSelector.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/Protocol.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/Protocol.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/sequences/Query.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/sequences/Query.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/sequences/Quit.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/sequences/Quit.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/bignumber.js/README.md" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/bignumber.js/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/README.md" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/core-util-is/README.md" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/core-util-is/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/inherits/README.md" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/inherits/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/isarray/README.md" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/isarray/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/string_decoder/README.md" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/string_decoder/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/Readme.md" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/Readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/ResultSet.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/ResultSet.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/ResultSetHeaderPacket.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/ResultSetHeaderPacket.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/RowDataPacket.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/RowDataPacket.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/SSLRequestPacket.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/SSLRequestPacket.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/sequences/Sequence.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/sequences/Sequence.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/SqlString.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/SqlString.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/sequences/Statistics.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/sequences/Statistics.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/StatisticsPacket.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/StatisticsPacket.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/UseOldPasswordPacket.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/UseOldPasswordPacket.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/lib/_stream_duplex.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/lib/_stream_duplex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/lib/_stream_passthrough.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/lib/_stream_passthrough.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/lib/_stream_readable.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/lib/_stream_readable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/lib/_stream_transform.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/lib/_stream_transform.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/lib/_stream_writable.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/lib/_stream_writable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/app.js" afterPath="$PROJECT_DIR$/backend/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/bignumber.js/bignumber.js.map" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/bignumber.js/bignumber.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/bignumber.js/bignumber.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/bignumber.js/bignumber.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/bignumber.js/bignumber.min.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/bignumber.js/bignumber.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/bignumber.js/bower.json" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/bignumber.js/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/isarray/build/build.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/isarray/build/build.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/constants/charsets.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/constants/charsets.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/constants/client.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/constants/client.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/isarray/component.json" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/isarray/component.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/dbconnect.js" afterPath="$PROJECT_DIR$/backend/dbconnect.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/duplex.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/duplex.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/constants/errors.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/constants/errors.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/constants/field_flags.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/constants/field_flags.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/float.patch" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/float.patch" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/core-util-is/float.patch" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/core-util-is/float.patch" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/parts/template/header.ejs" afterPath="$PROJECT_DIR$/backend/views/parts/template/header.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/index.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/index.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/packets/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/sequences/index.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/sequences/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/isarray/index.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/isarray/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/string_decoder/index.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/string_decoder/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/routes/index.js" afterPath="$PROJECT_DIR$/backend/routes/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/inherits/inherits.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/inherits/inherits.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/inherits/inherits_browser.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/inherits/inherits_browser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/parts/pages/init_setup.ejs" afterPath="$PROJECT_DIR$/backend/views/parts/pages/init_setup.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/parts/pages/login.ejs" afterPath="$PROJECT_DIR$/backend/views/parts/pages/login.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/parts/pages/offer.ejs" afterPath="$PROJECT_DIR$/backend/views/parts/pages/offer.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/package.json" afterPath="$PROJECT_DIR$/backend/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/package.json" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/bignumber.js/package.json" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/bignumber.js/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/package.json" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/core-util-is/package.json" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/core-util-is/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/inherits/package.json" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/inherits/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/isarray/package.json" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/isarray/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/string_decoder/package.json" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/string_decoder/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/passthrough.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/passthrough.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/readable.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/readable.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/constants/server_status.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/constants/server_status.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/constants/ssl_profiles.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/constants/ssl_profiles.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/inherits/test.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/inherits/test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/transform.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/transform.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/constants/types.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/constants/types.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/core-util-is/lib/util.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/core-util-is/lib/util.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/writable.js" afterPath="$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/writable.js" />
     </list>
     <ignored path="carpooling-app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,93 +141,18 @@
       <file leaf-file-name="offer.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/offer.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.089286">
-              <caret line="450" column="91" selection-start-line="450" selection-start-column="91" selection-end-line="450" selection-end-column="91" />
+            <state vertical-scroll-proportion="-1.3333334">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scratch_3" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_3">
+      <file leaf-file-name="header.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/parts/template/header.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="offer.html" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/Acaps revamp/offer.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="165" column="27" selection-start-line="78" selection-start-column="4" selection-end-line="171" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-52.41379">
-              <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="junk.commented" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/junk.commented">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="init_setup.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/init_setup.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1442216514448" expanded="true" signature="812:1118" placeholder="{...}" />
-                <marker date="1442216514448" expanded="true" signature="857:1112" placeholder="{...}" />
-                <marker date="1442216514448" expanded="true" signature="956:1039" placeholder="{...}" />
-                <marker date="1442216514448" expanded="true" signature="1181:1227" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="find.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/find.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/routes/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="69" column="46" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dbconnect.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/dbconnect.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33072406">
-              <caret line="76" column="264" selection-start-line="76" selection-start-column="264" selection-end-line="76" selection-end-column="264" />
+            <state vertical-scroll-proportion="-16.0">
+              <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -123,8 +161,78 @@
       <file leaf-file-name="login.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/login.ejs">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="1.4444444">
+              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="init_setup.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/init_setup.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.222222">
+              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logged.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/parts/template/logged.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.857143">
+              <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dbconnect.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/dbconnect.js">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+              <caret line="95" column="28" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="69" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="offer.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/offer.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.6666665">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/routes/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7549168">
+              <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="account_form.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/account_form.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="10.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -138,13 +246,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/backend/routes/index.js" />
         <option value="$PROJECT_DIR$/backend/views/error.ejs" />
-        <option value="$PROJECT_DIR$/backend/app.js" />
-        <option value="$PROJECT_DIR$/backend/views/parts/pages/login.ejs" />
         <option value="$PROJECT_DIR$/backend/public/sass/offer.scss" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1" />
-        <option value="$USER_HOME$/Desktop/Acaps revamp/offer.html" />
+        <option value="$PROJECT_DIR$/../Acaps revamp/offer.html" />
         <option value="$PROJECT_DIR$/backend/views/parts/pages/find.ejs" />
         <option value="$PROJECT_DIR$/backend/public/stylesheets/account.css" />
         <option value="$PROJECT_DIR$/backend/public/sass/app.css" />
@@ -154,8 +259,15 @@
         <option value="$PROJECT_DIR$/backend/public/sass/account.css" />
         <option value="$PROJECT_DIR$/backend/public/sass/app.scss" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_3" />
-        <option value="$PROJECT_DIR$/backend/views/parts/pages/offer.ejs" />
+        <option value="$PROJECT_DIR$/../gmaps_totalDIs/Google Maps JavaScript API v3 Example_ Directions Waypoints (LatLng).html" />
+        <option value="$PROJECT_DIR$/backend/views/parts/pages/init_setup.ejs" />
         <option value="$PROJECT_DIR$/backend/dbconnect.js" />
+        <option value="$PROJECT_DIR$/backend/views/parts/pages/offer.ejs" />
+        <option value="$PROJECT_DIR$/backend/views/parts/template/logged.ejs" />
+        <option value="$PROJECT_DIR$/backend/views/parts/template/header.ejs" />
+        <option value="$PROJECT_DIR$/backend/views/parts/pages/login.ejs" />
+        <option value="$PROJECT_DIR$/backend/app.js" />
+        <option value="$PROJECT_DIR$/backend/routes/index.js" />
       </list>
     </option>
   </component>
@@ -167,10 +279,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="1" />
-    <option name="width" value="1364" />
-    <option name="height" value="726" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -195,8 +307,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -243,18 +353,90 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="bin" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carpooling-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carpooling-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carpooling-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carpooling-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carpooling-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carpooling-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="routes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="terminal" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/in bw routes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../in bw routes" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="SearchEverywhereHistoryKey" value="off&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/views/parts/pages/offer.ejs&#10;index&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/routes/index.js&#10;acc&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/public/sass/account.css&#10;arvo&#9;null&#9;null&#10;.signup&#9;null&#9;null&#10;signup&#9;null&#9;null&#10;offer&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/views/parts/pages/offer.ejs&#10;find&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/views/parts/pages/find.ejs&#10;inde&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/routes/index.js&#10;res&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/node_modules/express/lib/response.js&#10;app&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/app.js&#10;prot&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/node_modules/mysql/lib/protocol/Protocol.js&#10;util&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/node_modules/multer/node_modules/busboy/node_modules/readable-stream/node_modules/core-util-is/lib/util.js&#10;dbc&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/dbconnect.js" />
@@ -351,46 +533,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1364" height="726" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18778281" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24047954" sideWeight="0.913649" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.04778157" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32684284" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922536" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.67486817" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1737649" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35654595" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496464" sideWeight="0.49513212" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28412256" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3649025" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35654595" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18647687" sideWeight="0.08635098" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18941979" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.04778157" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32922536" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.67486817" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18778281" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18941979" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1737649" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -404,217 +569,63 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backend/routes/find.js">
+    <entry file="file://$PROJECT_DIR$/backend/public/sass/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.88889">
+          <caret line="300" column="21" selection-start-line="300" selection-start-column="21" selection-end-line="300" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/public/images/cover.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/public/sass/base/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="3" selection-start-line="34" selection-start-column="3" selection-end-line="34" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="48.333332">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/login.ejs">
+    <entry file="file://$PROJECT_DIR$/backend/public/sass/variables.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/npm-debug.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/.npmignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/offer.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/node_modules/bcryptjs/src/bcrypt/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/node_modules/multer/node_modules/busboy/node_modules/readable-stream/node_modules/core-util-is/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/node_modules/mysql/node_modules/readable-stream/node_modules/core-util-is/lib/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/node_modules/multer/node_modules/busboy/node_modules/readable-stream/node_modules/core-util-is/lib/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/error.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/template/head.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/Protocol.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/node_modules/express/lib/response.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/routes/find.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/sass/offer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="105" column="20" selection-start-line="105" selection-start-column="20" selection-end-line="105" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/in bw routes/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="0" selection-start-line="32" selection-start-column="4" selection-end-line="76" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/Acaps revamp/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/sass/offer.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/account.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8064516">
-          <caret line="1054" column="0" selection-start-line="1054" selection-start-column="0" selection-end-line="1054" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/public/app.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="960" column="17" selection-start-line="960" selection-start-column="17" selection-end-line="960" selection-end-column="17" />
+          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/public/sass/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="1" column="51" selection-start-line="1" selection-start-column="51" selection-end-line="1" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/public/sass/bourbon/addons/_font-stacks.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+          <caret line="34" column="29" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/offer.css">
+    <entry file="file://$PROJECT_DIR$/backend/public/sass/base/_typography.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1292" column="7" selection-start-line="1292" selection-start-column="1" selection-end-line="1292" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/sass/account.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="84" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5483871">
-          <caret line="17" column="23" selection-start-line="17" selection-start-column="23" selection-end-line="17" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -625,56 +636,160 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/sass/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="300" column="21" selection-start-line="300" selection-start-column="21" selection-end-line="300" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/sass/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="38" column="25" selection-start-line="38" selection-start-column="25" selection-end-line="38" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2">
+    <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/app.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1625709">
-          <caret line="3573" column="62" selection-start-line="3573" selection-start-column="62" selection-end-line="3573" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/raw.js">
+    <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/app.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/account.ejs">
+    <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/account.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.0">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="928" column="14" selection-start-line="928" selection-start-column="14" selection-end-line="928" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/offer.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/public/sass/find_after.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0">
+          <caret line="293" column="17" selection-start-line="293" selection-start-column="17" selection-end-line="293" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/public/sass/base/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.3333335">
+          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/public/sass/parts/footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3333334">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/public/sass/parts/feature.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3333334">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/public/sass/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.333333">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/public/sass/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.862069">
+          <caret line="352" column="20" selection-start-line="352" selection-start-column="19" selection-end-line="352" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/public/sass/waypoint.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.0">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/xampp/htdocs/test_node/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.222221">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.7777778">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/uploads/car_pics/0b4cc0d312a970169b1a349b98602181">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/node_modules/morgan/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/node_modules/morgan/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/node_modules/morgan/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/node_modules/multer/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/node_modules/body-parser/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../gmaps_totalDIs/Google Maps JavaScript API v3 Example_ Directions Waypoints (LatLng).html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="62" column="7" selection-start-line="62" selection-start-column="6" selection-end-line="72" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/login.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="41" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/parts/template/footer.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/account_form.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -682,39 +797,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/rides.ejs">
+    <entry file="file://$PROJECT_DIR$/backend/node_modules/body-parser/node_modules/http-errors/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="21" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <caret line="71" column="6" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/routes/find.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/parts/template/head.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/node_modules/arrify/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/account.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/find.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.082706764">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/junk.commented">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/init_setup.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1442216514448" expanded="true" signature="812:1118" placeholder="{...}" />
-            <marker date="1442216514448" expanded="true" signature="857:1112" placeholder="{...}" />
-            <marker date="1442216514448" expanded="true" signature="956:1039" placeholder="{...}" />
-            <marker date="1442216514448" expanded="true" signature="1181:1227" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -726,58 +861,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/login.ejs">
+    <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/rides.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+        <state vertical-scroll-proportion="-9.222222">
+          <caret line="75" column="41" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/account_form.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="10.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/offer.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.089286">
-          <caret line="450" column="91" selection-start-line="450" selection-start-column="91" selection-end-line="450" selection-end-column="91" />
+        <state vertical-scroll-proportion="-1.3333334">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_3">
+    <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/login.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="46" />
+        <state vertical-scroll-proportion="1.4444444">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/Acaps revamp/offer.html">
+    <entry file="file://$PROJECT_DIR$/backend/views/parts/template/header.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="165" column="27" selection-start-line="78" selection-start-column="4" selection-end-line="171" selection-end-column="0" />
+        <state vertical-scroll-proportion="-16.0">
+          <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/routes/index.js">
+    <entry file="file://$PROJECT_DIR$/backend/views/offer.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="46" selection-start-line="69" selection-start-column="46" selection-end-line="69" selection-end-column="46" />
+        <state vertical-scroll-proportion="-6.6666665">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app.js">
+    <entry file="file://$PROJECT_DIR$/backend/views/parts/template/logged.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-52.41379">
-          <caret line="142" column="0" selection-start-line="142" selection-start-column="0" selection-end-line="142" selection-end-column="0" />
+        <state vertical-scroll-proportion="-3.857143">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/dbconnect.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33072406">
-          <caret line="76" column="264" selection-start-line="76" selection-start-column="264" selection-end-line="76" selection-end-column="264" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="95" column="28" selection-start-line="95" selection-start-column="27" selection-end-line="95" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/init_setup.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.222222">
+          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="69" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7549168">
+          <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
           <folding />
         </state>
       </provider>

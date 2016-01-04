@@ -1,4 +1,5 @@
 var express = require('express');
+var app = express();
 var router = express.Router();
 var session = require('express-session');
 var dbconnect = require('../dbconnect.js');
@@ -30,7 +31,7 @@ router.get('/user/setup', function (req, res, next) {
 router.get('/login', function (req, res, next) {
     res.render('login', {
         title: 'login to your account',
-        create: false
+        create: true
     });
 });
 
@@ -42,7 +43,7 @@ router.get('/find', function (req, res, next) {
     dbconnect.connection.query('SELECT * FROM `rides`,`users` WHERE `rides`.`rider_id`=`users`.`id`',
         function (err, rows, fields) {
             var data = rows;
-            console.log(data);
+           // console.log(data);
             if (err) throw err;
             else {
                 res.render('find', {
@@ -80,6 +81,18 @@ router.get('/offer', function (req, res, next) {
     } else {
         res.redirect('/login');
     }
+});
+
+router.get('/logout', function (req, res, next) {
+    req.session.destroy(function(err) {
+        res.redirect('/');
+
+        app.use(function(req, res, next){
+            res.locals.loggedUserName = null;
+            res.locals.loggedUserPic = null;
+            next();
+        });
+    });
 });
 
 
