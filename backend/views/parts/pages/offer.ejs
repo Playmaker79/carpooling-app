@@ -125,6 +125,7 @@
 			}
 			else if (status === google.maps.DirectionsStatus.OK) {
 				directionsDisplay.setDirections(response);
+				calculateDistanceTime(response);
 			}
 			else if(status === google.maps.DirectionsStatus.ZERO_RESULTS){
 				popNonvalidplace();
@@ -132,7 +133,24 @@
 			else {
 				window.alert('Directions request failed due to ' + status);
 			}
+
 		});
+
+	}
+
+
+	function calculateDistanceTime(result) {
+		var totalDist = 0;
+		var totalTime = 0;
+		var myroute = result.routes[0];
+		for (i = 0; i < myroute.legs.length; i++) {
+			totalDist += myroute.legs[i].distance.value;
+			totalTime += myroute.legs[i].duration.value;
+		}
+		totalDist = totalDist / 1000;
+		totalTime = (totalTime / 60).toFixed(2);
+		 console.log(totalDist);
+		 console.log(totalTime);
 	}
 
 	function processUpdate(){

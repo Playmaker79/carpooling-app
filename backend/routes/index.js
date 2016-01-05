@@ -9,21 +9,24 @@ var mysql = require('mysql');
 router.get('/', function (req, res, next) {
     res.render('index', {
         title: 'ACAPS - Amrita Carpooling system',
-        create: true
+        create: true,
+        session: req.session
     });
 });
 
 router.get('/account', function (req, res, next) {
     res.render('account', {
         title: 'Create a  new account ',
-        create: false
+        create: false,
+        session:req.session
     });
 });
 
 router.get('/user/setup', function (req, res, next) {
     res.render('parts/pages/init_setup.ejs', {
         title: 'Setup your account',
-        create: false
+        create: false,
+        session: req.session
     });
 });
 
@@ -31,7 +34,8 @@ router.get('/user/setup', function (req, res, next) {
 router.get('/login', function (req, res, next) {
     res.render('login', {
         title: 'login to your account',
-        create: true
+        create: true,
+        session:req.session
     });
 });
 
@@ -49,7 +53,8 @@ router.get('/find', function (req, res, next) {
                 res.render('find', {
                     title: 'Find A Ride',
                     ride_list: data,
-                    create:false
+                    create:false,
+                    session:req.session
                 });
             }
         });
@@ -74,7 +79,8 @@ router.get('/offer', function (req, res, next) {
                         email: data.email,
                         occupation: data.occupation,
                         profile_pic: data.profile_pic,
-                        create:false
+                        create:false,
+                        session:req.session
                     })
                 }
             });
