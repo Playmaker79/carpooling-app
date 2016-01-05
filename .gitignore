@@ -1,1 +1,2 @@
-node_modules
+node_modules/gulp-nodemon
+node_modules/nodemon

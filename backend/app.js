@@ -93,7 +93,7 @@ app.post('/login', function (req, res){
             console.log("rows\t")
             if(rows.length == 0){
                 /*when an account is not found*/
-                res.render("login",{create:false,title:'Login to your Account',status:'invalidAccount'});
+                res.render("login",{create:false,title:'Login to your Account',status:'invalidAccount',session:req.session});
                 res.end();
             }
             else if (err){
@@ -112,8 +112,6 @@ app.post('/login', function (req, res){
                     sess.current_user = current_user;
                     app.locals.loggedUserName = rows[0].name;
                     app.locals.loggedUserPic = rows[0].profile_pic;
-
-
 
                     /*redirect to initial profile pic upload page*/
                     if (sess.updateprofile == true && sess.current_user) {
@@ -201,7 +199,7 @@ dbconnect.connection.query('select * from rides,users WHERE `rides`.`source` LIK
           var data = rows;
           console.log(rows.length);
           console.log("\n no error");
-          res.render('find',{title:'Find A Ride',ride_list:data,create:false});
+          res.render('find',{title:'Find A Ride',ride_list:data,create:false,session:req.session});
       }
      }
 )});
