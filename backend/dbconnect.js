@@ -21,7 +21,7 @@ connection.connect(function (err) {
 exports.createaccount = function (values, password, res, req) {
     sess = req.session;
     var dob = new Date(values.date_picker);
-    console.log(dob);
+   // console.log(dob);
     var data = [values.first_name, values.last_name, values.gender_select, dob, values.email_id, values.occupation, "none", password]
     var success;
     connection.query('INSERT INTO `users`(`name`, `lastname`, `gender`, `dob`, `email`, `occupation`, `profile_pic`, `password_hash`) VALUES (?,?,?,?,?,?,?,?)', data,

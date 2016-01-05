@@ -71,6 +71,7 @@ app.use(function(req, res, next){
 /*handle account creation */
 app.post('/account', function (req, res) {
     var values = req.body;
+    console.log(req.body);
     //db_connect.insertdata(values);
     var password_salt = bcrypt.genSaltSync(10);
     var password = bcrypt.hashSync(values.password, password_salt);
