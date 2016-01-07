@@ -151,7 +151,10 @@
 		totalTime = (totalTime / 60).toFixed(2);
 		 console.log(totalDist);
 		 console.log(totalTime);
-		console.log(rateCalc(totalDist,10,3));
+		var rate = rateCalc(totalDist,10,seat);
+		console.log(rate);
+		var seat = $("input[name='seat_value']").val();
+		$("input[name='rider_rate']").val(rate.avg);
 	}
 
 	function processUpdate(){
@@ -181,14 +184,12 @@
 		}
 		else {
 			cost.minimum = cost.minimum/10;
-			cost.minimum = Math.round(cost.minimum) *10 ;
+			cost.minimum = Math.round(cost.minimum) *10;
 		}
 		cost.avg = cost.avg/10
-		cost.avg = Math.round(cost.avg) *10 ;
+		cost.avg = Math.round(cost.avg) *10;
 		cost.maximum = cost.maximum/10
-		cost.maximum = Math.round(cost.maximum) *10 ;
-		return cost;
-
+		cost.maximum = Math.round(cost.maximum) *10;
 	}
 </script>
 <!-- gmaps end-->
@@ -232,6 +233,18 @@
 		<div id="map">
 
 		</div>
+		<!-- number of seats -->
+		<div id="vechicle_seat">
+			<label for="seat_value">Number of seats available</label>
+			<input type="text" name="seat_value"/>
+		</div>
+		<!-- number of seats -->
+		<!-- rate -->
+		<div id="ride_cost">
+			<label for="rider_rate">Rate per passenger:</label>
+			<input type="number" name="rider_rate"/>
+		</div>
+		<!-- end rate -- >
 		<!-- Date Travel-->
 		<label for="date_travel">Date of travel</label>
 		<input type="text" class="date_picker" name="date_travel"/>
@@ -457,12 +470,6 @@
 		<input type="file" name="vehicle_picture" accept="image/*">
 		<br>
 		<br>
-		<!-- number of seats -->
-		<div id="vechicle_seat">
-			<label for="seat_value">Number of seats available</label>
-			<input type="text" name="seat_value"/>
-		</div>
-		<!-- number of seats -->
 
 		<!-- car-->
 		<div id="signup_gender">
@@ -493,10 +500,6 @@
 			<input type="radio" name="gender_select" value="o"/>
 		</div>
 
-		<div id="ride_cost">
-			<label for="rider_rate">Rate per passenger:</label>
-			<input type="number" name="rider_rate"/>
-		</div>
 
 		<div id="ride_phone">
 			<label for="ride_phone">Contact phone number:</label>
