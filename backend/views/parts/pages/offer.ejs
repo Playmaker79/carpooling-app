@@ -20,6 +20,12 @@
 		padding:0px;
 		margin:0px;
 	}
+
+	#ride_cost{
+		font-size: 20px;
+		font-weight: bold;
+		border: 0px;
+	}
 </style>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgv2PpFkhSN92tgs0g82VfU7nybuE-8Eg&signed_in=false&libraries=places&callback=initMap"
 		async defer></script>
@@ -65,6 +71,9 @@
 				}
 		);
 		directionsDisplay.setMap(map);
+		var onRateChange = function(){
+			calculateAndDisplayRoute(directionsService,directionsDisplay,waypts);
+		}
 		var onChangeHandler = function() {
 			calculateAndDisplayRoute(directionsService, directionsDisplay,waypts);
 		};
@@ -102,7 +111,7 @@
 		document.getElementById('source_addr').addEventListener('change', onChangeHandler);
 		document.getElementById('dest_addr').addEventListener('change', onChangeHandler);
 		document.getElementById('add_stop').addEventListener('click', onClickHandler);
-
+		document.getElementById('seat_value').addEventListener('change', onRateChange);
 
 	}
 
@@ -151,9 +160,9 @@
 		totalTime = (totalTime / 60).toFixed(2);
 		 console.log(totalDist);
 		 console.log(totalTime);
+		var seat = $("input[name='seat_value']").val();
 		var rate = rateCalc(totalDist,10,seat);
 		console.log(rate);
-		var seat = $("input[name='seat_value']").val();
 		$("input[name='rider_rate']").val(rate.avg);
 	}
 
@@ -190,6 +199,7 @@
 		cost.avg = Math.round(cost.avg) *10;
 		cost.maximum = cost.maximum/10
 		cost.maximum = Math.round(cost.maximum) *10;
+		return cost;
 	}
 </script>
 <!-- gmaps end-->
@@ -236,7 +246,7 @@
 		<!-- number of seats -->
 		<div id="vechicle_seat">
 			<label for="seat_value">Number of seats available</label>
-			<input type="text" name="seat_value"/>
+			<input type="text" name="seat_value" id="seat_value"/>
 		</div>
 		<!-- number of seats -->
 		<!-- rate -->
