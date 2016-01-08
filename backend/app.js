@@ -202,7 +202,7 @@ dbconnect.connection.query('select * from rides,users WHERE `rides`.`source` LIK
           var data = rows;
           console.log(rows.length);
           console.log("\n no error");
-          res.render('find',{title:'Find A Ride',ride_list:data,create:false});
+          res.render('find',{title:'Find A Ride',ride_list:data,create:false,session:req.sessionrs});
       }
      }
 )});
