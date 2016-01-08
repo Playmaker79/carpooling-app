@@ -1,0 +1,49 @@
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base/base";
+@import "common";
+@import "parts/datepicker/default";
+@import "parts/datepicker/default.date";
+
+.signup {
+  @extend fieldset;
+  @include span-columns(8);
+  @include shift(2);
+  margin-top: em(20);
+  margin-bottom: em(30);
+  background: white;
+  border: none;
+  box-shadow: 10px 10px 108px -23px rgba(0,0,0,0.85);
+}
+
+.signup h1{
+  font-size: 28px !important;
+  text-align: center;
+  font-family:"Arvo", serif;
+  font-weight: 200;
+}
+
+#account_step1{
+  @include  span-columns(12);
+}
+
+#account_step2{
+  @include  span-columns(12);
+}
+
+.error_message{
+  color:#EC7B5D;
+  float: right;
+}
+
+.valid_input{
+  border: 2px groove #acd200 !important;
+}
+
+.invalid_input{
+  border: 2px groove #EC7B5D !important;
+}
+
+#submit_button{
+  float: right;
+}

@@ -6,7 +6,6 @@ var patterns = {
 var validate = {
     verfiy_field: function(fieldset){
            if($(fieldset).children(".invalid_input").val() == undefined){
-               console.log("hereN");
                 $("#account_step1").slideUp("slow");
                $("#account_step2").slideDown("slow");
                return true
