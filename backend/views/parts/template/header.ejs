@@ -22,7 +22,7 @@ $(document).ready(function() {
           </ul>
     </nav>
       <!-- user profile_data -->
-      <%if (typeof loggedUserName !== 'undefined' && session.current_user){%>
+      <%if (typeof loggedUserName !== 'undefined' && typeof session !== 'undefined'){%>
       <% include logged.ejs%>
       <%}%>
 

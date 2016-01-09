@@ -50,6 +50,7 @@ router.get('/find', function (req, res, next) {
            // console.log(data);
             if (err) throw err;
             else {
+                console.log(req.session);
                 res.render('find', {
                     title: 'Find A Ride',
                     ride_list: data,
