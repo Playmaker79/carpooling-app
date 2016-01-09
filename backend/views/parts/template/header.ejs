@@ -23,7 +23,9 @@ $(document).ready(function() {
     </nav>
       <!-- user profile_data -->
       <%if (typeof loggedUserName !== 'undefined' && typeof session !== 'undefined'){%>
+    <%if (session.current_user){%>
       <% include logged.ejs%>
+    <%}%>
       <%}%>
 
      <%if (create == true){%>
