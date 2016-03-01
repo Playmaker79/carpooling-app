@@ -10,10 +10,7 @@ var routes = require('./routes/index');
 var app = express();
 var multer = require('multer');
 var session = require('express-session');
-var state = require('express-state');
 
-
-state.extend(app);
 
 var profile_pic_location = multer({
     dest: 'uploads/profile_pics/',
