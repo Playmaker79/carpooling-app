@@ -7,7 +7,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7fd94be-981c-4584-81e9-cc708cc4ca11" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/parts/template/header.ejs" afterPath="$PROJECT_DIR$/backend/views/parts/template/header.ejs" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\public\stylesheet\main.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\public\stylesheet\main.css.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\public\stylesheet\signup.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\public\stylesheet\signup.css.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\public\stylesheets\account.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\public\stylesheets\account.css.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\public\stylesheets\account.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\public\stylesheets\account.scss.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\public\stylesheets\app.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\public\stylesheets\app.css.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\public\stylesheets\app.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\public\stylesheets\app.scss.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\public\stylesheets\find_after.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\public\stylesheets\init_setup.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\public\stylesheets\init_setup.css.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\public\stylesheets\main.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\public\stylesheets\main.css.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\public\stylesheets\offer.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\public\stylesheets\offer.css.map" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\public\stylesheets\signup.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\public\stylesheets\signup.css.map" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/images/Thumbs.db" afterPath="$PROJECT_DIR$/backend/public/images/Thumbs.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/parts/pages/find.ejs" afterPath="$PROJECT_DIR$/backend/views/parts/pages/find.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/parts/template/head.ejs" afterPath="$PROJECT_DIR$/backend/views/parts/template/head.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/parts/pages/rides.ejs" afterPath="$PROJECT_DIR$/backend/views/parts/pages/rides.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="carpooling-app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,21 +53,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="header.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="header.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/views/parts/template/header.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.504717">
-              <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+            <state vertical-scroll-proportion="-26.666666">
+              <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/app.js">
+      <file leaf-file-name="rides.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/rides.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="5.137931">
-              <caret line="208" column="0" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
+            <state vertical-scroll-proportion="-28.928572">
+              <caret line="94" column="27" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
+              <folding>
+                <element signature="e#204#327#0#JavaScript" expanded="false" />
+                <element signature="n#style#0;n#textarea#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customize.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/customize.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6820027">
+              <caret line="109" column="29" selection-start-line="109" selection-start-column="29" selection-end-line="109" selection-end-column="29" />
               <folding />
             </state>
           </provider>
@@ -51,18 +89,8 @@
       <file leaf-file-name="offer.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/offer.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.7777777">
+            <state vertical-scroll-proportion="0.6666667">
               <caret line="161" column="32" selection-start-line="161" selection-start-column="32" selection-end-line="161" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/routes/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.068966">
-              <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -78,31 +106,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="signup.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/signup.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30769232">
+            <state vertical-scroll-proportion="19.62963">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/login.ejs">
+      <file leaf-file-name="find.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/find.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30769232">
-              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="41" />
+            <state vertical-scroll-proportion="-6.0">
+              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -111,8 +129,8 @@
       <file leaf-file-name="head.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/views/parts/template/head.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.0">
-              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="73" />
+            <state vertical-scroll-proportion="-4.6666665">
+              <caret line="14" column="57" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
               <folding />
             </state>
           </provider>
@@ -121,8 +139,18 @@
       <file leaf-file-name="login.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/login.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2962963">
+            <state vertical-scroll-proportion="-1.3703704">
               <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="find.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/find.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-31.703703">
+              <caret line="89" column="83" selection-start-line="89" selection-start-column="83" selection-end-line="89" selection-end-column="83" />
               <folding />
             </state>
           </provider>
@@ -147,7 +175,6 @@
         <option value="$PROJECT_DIR$/backend/public/sass/offer.scss" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1" />
         <option value="$PROJECT_DIR$/../Acaps revamp/offer.html" />
-        <option value="$PROJECT_DIR$/backend/views/parts/pages/find.ejs" />
         <option value="$PROJECT_DIR$/backend/public/stylesheets/account.css" />
         <option value="$PROJECT_DIR$/backend/public/sass/app.css" />
         <option value="$PROJECT_DIR$/backend/public/stylesheets/app.css" />
@@ -155,7 +182,6 @@
         <option value="$PROJECT_DIR$/backend/public/sass/account.scss" />
         <option value="$PROJECT_DIR$/backend/public/sass/account.css" />
         <option value="$PROJECT_DIR$/backend/public/sass/app.scss" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_3" />
         <option value="$PROJECT_DIR$/../gmaps_totalDIs/Google Maps JavaScript API v3 Example_ Directions Waypoints (LatLng).html" />
         <option value="$PROJECT_DIR$/backend/views/parts/pages/init_setup.ejs" />
         <option value="$PROJECT_DIR$/backend/views/parts/template/logged.ejs" />
@@ -164,13 +190,20 @@
         <option value="$PROJECT_DIR$/backend/public/sass/signup.scss.css" />
         <option value="$PROJECT_DIR$/backend/views/account.ejs" />
         <option value="$PROJECT_DIR$/backend/views/parts/pages/account_form.ejs" />
-        <option value="$PROJECT_DIR$/backend/views/parts/template/head.ejs" />
         <option value="$PROJECT_DIR$/backend/public/sass/signup.scss" />
         <option value="$PROJECT_DIR$/backend/public/javascripts/account.js" />
         <option value="$PROJECT_DIR$/backend/routes/index.js" />
         <option value="$PROJECT_DIR$/backend/app.js" />
         <option value="$PROJECT_DIR$/backend/views/parts/pages/offer.ejs" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_2" />
+        <option value="G:/re-revamp/find.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_3" />
+        <option value="$PROJECT_DIR$/backend/views/parts/template/head.ejs" />
+        <option value="$PROJECT_DIR$/backend/views/find.ejs" />
         <option value="$PROJECT_DIR$/backend/views/parts/template/header.ejs" />
+        <option value="$PROJECT_DIR$/backend/views/parts/pages/find.ejs" />
+        <option value="$PROJECT_DIR$/backend/views/parts/pages/rides.ejs" />
+        <option value="$PROJECT_DIR$/backend/public/stylesheets/customize.css" />
       </list>
     </option>
   </component>
@@ -211,6 +244,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -345,19 +379,40 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carpooling-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carpooling-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../in bw routes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="SearchEverywhereHistoryKey" value="ind&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/routes/index.js&#10;off&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/views/parts/pages/offer.ejs&#10;index&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/routes/index.js&#10;acc&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/public/sass/account.css&#10;arvo&#9;null&#9;null&#10;.signup&#9;null&#9;null&#10;signup&#9;null&#9;null&#10;offer&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/views/parts/pages/offer.ejs&#10;find&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/views/parts/pages/find.ejs&#10;inde&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/routes/index.js&#10;res&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/node_modules/express/lib/response.js&#10;app&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/app.js&#10;prot&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/node_modules/mysql/lib/protocol/Protocol.js&#10;util&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/node_modules/multer/node_modules/busboy/node_modules/readable-stream/node_modules/core-util-is/lib/util.js&#10;dbc&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/dbconnect.js" />
@@ -458,10 +513,11 @@
     <frame x="-8" y="-8" width="1444" height="876" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23684211" sideWeight="0.913649" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2009804" sideWeight="0.913649" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.04778157" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32597622" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3559322" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496464" sideWeight="0.49513212" order="3" side_tool="false" content_ui="tabs" />
@@ -475,7 +531,6 @@
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35654595" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18647687" sideWeight="0.08635098" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35654595" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -497,6 +552,22 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/backend/views/parts/template/head.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/login.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/backend/public/sass/parts/footer.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3333334">
@@ -579,13 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/template/footer.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/node_modules/body-parser/node_modules/http-errors/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -616,26 +680,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/account.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/account_form.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/account.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -656,19 +704,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/find.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/dbconnect.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.62069">
           <caret line="98" column="168" selection-start-line="98" selection-start-column="168" selection-end-line="98" selection-end-column="168" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -676,14 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/node.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -696,29 +727,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/find.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3076923">
-          <caret line="42" column="12" selection-start-line="29" selection-start-column="8" selection-end-line="42" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/rides.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.65384614">
-          <caret line="75" column="41" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/public/javascripts/picker.date.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -726,7 +738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -734,7 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -742,7 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="82" column="4" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -761,7 +770,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -773,66 +781,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/account.css">
+    <entry file="file://$PROJECT_DIR$/backend/views/login.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="928" column="14" selection-start-line="928" selection-start-column="14" selection-end-line="928" selection-end-column="14" />
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/app.css">
+    <entry file="file://$PROJECT_DIR$/backend/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/re-revamp/find.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.6666665">
+          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/parts/template/footer.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/app.scss">
+    <entry file="file://$PROJECT_DIR$/backend/node.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30769232">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="3" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_3">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/main.css">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="20" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+        <state vertical-scroll-proportion="-4.053571">
+          <caret line="36" column="56" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/offer.css">
+    <entry file="file://$PROJECT_DIR$/backend/views/account.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6666667">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/error.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/signup.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30769232">
+        <state vertical-scroll-proportion="19.62963">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/login.ejs">
+    <entry file="file://$PROJECT_DIR$/backend/views/find.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30769232">
-          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="41" />
+        <state vertical-scroll-proportion="-6.0">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/find.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-31.703703">
+          <caret line="89" column="83" selection-start-line="89" selection-start-column="83" selection-end-line="89" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/parts/template/header.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-26.666666">
+          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -845,33 +904,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.068966">
-          <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/parts/template/head.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="5.137931">
-          <caret line="208" column="0" selection-start-line="208" selection-start-column="0" selection-end-line="208" selection-end-column="0" />
+        <state vertical-scroll-proportion="-4.6666665">
+          <caret line="14" column="57" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/offer.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.7777777">
+        <state vertical-scroll-proportion="0.6666667">
           <caret line="161" column="32" selection-start-line="161" selection-start-column="32" selection-end-line="161" selection-end-column="32" />
           <folding />
         </state>
@@ -879,16 +922,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/login.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2962963">
+        <state vertical-scroll-proportion="-1.3703704">
           <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/template/header.ejs">
+    <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/rides.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.504717">
-          <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
+        <state vertical-scroll-proportion="-28.928572">
+          <caret line="94" column="27" selection-start-line="94" selection-start-column="27" selection-end-line="94" selection-end-column="27" />
+          <folding>
+            <element signature="e#204#327#0#JavaScript" expanded="false" />
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/customize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6820027">
+          <caret line="109" column="29" selection-start-line="109" selection-start-column="29" selection-end-line="109" selection-end-column="29" />
           <folding />
         </state>
       </provider>

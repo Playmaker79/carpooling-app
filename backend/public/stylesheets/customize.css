@@ -1,0 +1,162 @@
+
+#navigator{
+    background-color: #3f3f3f;
+    height: 5%;
+    
+}
+
+#profile_dropdown{
+    font-family: "open sans";
+    transition: all 0.3s ease 0s;
+  
+}
+#profile_dropdown:focus{
+    height: 5%;  
+}
+
+#car, #sar{
+    font-size: 1.2em;
+    font-family: "open sans semibold";
+}
+#logo img{
+    vertical-align: middle;
+    
+}
+
+#car_txt, #toprides_txt, #sar_text{
+    text-align: center;
+    font-size: 1.6em;
+
+}
+
+#field-1 {
+    font-family: "Segoe ui";
+    font-size: 1.4em;
+    height: 5%;
+    color:  #3f3f3f;
+    border-radius: 0.2em;
+     transition: all 0.3s ease 0s;
+}
+#field-1:focus {
+    outline-color: #eb7a5c;
+    border-color:  #eb7a5c;
+}
+
+#catch{
+    font-family: "open sans";
+    font-weight: 700;
+    width: 70%;
+    border-radius: 0.2em;
+    border:none;
+    background-color: #3f3f3f;
+    transition: all 0.3s ease 0s;
+}
+#catch:hover
+{
+background-image:none !important;
+background-color:#eb7a5c !important;
+    
+}
+
+#f1{
+    
+    padding-top: 1%;
+    padding-bottom: 0.2%;
+}
+
+#field-2 {
+    font-family: "Segoe ui";
+    font-size: 1.4em;
+    height: 5%;
+    color:  #3f3f3f;
+    border-radius: 0.2em;
+     transition: all 0.3s ease 0s;
+    
+}
+#field-2:focus{
+     outline-color: #eb7a5c;
+    border-color:  #eb7a5c;
+}
+
+#catchbutton{
+    padding: 0.2%;
+    
+}
+
+.search_background h3, #toprides_txt {
+    font-family: "open sans";
+    color:  #eb7a5c;
+    font-weight: 700;
+    align-content: center;
+    font-size: 1.2em;
+}
+
+#toprides{
+    background-color: #f2f2f2;
+   border-size:2px;
+   border-style:solid;
+   border-color:#f1f1f1;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1.3em;
+}
+#toprides panel{
+    border-radius: 5em;
+}
+
+.search_background{
+    background-image:url(../images/city_back.svg);
+    background-size: contain;
+    margin:0;
+    background-repeat: repeat;
+}
+.sar_bg h3{
+   font-family: "open sans";
+    color:  #eb7a5c;
+    font-weight: 700;
+        text-align: center;
+    align-content: center;
+    font-size: 1.2em  
+}
+
+#toprides button{
+    background-color:#eb7a5c;
+    border: 0px;
+    border-radius: 0.2em;
+    transition: all 0.3s ease 0s;
+    font-size: 1.2em;
+    margin-left: 0.7em;
+    text-align: center;
+}
+#toprides i{
+    border: 0px;
+    border-radius: 0.2em;
+}
+
+#toprides button:hover{
+    background:#ce4f36;
+    border: 0px;
+}
+
+#viewmore_button{
+    padding-top: 2%;
+}
+#viewmore_button button{
+    background-color: #3f3f3f;
+}
+#viewmore_button button:hover{
+    background-color:#eb7a5c; 
+}
+.list-unstyled user-info-list li, list-unstyled user-friends-count li{
+    text-align: center;
+}
+#phnbtn1 span,#phnbtn2 span,#phnbtn3 span,#phnbtn4 span{
+    background-color:#32bbaa; !important;
+    border-radius: 0.3em;
+}
+
+#toprides img, button{
+   margin: 0.7em;
+}
+#viewmore_button{
+    margin:0%;
+}

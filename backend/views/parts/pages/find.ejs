@@ -43,6 +43,7 @@
             
         });
     </script>
+<!--
 <div id="action_boxes">
    <h2> Find A Ride</h2>
     <form action="/find"  method="post">
@@ -53,11 +54,41 @@
         </p>
         <p>
             <label>To</label>
-            <input type="text" name="to_location" id="to_location"/> 
+            <input type="text" name="to_location" id="to_location"/>
         </p>
         <p>
             <input type="submit" value="Find a Ride" class="find">
         </p>
     </fieldset>
     </form>
+</div>-->
+
+
+
+<!-- Catch a ride search box and layout -->
+<div class="search_background">
+    <form action="/find"  method="post">
+    <div class="row">
+        <div class="col-md-4 col-sm-3 col-xs-3" ></div>
+        <div class="col-md-4 col-sm-6 col-xs-6"><h3 id="car_txt">Catch a Ride</h3></div>
+        <div class="col-md-4 col-sm-3 col-xs-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-sm-3 col-xs-3"></div>
+        <div class="col-md-4 col-sm-6 col-xs-6" id="f1">
+            <input name="from_location" type="text" class="form-control" id="from_location" placeholder="From" ></div>
+        <div class="col-md-4 col-sm-3 col-xs-3"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-sm-3 col-xs-3"></div>
+        <div class="col-md-4 col-sm-6 col-xs-6">
+            <input name="to_location" type="text" class="form-control" id="to_location"
+                                                       placeholder="To"></div>
+        <div class="col-md-4 col-sm-3 col-xs-3"></div>
+    </div>
+    <div class="row text-center">
+        <input type="submit" value="Find a Ride" class="find btn btn-primary btn-lg">
+    </div>
+</form>
 </div>
+<!-- catch a ride search box layout end -->

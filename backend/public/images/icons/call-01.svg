@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="30px"
+	 height="30px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+<g id="Layer_1">
+	<path fill="#606161" d="M23.208,1.522C23.208,1.234,23.03,1,22.811,1H7.188C6.97,1,6.792,1.234,6.792,1.522v26.288
+		c0,0.289,0.178,0.523,0.397,0.523h15.622c0.22,0,0.397-0.234,0.397-0.523V1.522z"/>
+	<rect x="7.167" y="2" fill="#FFFFFF" width="15.667" height="23.917"/>
+	<g>
+		<rect x="7.17" y="2" fill="#BBD631" width="15.66" height="23.97"/>
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="5.625" y1="13.9844" x2="14.5625" y2="13.9844">
+			<stop  offset="0" style="stop-color:#ABBF37"/>
+			<stop  offset="0.0432" style="stop-color:#AEC337"/>
+			<stop  offset="0.2055" style="stop-color:#B6CC34"/>
+			<stop  offset="0.4289" style="stop-color:#BAD332"/>
+			<stop  offset="1" style="stop-color:#BBD631"/>
+		</linearGradient>
+		<rect x="7.167" y="2" fill="url(#SVGID_1_)" width="4.021" height="23.969"/>
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="18.8096" y1="13.9849" x2="22.8301" y2="13.9849">
+			<stop  offset="0" style="stop-color:#BBD631"/>
+			<stop  offset="0.5711" style="stop-color:#BAD332"/>
+			<stop  offset="0.7945" style="stop-color:#B6CC34"/>
+			<stop  offset="0.9568" style="stop-color:#AEC337"/>
+			<stop  offset="1" style="stop-color:#ABBF37"/>
+		</linearGradient>
+		<rect x="18.81" y="2" fill="url(#SVGID_2_)" width="4.021" height="23.97"/>
+	</g>
+	<path fill="#B0C436" d="M22.83,14.38v11.59h-4.44l-7.34-9.25c0,0,1.45-1.84,1.45-2.51s1.92-1.5,3.5-2.54
+		c1.15-0.76,2.28-0.54,2.81-0.37c0.2,0.06,0.311,0.12,0.311,0.12L22.83,14.38z"/>
+	<circle fill="#FFFFFF" cx="15" cy="27.108" r="1.001"/>
+	<radialGradient id="SVGID_3_" cx="15" cy="27.1084" r="1.0015" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="0.3726" style="stop-color:#FDFDFD"/>
+		<stop  offset="0.5069" style="stop-color:#F6F6F6"/>
+		<stop  offset="0.6026" style="stop-color:#EBEBEB"/>
+		<stop  offset="0.68" style="stop-color:#DADADA"/>
+		<stop  offset="0.7463" style="stop-color:#C4C4C4"/>
+		<stop  offset="0.805" style="stop-color:#A8A8A8"/>
+		<stop  offset="0.8581" style="stop-color:#888888"/>
+		<stop  offset="0.9069" style="stop-color:#626262"/>
+		<stop  offset="0.9523" style="stop-color:#373737"/>
+		<stop  offset="0.9926" style="stop-color:#090909"/>
+		<stop  offset="1" style="stop-color:#000000"/>
+	</radialGradient>
+	<circle opacity="0.11" fill="url(#SVGID_3_)" cx="15" cy="27.108" r="1.001"/>
+	<path fill="#FFFFFF" d="M16.281,1.521c0-0.055-0.098-0.099-0.219-0.099h-2.125c-0.121,0-0.219,0.044-0.219,0.099l0,0
+		c0,0.055,0.098,0.099,0.219,0.099h2.125C16.184,1.62,16.281,1.576,16.281,1.521L16.281,1.521z"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M17.205,9.917c-0.457,0.018-0.893,0.112-1.313,0.283
+		c-0.871,0.351-1.643,0.855-2.332,1.486c-0.528,0.482-1.031,0.988-1.458,1.564c-0.394,0.531-0.737,1.091-0.968,1.712
+		c-0.134,0.364-0.233,0.737-0.252,1.125c-0.014,0.293,0.055,0.555,0.28,0.77c0.373,0.354,0.734,0.723,1.099,1.087
+		c0.119,0.118,0.257,0.172,0.421,0.118c0.117-0.038,0.198-0.126,0.254-0.231c0.308-0.575,0.613-1.151,0.918-1.729
+		c0.102-0.191,0.061-0.422-0.102-0.587c-0.131-0.133-0.264-0.265-0.397-0.395c-0.062-0.06-0.083-0.124-0.059-0.208
+		c0.073-0.249,0.194-0.473,0.345-0.68c0.492-0.679,1.077-1.263,1.793-1.709c0.158-0.099,0.325-0.185,0.514-0.217
+		c0.069-0.011,0.121,0.009,0.169,0.055c0.148,0.15,0.297,0.301,0.446,0.45c0.191,0.19,0.461,0.225,0.694,0.089
+		c0.531-0.311,1.063-0.623,1.593-0.934c0.03-0.017,0.06-0.037,0.088-0.057c0.218-0.159,0.242-0.418,0.055-0.611
+		c-0.134-0.137-0.272-0.27-0.409-0.404c-0.236-0.232-0.478-0.459-0.707-0.697C17.69,10.002,17.467,9.915,17.205,9.917z"/>
+</g>
+<g id="Layer_2">
+</g>
+</svg>

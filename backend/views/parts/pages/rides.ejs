@@ -1,141 +1,107 @@
 <style>
-    fieldset#rides{
-        width:100%;
-        margin:0 auto;
-        clear:both;
-        padding-bottom:100px;
-    }
-    span.arrow{
-        font-size: 25px;
-        padding:5px;
+    .ride_pic{
         width:100px;
-        color:#EC7B5D;
-        
-    }
-    #rider_info {
-        text-align:center;
-    }
-    #rider_info h2{
-        color:#9f9f9f;
-    }
-    #rider_info img{
-        margin:0 auto;
-        width:5.5em;
-        height:5em;
-        border-radius:20%;
-        opacity:1 !important;
-    }
-    #rider_info p{
-        margin:0 auto;
-    }
-
-    #rider_info h1{
-        font-size:1.5em;
-    }
-
-    .ride_location {
-        font-size: 1.5em;
-        font-family: open sans light;
-    }
-
-    .grid-items-lines .grid-item {
-        height: 35em !important;
-        margin-top:1em;
-        overflow:;
-    }
-    
-    #car_name{
-        font-size:1.5em !important;
-    }
-    .bottom-cover{
-        display:none;
-    }
-    #restrictions{
-        margin-left:35%;
-    }
-    #restrictions img{
-        display:inline-block;
-        margin:5px;
+        height: 100px;
     }
 </style>
- <fieldset id="rides"> 
- <% if(ride_list.length == 0){ %>
-     <div class="flash-error">
-  <h2>oops :( no rides found. <a href="/find">Go back</a></h2>
-   </div>
- <% }else{ %>
- <% ride_list.forEach(function(ride_data) { %>
-  <div class="grid-items-lines">
-   <div href="javascript:void(0)" class="grid-item" id="rider_info">
-    <img src="<%= ride_data.profile_pic%>" alt="" id="img"  class="profile_pic" width="60" height="40"/>
-    <h1><%= ride_data.name %> <%= ride_data.lastname %> </h1>
-       <h2><%= ride_data.occupation %></h2>
-       <p><%= ride_data.purpose %></p>
-       <br>
-       <h6 for="">Ride</h6><h2 id="car_name"><%= ride_data.car_name%></h2>
-       <img src="<%=ride_data.car_photo%>" alt="<%= ride_data.car_name%>">   
-        <!-- date calc -->
-  </div>
-  
-   <div href="javascript:void(0)" class="grid-item grid-item-big">
-   <%var travel_date = ride_data.travel_date.toString()%>
-   <% var date = travel_date.split("00:");%>
-       <div id="ride_date_time">
-           <h1 class="text-left"><%= date[0]%></h1>
-           <h1 class="text-right"><%= ride_data.travel_time.toString() %></h1>
-       </div>
-    <% console.log(date)%>
-    <h2 class="ride_location"><%= ride_data.source %><span class="arrow">&#8594;</span><%= ride_data.destination %></h2>
 
-       <!-- waypoints-->
+<!-- Top rides start -->
+<div id="toprides">
+    <h1 id="toprides_txt">Latest Rides</h1>
+    <% if(ride_list.length == 0){ %>
+    <div class="flash-error">
+        <h2>oops :( no rides found. <a href="/find">Go back</a></h2>
+    </div>
+    <% }else{ %>
+    <div class="container-fluid">
+        <% ride_list.forEach(function(ride_data) { %>
+            <div class="col-sm-6 col-md-3 col-xs-12">
+                <div class="panel panel-default">
 
-        <% var splittedWaypoints = ride_data.waypoints.split(",")%>
+                    <div class="panel-body">
+                        <div class="user-info-sidebar">
+                            <a href="#" class="user-img">
+                                <img src="<%= ride_data.profile_pic%>" alt="user-img" class="img-cirlce img-responsive
+                                img-thumbnail ride_pic">
+                            </a>
+                            <br/>
+                            <a href="#" class="user-name">
+                                <h3 class=""><%= ride_data.name %> <%= ride_data.lastname %></h3>
+                                <span class="user-status is-online"></span>
+                            </a>
 
-       <span id="waypointbox">
-           <% splittedWaypoints.forEach(function(waypoint){%>
-           <span class="badge-alert waypoint"><%= waypoint %></span>
-           <%});%>
-       </span>
-       <!--end waypoints-->
-       <span class="ride_info">
-           <h2> rate per traveller:<span class="arrow">₹<%= ride_data.Rate%></span></h2>
-       <h2>call:<span class="arrow"><%=ride_data.phone%></span></h2>
-       <div id="co-passenger">
-           <% if(ride_data.passenger== 'm' ) {%>
-           <h2>Co-passenger preference:<span class="arrow">Male</span></h2>
-           <% }%>
-           <% if(ride_data.passenger== 'f' ) {%>
-           <h2>Co-passenger preference:<span class="arrow">Female</span></h2>
-           <% }%>
-           <% if(ride_data.passenger== 'o' ) {%>
-           <h2>Co-passenger preference:<span class="arrow">Any</span></h2>
-           <% }%>
-       </div>
-        <div id="restrictions">
-            <% if(ride_data.drinking ==1) {%>
-            <img src="/images/icons/drinking_icon.svg" alt="Drinking">
-            <%}%>
-            <% if(ride_data.smoking ==1) {%>
-            <img src="/images/icons/smoking_icon.svg" alt="Smoking">
-            <%}%>
-            <% if(ride_data.music ==1) {%>
-            <img src="/images/icons/music_icon.svg" alt="Music">
-            <%}%>
 
-            <!-- restriction -->
-            <% if(ride_data.drinking ==0) {%>
-            <img src="/images/icons/no Liquor -01.svg" alt="No Drinking">
-            <%}%>
-            <% if(ride_data.smoking ==0) {%>
-            <img src="/images/icons/no cigarettes-01.svg" alt="No Smoking">
-            <%}%>
-            <% if(ride_data.music ==0) {%>
-            <img src="/images/icons/no music-01.svg" alt="No Music">
-            <%}%>
-       </span>
+                            <hr>
+
+                            <ul class="list-unstyled user-info-list">
+
+                                <li>
+                                    <img src="images/icons/Location.svg"></i>
+                                    <strong><span><%= ride_data.source %></span></strong> to <strong><span><%= ride_data.destination %></span></strong>
+                                </li>
+                                <li>
+                                    <img src="images/icons/Date_O_T-01.svg"></i>
+                                    <%var travel_date = ride_data.travel_date.toString()%>
+                                    <% var date = travel_date.split("00:");%>
+                                    <strong><span><%= date[0]%></span></strong>
+                                </li>
+                                <li>
+                                    <img src="images/icons/Time_O_T-01.svg"></i>
+                                    <strong><span><%= ride_data.travel_time %></span></strong>
+                                </li>
+                                </li>
+                                <img src="images/icons/travel%20rate-01.svg"></i>
+                                <strong><span><%= ride_data.Rate%></span></strong>Per Passenger.
+                                </li>
+                                <li>
+                                    <% var splittedWaypoints = ride_data.waypoints.split(",")%>
+                                    <img src="images/icons/in_btwn_location-01-01.svg"></i>
+                                    <% splittedWaypoints.forEach(function(waypoint){%>
+                                    <strong><span><%= waypoint %></span></strong>
+                                    <%});%>
+                                </li>
+                            </ul>
+
+                            </ul>
+                            <button class="btn btn-primary btn-icon btn-icon-standalone" id="phnbtn1">
+                                <i class="fa fa-phone-square"></i>
+                                <span><%=ride_data.phone%></span>
+                            </button>
+
+
+                        </div></div></div>
+            </div>
+        <% }); %>
         </div>
-</div>
-<% }); %>
-<%}%>
-</fieldset>
-<br>
+        <%}%>
+        <!-- View more------------------------------------------------------------------------------------------ -->
+
+
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-xs-3"></div>
+            <div class="col-sm-4 col-md-4 col-xs-6" id="viewmore_button">	<button type="button" class="btn btn-success btn-block  ">
+                    View More
+                </button></div>
+            <div class="col-sm-4 col-md-4 col-xs-3"></div>
+        </div>
+        <!-- View more end--------------------------------------------------------------------------------------------->
+
+
+
+
+        <!-- Main menu end -->
+
+        <!-- Bottom Scripts -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/TweenMax.min.js"></script>
+        <script src="assets/js/resizeable.js"></script>
+        <script src="assets/js/joinable.js"></script>
+        <script src="assets/js/xenon-api.js"></script>
+        <script src="assets/js/xenon-toggles.js"></script>
+
+
+        <!-- JavaScripts initializations and stuff -->
+        <script src="assets/js/xenon-custom.js"></script>
+        <textarea tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px; padding: 0px; box-sizing: content-box; word-wrap: break-word; overflow: hidden; transition: none; height: 0px !important; min-height: 0px !important; font-family: Arimo, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; word-spacing: 0px; text-indent: 0px; line-height: 18.5714px; width: 53px;" class="autosizejs" id="autosizejs"></textarea>
+</body>
+</html>
