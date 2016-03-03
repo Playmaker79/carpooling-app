@@ -57,7 +57,7 @@
                                     <% var splittedWaypoints = ride_data.waypoints.split(",")%>
                                     <img src="images/icons/in_btwn_location-01-01.svg"></i>
                                     <% splittedWaypoints.forEach(function(waypoint){%>
-                                    <strong><span><%= waypoint %></span></strong>
+                                    <strong><span class="tag label label-warning"><%= waypoint %></span></strong>
                                     <%});%>
                                 </li>
                             </ul>
@@ -103,5 +103,4 @@
         <!-- JavaScripts initializations and stuff -->
         <script src="assets/js/xenon-custom.js"></script>
         <textarea tabindex="-1" style="position: absolute; top: -999px; left: 0px; right: auto; bottom: auto; border: 0px; padding: 0px; box-sizing: content-box; word-wrap: break-word; overflow: hidden; transition: none; height: 0px !important; min-height: 0px !important; font-family: Arimo, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 400; font-style: normal; letter-spacing: 0px; text-transform: none; word-spacing: 0px; text-indent: 0px; line-height: 18.5714px; width: 53px;" class="autosizejs" id="autosizejs"></textarea>
-</body>
-</html>
+</div>
