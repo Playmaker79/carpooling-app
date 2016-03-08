@@ -8,42 +8,34 @@ $(document).ready(function() {
   });
 });
 </script>
- <header role="banner">
-   <nav class="navbar navbar-inverse" role="navigation">
-     
-     <!-- Brand and toggle get grouped for better mobile display -->
-     <div class="navbar-header">
-       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
-         <span class="sr-only">Toggle navigation</span>
-         <i class="fa-bars"></i>
-       </button>
-       <a class="navbar-brand" href="#">
-         <img src="images/logo.png" alt="ACAPS" class="logo"/>
-       </a>
-     </div>
+ <header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="/" class="logo">
+      <img src="/images/logo.png" alt="Logo Image">
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        <li class="nav-link"><a href="/find">Find a ride</a></li>
+        <li class="nav-link"><a href="/offer">Offer a ride</a></li>
+        <li class="nav-link"><a href="/about">About us</a></li>
+          </ul>
+    </nav>
+      <!-- user profile_data -->
+      <%if (typeof loggedUserName !== 'undefined' && typeof session !== 'undefined'){%>
+    <%if (session.current_user){%>
+      <% include logged.ejs%>
+    <%}%>
+      <%}%>
 
-     <!-- Collect the nav links, forms, and other content for toggling -->
-     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-       <ul class="nav navbar-nav">
-         <li class="active">
-           <a href="/find">Find a ride</a>
-         </li>
-         <li>
-           <a href="/offer">Offer a ride</a>
-         </li>
-         <li>
-           <a href="/about">About Us</a>
-         </li>
-       </ul>
+     <%if (create == true){%>
+     <div class="navigation-tools">
+    <!-- <input type="submit" Value="Create an account"> -->
 
-       <!-- The user logged in stuff here -->
-
-       <%if (typeof loggedUserName !== 'undefined' && typeof session !== 'undefined'){%>
-       <%if (session.current_user){%>
-       <% include logged.ejs%>
-       <%}%>
-       <%}%>
-     </div>
-     <!-- /.navbar-collapse -->
-   </nav>
+         <a href="/account"> <input type="submit" Value="Signup"></a>
+         <a href="/login"> <input type="submit" Value="Login"></a>
+      </div>
+    </div>    
+    <%}%>
+    </div>
 </header>
