@@ -7,24 +7,128 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7fd94be-981c-4584-81e9-cc708cc4ca11" name="Default" comment="">
-<<<<<<< HEAD
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/db.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/models/users.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/parts/pages/account_form.ejs" afterPath="$PROJECT_DIR$/backend/views/parts/pages/account_form.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/app.js" afterPath="$PROJECT_DIR$/backend/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/dbconnect.js" afterPath="$PROJECT_DIR$/backend/dbconnect.js" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\public\javascripts\account.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\public\javascripts\main.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\public\javascripts\picker.date.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Arjun\Desktop\carpooling-app\backend\public\javascripts\picker.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/additional-methods.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/additional-methods.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/additional-methods.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/additional-methods.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/stylesheets/customize.css" afterPath="$PROJECT_DIR$/backend/public/stylesheets/customize.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/parts/template/footer.ejs" afterPath="$PROJECT_DIR$/backend/views/parts/template/footer.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/parts/template/head.ejs" afterPath="$PROJECT_DIR$/backend/views/parts/template/head.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/routes/index.js" afterPath="$PROJECT_DIR$/backend/routes/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/parts/template/header.ejs" afterPath="$PROJECT_DIR$/backend/views/parts/template/header.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-1.11.1.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-1.11.1.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/formwizard/jquery.bootstrap.wizard.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/formwizard/jquery.bootstrap.wizard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/formwizard/jquery.bootstrap.wizard.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/formwizard/jquery.bootstrap.wizard.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/jquery.validate.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/jquery.validate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/jquery.validate.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/jquery.validate.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/parts/template/logged.ejs" afterPath="$PROJECT_DIR$/backend/views/parts/template/logged.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/package.json" afterPath="$PROJECT_DIR$/backend/package.json" />
-=======
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/views/parts/pages/account_form_BK.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/account.ejs" afterPath="$PROJECT_DIR$/backend/views/account.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/parts/pages/account_form.ejs" afterPath="$PROJECT_DIR$/backend/views/parts/pages/account_form.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/parts/template/head.ejs" afterPath="$PROJECT_DIR$/backend/views/parts/template/head.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/parts/pages/rides.ejs" afterPath="$PROJECT_DIR$/backend/views/parts/pages/rides.ejs" />
->>>>>>> origin/Launch
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ar.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ar.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ar.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_bg.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_bg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_bg.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_bg.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ca.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ca.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ca.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ca.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_cs.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_cs.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_cs.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_cs.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_da.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_da.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_da.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_da.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_de.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_de.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_de.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_de.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_el.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_el.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_el.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_el.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_es.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_es.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_es.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_es.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_es_AR.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_es_AR.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_es_AR.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_es_AR.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_et.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_et.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_et.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_et.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_eu.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_eu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_eu.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_eu.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_fa.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_fa.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_fa.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_fa.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_fi.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_fi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_fi.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_fi.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_fr.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_fr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_fr.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_fr.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_gl.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_gl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_gl.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_gl.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_he.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_he.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_he.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_he.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_hr.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_hr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_hr.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_hr.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_hu.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_hu.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_hu.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_hu.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_id.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_id.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_id.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_id.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_is.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_is.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_is.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_is.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_it.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_it.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_it.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_it.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ja.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ja.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ja.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ja.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ka.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ka.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ka.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ka.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_kk.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_kk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_kk.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_kk.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ko.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ko.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ko.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ko.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_lt.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_lt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_lt.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_lt.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_lv.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_lv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_lv.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_lv.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_my.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_my.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_my.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_my.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_nl.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_nl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_nl.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_nl.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_no.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_no.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_no.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_no.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_pl.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_pl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_pl.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_pl.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_pt_BR.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_pt_BR.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_pt_BR.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_pt_BR.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_pt_PT.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_pt_PT.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_pt_PT.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_pt_PT.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ro.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ro.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ro.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ru.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ru.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ru.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_ru.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_si.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_si.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_si.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_si.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_sk.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_sk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_sk.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_sk.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_sl.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_sl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_sl.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_sl.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_sr.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_sr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_sr.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_sr.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_sr_lat.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_sr_lat.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_sr_lat.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_sr_lat.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_sv.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_sv.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_sv.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_sv.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_th.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_th.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_th.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_th.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_tj.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_tj.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_tj.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_tj.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_tr.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_tr.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_tr.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_tr.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_uk.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_uk.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_uk.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_uk.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_vi.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_vi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_vi.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_vi.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_zh.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_zh.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_zh.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_zh.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_zh_TW.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_zh_TW.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_zh_TW.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/messages_zh_TW.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/methods_de.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/methods_de.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/methods_de.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/methods_de.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/methods_es_CL.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/methods_es_CL.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/methods_es_CL.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/methods_es_CL.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/methods_fi.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/methods_fi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/methods_fi.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/methods_fi.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/methods_nl.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/methods_nl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/methods_nl.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/methods_nl.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/methods_pt.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/methods_pt.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/methods_pt.min.js" afterPath="$PROJECT_DIR$/backend/public/javascripts/jquery-validate/localization/methods_pt.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="carpooling-app.iws" />
@@ -46,12 +150,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-<<<<<<< HEAD
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.793104">
+            <state vertical-scroll-proportion="0.0">
               <caret line="240" column="0" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="offer.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/css/offer.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customize.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/customize.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -67,182 +190,62 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="find.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/routes/find.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/db.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-=======
-      <file leaf-file-name="header.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/parts/template/header.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.37037">
-              <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
->>>>>>> origin/Launch
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="account_form.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/account_form.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.185185">
-              <caret line="113" column="87" selection-start-line="113" selection-start-column="71" selection-end-line="113" selection-end-column="87" />
-=======
-      <file leaf-file-name="rides.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/rides.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-70.0">
-              <caret line="105" column="6" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
->>>>>>> origin/Launch
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dbconnect.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/dbconnect.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49053857">
-              <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
-              <folding>
-                <marker date="1457401367964" expanded="true" signature="594:889" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-<<<<<<< HEAD
-      <file leaf-file-name="generic-pool.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/node_modules/generic-pool/lib/generic-pool.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="301" column="24" selection-start-line="301" selection-start-column="24" selection-end-line="301" selection-end-column="24" />
-              <folding />
-=======
-      <file leaf-file-name="account_form.ejs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/account_form.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.050561797">
-              <caret line="2" column="64" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="64" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#textarea#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#select#0;n#div#0;n#div#1;n#div#2;n#div#1;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#1;n#div#2;n#div#1;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#1;n#span#0;n#span#0;n#div#0;n#div#1;n#div#2;n#div#1;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ul#0;n#span#0;n#div#0;n#div#1;n#div#2;n#div#1;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#textarea#0;n#div#0;n#div#0;n#div#2;n#div#2;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#5;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#6;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#7;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#8;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#9;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#10;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#11;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
->>>>>>> origin/Launch
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="xenon-custom.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/public/javascripts/xenon-custom.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="583" column="28" selection-start-line="583" selection-start-column="28" selection-end-line="583" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="raw.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/Raw_backup/raw.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-<<<<<<< HEAD
-              <caret line="8860" column="30" selection-start-line="8860" selection-start-column="30" selection-end-line="8860" selection-end-column="30" />
-              <folding>
-                <marker date="1457205236174" expanded="true" signature="15157:15164" placeholder="..." />
-                <marker date="1457205236174" expanded="true" signature="15237:15244" placeholder="..." />
-              </folding>
-=======
-              <caret line="109" column="29" selection-start-line="109" selection-start-column="29" selection-end-line="109" selection-end-column="29" />
-              <folding />
->>>>>>> origin/Launch
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jquery.validate.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/public/javascripts/jquery-validate/jquery.validate.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-            <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="1205" selection-start-line="3" selection-start-column="1205" selection-end-line="3" selection-end-column="1205" />
-=======
-            <state vertical-scroll-proportion="-4.6666665">
-              <caret line="14" column="72" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="72" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="account.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/views/account.ejs">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-3.3333333">
               <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
->>>>>>> origin/Launch
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/public/javascripts/main.js">
+      <file leaf-file-name="head.ejs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/views/parts/template/head.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.72">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery-1.11.1.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/public/javascripts/jquery-1.11.1.min.js">
+      <file leaf-file-name="header.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/parts/template/header.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="-16.0">
+              <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="footer.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/parts/template/footer.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.785714">
+              <caret line="18" column="74" selection-start-line="18" selection-start-column="74" selection-end-line="18" selection-end-column="74" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logged.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/parts/template/logged.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.333333">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="error.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/error.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -276,7 +279,6 @@
         <option value="$PROJECT_DIR$/backend/public/sass/app.scss" />
         <option value="$PROJECT_DIR$/../gmaps_totalDIs/Google Maps JavaScript API v3 Example_ Directions Waypoints (LatLng).html" />
         <option value="$PROJECT_DIR$/backend/views/parts/pages/init_setup.ejs" />
-        <option value="$PROJECT_DIR$/backend/views/parts/template/logged.ejs" />
         <option value="$PROJECT_DIR$/backend/views/parts/pages/login.ejs" />
         <option value="$PROJECT_DIR$/backend/public/sass/signup.scss.css" />
         <option value="$PROJECT_DIR$/backend/public/sass/signup.scss" />
@@ -286,25 +288,15 @@
         <option value="G:/re-revamp/find.html" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_3" />
         <option value="$PROJECT_DIR$/backend/views/find.ejs" />
-        <option value="$PROJECT_DIR$/backend/views/parts/template/header.ejs" />
         <option value="$PROJECT_DIR$/backend/views/parts/pages/find.ejs" />
-        <option value="$PROJECT_DIR$/backend/public/stylesheets/customize.css" />
-        <option value="$PROJECT_DIR$/backend/views/parts/pages/rides.ejs" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_4" />
-        <option value="$PROJECT_DIR$/backend/views/parts/template/head.ejs" />
         <option value="$PROJECT_DIR$/backend/views/account.ejs" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_5" />
         <option value="$PROJECT_DIR$/backend/views/parts/pages/account_form_BK.html" />
-<<<<<<< HEAD
         <option value="$PROJECT_DIR$/backend/views/parts/pages/rides.ejs" />
         <option value="$PROJECT_DIR$/backend/public/stylesheets/bootstrap.css" />
-        <option value="$PROJECT_DIR$/backend/views/parts/template/header.ejs" />
-        <option value="$PROJECT_DIR$/backend/public/stylesheets/customize.css" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_6" />
-        <option value="$PROJECT_DIR$/backend/views/parts/template/logged.ejs" />
         <option value="$PROJECT_DIR$/../xenon_1.3/xenon-files/html/forms-wizard.html" />
-        <option value="$PROJECT_DIR$/backend/views/parts/template/head.ejs" />
-        <option value="$PROJECT_DIR$/backend/views/parts/template/footer.ejs" />
         <option value="$PROJECT_DIR$/backend/views/parts/pages/account_form.ejs" />
         <option value="$PROJECT_DIR$/models/users.js" />
         <option value="$PROJECT_DIR$/db.js" />
@@ -313,9 +305,11 @@
         <option value="$PROJECT_DIR$/backend/public/javascripts/xenon-custom.js" />
         <option value="$PROJECT_DIR$/backend/routes/index.js" />
         <option value="$PROJECT_DIR$/backend/dbconnect.js" />
-=======
-        <option value="$PROJECT_DIR$/backend/views/parts/pages/account_form.ejs" />
->>>>>>> origin/Launch
+        <option value="$PROJECT_DIR$/backend/views/parts/template/footer.ejs" />
+        <option value="$PROJECT_DIR$/backend/views/parts/template/header.ejs" />
+        <option value="$PROJECT_DIR$/backend/public/stylesheets/customize.css" />
+        <option value="$PROJECT_DIR$/backend/views/parts/template/logged.ejs" />
+        <option value="$PROJECT_DIR$/backend/views/parts/template/head.ejs" />
       </list>
     </option>
   </component>
@@ -356,7 +350,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -403,7 +396,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -421,12 +414,87 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carpooling-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carpooling-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carpooling-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carpooling-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carpooling-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carpooling-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -435,11 +503,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-<<<<<<< HEAD
     <property name="SearchEverywhereHistoryKey" value="acc&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/views/parts/pages/account_form.ejs&#10;DBCO&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/dbconnect.js&#10;APP&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/app.js&#10;toggles&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/public/javascripts/xenon-toggles.js&#10;xenon&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/public/javascripts/xenon-api.js&#10;accoun&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/views/parts/pages/account_form.ejs&#10;footer&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/views/parts/template/footer.ejs&#10;cus&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/public/stylesheets/customize.css&#10;bootstrap.css&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/public/stylesheets/bootstrap.css&#10;logged&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/views/parts/template/logged.ejs&#10;ind&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/routes/index.js&#10;off&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/views/parts/pages/offer.ejs&#10;index&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/routes/index.js&#10;arvo&#9;null&#9;null&#10;.signup&#9;null&#9;null&#10;signup&#9;null&#9;null&#10;offer&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/views/parts/pages/offer.ejs&#10;find&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/views/parts/pages/find.ejs&#10;inde&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/routes/index.js&#10;res&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/node_modules/express/lib/response.js&#10;app&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/app.js&#10;prot&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/node_modules/mysql/lib/protocol/Protocol.js&#10;util&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/node_modules/multer/node_modules/busboy/node_modules/readable-stream/node_modules/core-util-is/lib/util.js&#10;dbc&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/dbconnect.js" />
-=======
-    <property name="SearchEverywhereHistoryKey" value="ind&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/routes/index.js&#10;off&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/views/parts/pages/offer.ejs&#10;index&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/routes/index.js&#10;acc&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/public/sass/account.css&#10;arvo&#9;null&#9;null&#10;.signup&#9;null&#9;null&#10;signup&#9;null&#9;null&#10;offer&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/views/parts/pages/offer.ejs&#10;find&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/views/parts/pages/find.ejs&#10;inde&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/routes/index.js&#10;res&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/node_modules/express/lib/response.js&#10;app&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/app.js&#10;prot&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/node_modules/mysql/lib/protocol/Protocol.js&#10;util&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/node_modules/multer/node_modules/busboy/node_modules/readable-stream/node_modules/core-util-is/lib/util.js&#10;dbc&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/dbconnect.js" />
->>>>>>> origin/Launch
     <property name="FullScreen" value="false" />
     <property name="com.intellij.ide.scratch.NewScratchFileAction" value="HTML&#10;EJS" />
     <property name="recentsLimit" value="5" />
@@ -540,35 +604,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19111425" sideWeight="0.913649" order="2" side_tool="false" content_ui="combo" />
-=======
-    <frame x="-8" y="-8" width="1444" height="876" extended-state="1" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2009804" sideWeight="0.913649" order="2" side_tool="false" content_ui="combo" />
->>>>>>> origin/Launch
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21086037" sideWeight="0.913649" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.04778157" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32597622" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3548387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3548387" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2496464" sideWeight="0.49513212" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6462396" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3649025" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35654595" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286908" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18647687" sideWeight="0.08635098" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3649025" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -589,25 +646,44 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/backend/dbconnect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1457401534283" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/node_modules/generic-pool/lib/generic-pool.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="301" column="24" selection-start-line="301" selection-start-column="24" selection-end-line="301" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/Raw_backup/raw.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8860" column="30" selection-start-line="8860" selection-start-column="30" selection-end-line="8860" selection-end-column="30" />
+          <folding>
+            <marker date="1457205236174" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1457205236174" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/public/javascripts/jquery-validate/jquery.validate.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="1205" selection-start-line="3" selection-start-column="1205" selection-end-line="3" selection-end-column="1205" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/init_setup.ejs">
-=======
-    <entry file="file://$PROJECT_DIR$/backend/public/sass/parts/feature.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3333334">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/sass/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.333333">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/sass/main.css">
->>>>>>> origin/Launch
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.259259">
           <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
@@ -642,54 +718,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/javascripts/picker.date.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/javascripts/picker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/javascripts/account.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="4" selection-start-line="82" selection-start-column="4" selection-end-line="82" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/css/offer.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/public/css/main.css.map">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-<<<<<<< HEAD
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider editor-type-id="sourcemapFileViewerProvider">
         <state />
-=======
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="42" />
-        </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/init_setup.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.259259">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
->>>>>>> origin/Launch
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/public/css/main.css">
@@ -724,13 +760,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.053571">
           <caret line="36" column="56" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/error.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -776,35 +805,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/javascripts/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/public/javascripts/jquery-1.11.1.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/backend/views/account.ejs">
-=======
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/template/footer.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/node.sh">
->>>>>>> origin/Launch
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3333333">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -833,153 +837,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.9959404">
           <caret line="0" column="18872" selection-start-line="0" selection-start-column="18872" selection-end-line="0" selection-end-column="18872" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/customize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="107" column="16" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/template/head.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/backend/public/javascripts/devexpress-web-14.1/js/dx.chartjs.js">
-=======
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/template/logged.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/offer.ejs">
->>>>>>> origin/Launch
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2435724">
-          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/javascripts/xenon-api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/backend/public/javascripts/xenon-toggles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/template/footer.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="26" />
-=======
-    <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/customize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="109" column="29" selection-start-line="109" selection-start-column="29" selection-end-line="109" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/rides.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-70.0">
-          <caret line="105" column="6" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
->>>>>>> origin/Launch
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/../xenon_1.3/xenon-files/html/forms-wizard.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2225" column="7" selection-start-line="2225" selection-start-column="4" selection-end-line="2232" selection-end-column="0" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#form#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/template/logged.ejs">
+    <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/account_form_BK.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.0">
-          <caret line="6" column="47" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
-=======
-    <entry file="file://$PROJECT_DIR$/backend/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/template/header.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.37037">
-          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
->>>>>>> origin/Launch
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/template/header.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="30" />
-=======
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_4">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3398876">
-          <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
->>>>>>> origin/Launch
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/javascripts/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state vertical-scroll-proportion="-26.0">
           <caret line="39" column="45" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="45" />
-=======
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
->>>>>>> origin/Launch
-          <folding />
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/backend/junk.commented">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -987,9 +865,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="50" column="25" selection-start-line="50" selection-start-column="25" selection-end-line="50" selection-end-column="25" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -997,42 +872,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="301" column="24" selection-start-line="301" selection-start-column="24" selection-end-line="301" selection-end-column="24" />
-=======
-    <entry file="file://$PROJECT_DIR$/backend/public/javascripts/jquery-1.11.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/template/head.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6666665">
-          <caret line="14" column="72" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="72" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/account.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.3333333">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
->>>>>>> origin/Launch
-          <folding />
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/backend/Raw_backup/raw.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="8860" column="30" selection-start-line="8860" selection-start-column="30" selection-end-line="8860" selection-end-column="30" />
           <folding>
-            <marker date="1457205236174" expanded="true" signature="15157:15164" placeholder="..." />
-            <marker date="1457205236174" expanded="true" signature="15237:15244" placeholder="..." />
+            <marker date="1457205236174" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1457205236174" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1041,37 +891,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="3" column="1205" selection-start-line="3" selection-start-column="1205" selection-end-line="3" selection-end-column="1205" />
-=======
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_5">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/account_form_BK.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-35.333332">
-          <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
->>>>>>> origin/Launch
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/account_form.ejs">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-        <state vertical-scroll-proportion="-14.185185">
-          <caret line="113" column="87" selection-start-line="113" selection-start-column="71" selection-end-line="113" selection-end-column="87" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/javascripts/xenon-custom.js">
-      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="583" column="28" selection-start-line="583" selection-start-column="28" selection-end-line="583" selection-end-column="28" />
+          <caret line="113" column="87" selection-start-line="113" selection-start-column="71" selection-end-line="113" selection-end-column="87" />
           <folding />
         </state>
       </provider>
@@ -1084,19 +911,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.793104">
-          <caret line="240" column="0" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/routes/find.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/dbconnect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+          <folding>
+            <marker date="1457401534283" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1108,52 +937,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/dbconnect.js">
+    <entry file="file://$PROJECT_DIR$/backend/views/error.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49053857">
-          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
-          <folding>
-            <marker date="1457401367964" expanded="true" signature="594:889" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-=======
-        <state vertical-scroll-proportion="0.050561797">
-          <caret line="2" column="64" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="64" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#div#0;n#div#1;n#div#2;n#div#1;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#span#0;n#div#0;n#div#1;n#div#2;n#div#1;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#span#0;n#span#0;n#div#0;n#div#1;n#div#2;n#div#1;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#span#0;n#div#0;n#div#1;n#div#2;n#div#1;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#0;n#div#2;n#div#2;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#2;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#5;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#6;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#7;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#8;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#9;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#10;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#11;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#ul#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#4;n#div#1;n#form#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/backend/views/account.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.3333333">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
->>>>>>> origin/Launch
+    <entry file="file://$PROJECT_DIR$/backend/views/parts/template/footer.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.785714">
+          <caret line="18" column="74" selection-start-line="18" selection-start-column="74" selection-end-line="18" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/css/offer.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/customize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="240" column="0" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/parts/template/header.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.0">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/parts/template/logged.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.333333">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/parts/template/head.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.72">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

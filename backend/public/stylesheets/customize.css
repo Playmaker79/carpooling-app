@@ -1,17 +1,15 @@
 
-#navigator{
-    background-color: #3f3f3f;
-    height: 5%;
-    
+.navbar{
+    margin-bottom: 0px;
 }
 
 #profile_dropdown{
     font-family: "open sans";
     transition: all 0.3s ease 0s;
-  
+
 }
 #profile_dropdown:focus{
-    height: 5%;  
+    height: 5%;
 }
 
 #car, #sar{
@@ -20,7 +18,7 @@
 }
 #logo img{
     vertical-align: middle;
-    
+
 }
 
 #car_txt, #toprides_txt, #sar_text{
@@ -35,7 +33,7 @@
     height: 5%;
     color:  #3f3f3f;
     border-radius: 0.2em;
-     transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
 }
 #field-1:focus {
     outline-color: #eb7a5c;
@@ -53,13 +51,13 @@
 }
 #catch:hover
 {
-background-image:none !important;
-background-color:#eb7a5c !important;
-    
+    background-image:none !important;
+    background-color:#eb7a5c !important;
+
 }
 
 #f1{
-    
+
     padding-top: 1%;
     padding-bottom: 0.2%;
 }
@@ -70,17 +68,17 @@ background-color:#eb7a5c !important;
     height: 5%;
     color:  #3f3f3f;
     border-radius: 0.2em;
-     transition: all 0.3s ease 0s;
-    
+    transition: all 0.3s ease 0s;
+
 }
 #field-2:focus{
-     outline-color: #eb7a5c;
+    outline-color: #eb7a5c;
     border-color:  #eb7a5c;
 }
 
 #catchbutton{
     padding: 0.2%;
-    
+
 }
 
 .search_background h3, #toprides_txt {
@@ -93,11 +91,11 @@ background-color:#eb7a5c !important;
 
 #toprides{
     background-color: #f2f2f2;
-   border-size:2px;
-   border-style:solid;
-   border-color:#f1f1f1;
-   font-family: 'Montserrat', sans-serif;
-   font-size: 1.3em;
+    border-size:2px;
+    border-style:solid;
+    border-color:#f1f1f1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
 }
 #toprides panel{
     border-radius: 5em;
@@ -108,14 +106,15 @@ background-color:#eb7a5c !important;
     background-size: contain;
     margin:0;
     background-repeat: repeat;
+    padding: 7%;
 }
 .sar_bg h3{
-   font-family: "open sans";
+    font-family: "open sans";
     color:  #eb7a5c;
     font-weight: 700;
-        text-align: center;
+    text-align: center;
     align-content: center;
-    font-size: 1.2em  
+    font-size: 1.2em
 }
 
 #toprides button{
@@ -144,7 +143,7 @@ background-color:#eb7a5c !important;
     background-color: #3f3f3f;
 }
 #viewmore_button button:hover{
-    background-color:#eb7a5c; 
+    background-color:#eb7a5c;
 }
 .list-unstyled user-info-list li, list-unstyled user-friends-count li{
     text-align: center;
@@ -155,8 +154,15 @@ background-color:#eb7a5c !important;
 }
 
 #toprides img, button{
-   margin: 0.7em;
+    margin: 0.7em;
 }
 #viewmore_button{
     margin:0%;
+}
+
+
+.logo{
+    position: relative;
+    bottom: 50%;
+    width: 50%;
 }
