@@ -103,5 +103,10 @@ router.get('/logout', function (req, res, next) {
 });
 
 
+router.get('/printme',function(req,res){
+    var result = dbconnect.printme();
+    console.log(result);
+    res.end();
+});
 
 module.exports = router;

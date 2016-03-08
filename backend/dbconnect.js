@@ -1,6 +1,6 @@
 var mysql = require('mysql');
 var session = require('express-session');
-
+var db = require('./db');
 
 var connection = mysql.createConnection({
     host: 'localhost',
@@ -18,22 +18,38 @@ connection.connect(function (err) {
 });
 
 
+
 exports.createaccount = function (values, password, res, req) {
     sess = req.session;
-    var dob = new Date(values.date_picker);
+    var dob = new Date(values.birthdate);
    // console.log(dob);
-    var data = [values.first_name, values.last_name, values.gender_select, dob, values.email_id, values.occupation, "none", password]
+    var data = {
+        name:values.First_name,
+        lastname:values.last_name,
+     gender:values.gender_select,
+     dob:dob,
+     email:values.email,
+     occupation:values.occupation,
+     company:values.company,
+     phone:values.phone,
+     profile_pic:"none",
+     password_hash:password}
     var success;
-    connection.query('INSERT INTO `users`(`name`, `lastname`, `gender`, `dob`, `email`, `occupation`, `profile_pic`, `password_hash`) VALUES (?,?,?,?,?,?,?,?)', data,
+    db.users.create(data).then(function(){
+        res.redirect('/login');
+    });
+    /*connection.query('INSERT INTO `users`(`name`, `lastname`, `gender`, `dob`, `email`, `occupation`, `company`,`phone`,`profile_pic`, `password_hash`) VALUES (?,?,?,?,?,?,?,?,?,?)', data,
         function (err, result) {
-            if (err) throw err;
+            if (err) {
+                throw err;
+            }
             if (!err) {
                 sess.updateprofile = true;
                 res.redirect('/login');
                 res.end();
                 success = true;
             }
-        });
+        });*/
     return success
 }
 
