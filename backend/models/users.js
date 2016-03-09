@@ -25,7 +25,8 @@ module.exports = function (sequelize, DataTypes) {
         },
         email: {
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: false,
+            unique:true
         },
         occupation: {
             type: DataTypes.STRING,
@@ -37,7 +38,8 @@ module.exports = function (sequelize, DataTypes) {
         },
         phone:{
             type: DataTypes.STRING,
-            allowNull:false
+            allowNull:false,
+            unique:true
         },
         profile_pic: {
             type: DataTypes.STRING,

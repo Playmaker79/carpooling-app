@@ -87,7 +87,7 @@ app.post('/login', function (req, res){
     //console.log("bcr" + bcrypt);
     dbconnect.connection.query('SELECT * FROM `users` WHERE `email`=?', [values.email],
         function (err, rows, fields) {
-            console.log("rows\t")
+            console.log(rows+"\n");
             if(rows.length == 0){
                 /*when an account is not found*/
                 res.render("login",{create:false,title:'Login to your Account',status:'invalidAccount'});

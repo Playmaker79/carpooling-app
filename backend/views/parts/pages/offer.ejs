@@ -1,30 +1,15 @@
-
 <style>
-
-	.grid-items-lines p {
-		text-align:center;
-		margin-left:50px;
+	.alert{
+		margin: 5px;
+		text-align: left;
+		font-size: 1.2em;
+		padding-top: 5px;
+		padding-bottom: 0px;
+		color:#f4f4f4;
 	}
-	#pro-pic{
-		margin:0 auto;
-		opacity:1;
-		width: 6.5em;
-		height: 100px;
-		BORDER-RADIUS: 50PX;
-	}
-
-	.grid-item:hover{
-		background:#f4f4f4;
-	}
-	hr{
-		padding:0px;
-		margin:0px;
-	}
-
-	#ride_cost{
-		font-size: 20px;
-		font-weight: bold;
-		border: 0px;
+	.close{
+		background: black;
+		color: #f4f4f4;
 	}
 </style>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgv2PpFkhSN92tgs0g82VfU7nybuE-8Eg&signed_in=false&libraries=places&callback=initMap"
@@ -85,7 +70,7 @@
 			stop = stop[0];
 			if(stop.length>1 && add_points == true){
 				waypts.push({location:stop});
-				$("<span class='col-md-3 badge-alert stop_tag_item' stop-point='"+stop+"'>"+stop+"<span class='stop_close'>x</span>"+"</span>")
+				$("<span class='tag alert label-info stop_tag_item' stop-point='"+stop+"'>"+stop+"<button class='close' data-dismiss='alert'>x</button>"+"</span>")
 						.appendTo($('#stop_tags')).hide().slideDown();
 				$("#stop_points").val("");
 				$(".stop_tag_item").click(function(){
@@ -203,7 +188,7 @@
 	}
 </script>
 <!-- gmaps end-->
-<div class="grid-items-lines">
+<!--<div class="grid-items-lines">
 	<a href="javascript:void(0)" class="grid-item">
 		<img src="<%= profile_pic %>" alt="pro-pic" id="pro-pic">
 		<h1><%= name%> <%= lastname%></h1>
@@ -216,307 +201,561 @@
 
 	<div class="right-cover"></div>
 	<div class="bottom-cover"></div>
-</div>
-<hr>
+</div>-->
 <!--Offer a ride-->
-<br>
 <div class="signup">
-	<h1>Offer a Ride</h1>
-	<form action="/offer" method="post" enctype="multipart/form-data" id="offer_form">
-		<div class="ride_planner">
-			<!-- from-->
-			<label for="source">From</label>
-			<input type="text" name="source" placeholder="enter your starting point" id="source_addr"/>
+	<h1 class="text-center">Offer a Ride</h1>
+	<div class="container">
+		<form role="forl" id="rootwizard" class="form-wizard validate" novalidate>
 
-			<!-- to-->
-			<label for="destination">To</label>
-			<input type="text" name="destination" placeholder="enter your destination" id="dest_addr"/>
+			<ul class="tabs">
+				<li class="active">
+					<a href="#fwv-1" data-toggle="tab">
+						Ride planner
+						<span>1</span>
+					</a>
+				</li>
+				<li>
+					<a href="#fwv-2" data-toggle="tab">
+						Ride Info
+						<span>2</span>
+					</a>
+				</li>
+				<li>
+					<a href="#fwv-3" data-toggle="tab">
+						Vechicle info
+						<span>3</span>
+					</a>
+				</li>
+				<li>
+					<a href="#fwv-4" data-toggle="tab">
+						Finishing Up!
+						<span>4</span>
+					</a>
+				</li>
+			</ul>
 
-			<!-- In bettween routes-->
-			<label for="stops">Stop points</label>
-			<input type="text" name="destination" placeholder="Enter in bettween locations" id="stop_points"/>
-			<input type="button" id="add_stop" value="add"/>
-			<div id="stop_tags">
-				<div class="clearfix"></div>
+			<div class="progress-indicator">
+				<span></span>
 			</div>
-		</div>
-		<div id="map">
 
-		</div>
-		<!-- number of seats -->
-		<div id="vechicle_seat">
-			<label for="seat_value">Number of seats available</label>
-			<input type="text" name="seat_value" id="seat_value"/>
-		</div>
-		<!-- number of seats -->
-		<!-- rate -->
-		<div id="ride_cost">
-			<label for="rider_rate">Rate per passenger:</label>
-			<input type="number" name="rider_rate"/>
-		</div>
-		<!-- end rate -- >
-		<!-- Date Travel-->
-		<label for="date_travel">Date of travel</label>
-		<input type="text" class="date_picker" name="date_travel"/>
+			<div class="tab-content no-margin">
 
-		<!--time-->
-		<label for="time_travel">Time</label>
-		<select name="time_travel" id="time_travel">
-			<option value="5:00 AM">5:00 AM</option>
-			<option value="5:15 AM">5:15 AM</option>
-			<option value="5:30 AM">5:30 AM</option>
-			<option value="5:45 AM">5:45 AM</option>
+				<!-- Tabs Content -->
+				<div class="tab-pane with-bg active" id="fwv-1">
 
-			<option value="6:00 AM">6:00 AM</option>
-			<option value="6:15 AM">6:15 AM</option>
-			<option value="6:30 AM">6:30 AM</option>
-			<option value="6:45 AM">6:45 AM</option>
+					<!-- Gmaps & waypoints -->
+					<div class="row">
+						<div class="col-md-6">
+							<!- From & To locations-->
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label class="control-label" for="source">From</label>
+										<input class="form-control" name="source" id="source_addr" data-validate="required" placeholder="Ex:Bangalore" />
+									</div>
+								</div>
 
-			<option value="7:00 AM">7:00 AM</option>
-			<option value="7:15 AM">7:15 AM</option>
-			<option value="7:30 AM">7:30 AM</option>
-			<option value="7:45 AM">7:45 AM</option>
+								<div class="col-md-12">
+									<div class="form-group">
+										<label class="control-label" for="destination">To</label>
+										<input class="form-control" name="destination" id="dest_addr" data-validate="required" placeholder="Ex:Kochi" />
+									</div>
+								</div>
 
-			<option value="8:00 AM">8:00 AM</option>
-			<option value="8:15 AM">8:15 AM</option>
-			<option value="8:30 AM">8:30 AM</option>
-			<option value="8:45 AM">8:45 AM</option>
+								<!-- Waypoints -->
+								<div class="col-md-12">
+									<div class="form-group text-right">
+										<label class="control-label" for="waypoints">In between stops</label>
+										<input class="form-control" name="waypoints" id="stop_points" data-validate="required" placeholder="Ex:kottayam" />
+										<br/>
+										<input type="button" id="add_stop" value="add" class="button btn-primary btn"/>
+										<div id="stop_tags">
+											<div class="clearfix"></div>
+										</div>
+									</div>
+								</div>
 
-			<option value="9:00 AM">9:00 AM</option>
-			<option value="9:15 AM">9:15 AM</option>
-			<option value="9:30 AM">9:30 AM</option>
-			<option value="9:45 AM">9:45 AM</option>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+									<div class="panel panel-default panel-border">
+										<div class="panel-heading">
+											<h3 class="panel-title">Route Map</h3>
+											<div class="panel-options">
+												<a href="#" data-toggle="panel">
+													<span class="collapse-icon">&#45;</span>
+													<span class="expand-icon">&#43;</span>
+												</a>
+												<a href="#" data-toggle="remove">
+													x
+												</a>
+											</div>
+										</div>
+										<div class="panel-body no-padding">
+											<div id="map" style="height: 450px; width: 100%"></div>
+										</div>
+									</div>
 
-			<option value="10:00 AM">10:00 AM</option>
-			<option value="10:15 AM">10:15 AM</option>
-			<option value="10:30 AM">10:30 AM</option>
-			<option value="10:45 AM">10:45 AM</option>
+							</div>
+						</div>
+					</div>
 
-			<option value="11:00 AM">11:00 AM</option>
-			<option value="11:15 AM">11:15 AM</option>
-			<option value="11:30 AM">11:30 AM</option>
-			<option value="11:45 AM">11:45 AM</option>
+				</div>
 
-			<option value="12:00 PM">12:00 PM</option>
-			<option value="12:15 PM">12:15 PM</option>
-			<option value="12:30 PM">12:30 PM</option>
-			<option value="12:45 PM">12:45 PM</option>
+				<div class="tab-pane with-bg" id="fwv-2">
 
-			<option value="1:00 PM">1:00 PM</option>
-			<option value="1:15 PM">1:15 PM</option>
-			<option value="1:30 PM">1:30 PM</option>
-			<option value="1:45 PM">1:45 PM</option>
+					<div class="row">
 
-			<option value="2:00 PM">2:00 PM</option>
-			<option value="2:15 PM">2:15 PM</option>
-			<option value="2:30 PM">2:30 PM</option>
-			<option value="2:45 PM">2:45 PM</option>
+						<div class="col-md-8">
+							<div class="form-group">
+								<label class="control-label" for="street">Street</label>
+								<input class="form-control" name="street" id="street" data-validate="required" placeholder="Enter your street address" />
+							</div>
+						</div>
 
-			<option value="3:00 PM">3:00 PM</option>
-			<option value="3:15 PM">3:15 PM</option>
-			<option value="3:30 PM">3:30 PM</option>
-			<option value="3:45 PM">3:45 PM</option>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label class="control-label" for="door_no">Door no.</label>
+								<input class="form-control" name="door_no" id="door_no" data-validate="number" placeholder="Numbers only" />
+							</div>
+						</div>
 
-			<option value="4:00 PM">4:00 PM</option>
-			<option value="4:15 PM">4:15 PM</option>
-			<option value="4:30 PM">4:30 PM</option>
-			<option value="4:45 PM">4:45 PM</option>
+					</div>
 
-			<option value="5:00 PM">5:00 PM</option>
-			<option value="5:15 PM">5:15 PM</option>
-			<option value="5:30 PM">5:30 PM</option>
-			<option value="5:45 PM">5:45 PM</option>
+					<div class="row">
 
-			<option value="6:00 PM">6:00 PM</option>
-			<option value="6:15 PM">6:15 PM</option>
-			<option value="6:30 PM">6:30 PM</option>
-			<option value="6:45 PM">6:45 PM</option>
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="control-label" for="address_line_2">Address Line 2</label>
+								<input class="form-control" name="address_line_2" id="address_line_2" placeholder="(Optional) Secondary Address" />
+							</div>
+						</div>
 
-			<option value="7:00 PM">7:00 PM</option>
-			<option value="7:15 PM">7:15 PM</option>
-			<option value="7:30 PM">7:30 PM</option>
-			<option value="7:45 PM">7:45 PM</option>
+					</div>
 
-			<option value="8:00 PM">8:00 PM</option>
-			<option value="8:15 PM">8:15 PM</option>
-			<option value="8:30 PM">8:30 PM</option>
-			<option value="8:45 PM">8:45 PM</option>
+					<div class="row">
 
-			<option value="9:00 PM">9:00 PM</option>
-			<option value="9:15 PM">9:15 PM</option>
-			<option value="9:30 PM">9:30 PM</option>
-			<option value="9:45 PM">9:45 PM</option>
+						<div class="col-md-5">
+							<div class="form-group">
+								<label class="control-label" for="city">City</label>
+								<input class="form-control" name="city" id="city" data-validate="required" placeholder="Current city" />
+							</div>
+						</div>
 
-			<option value="10:00 PM">10:00 PM</option>
-			<option value="10:15 PM">10:15 PM</option>
-			<option value="10:30 PM">10:30 PM</option>
-			<option value="10:45 PM">10:45 PM</option>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label class="control-label" for="state">State</label>
 
-			<option value="11:00 PM">11:00 PM</option>
-			<option value="11:15 PM">11:15 PM</option>
-			<option value="11:30 PM">11:30 PM</option>
-			<option value="11:45 PM">11:45 PM</option>
-		</select>
-		<br>
+								<select name="test" class="selectboxit">
+									<optgroup label="United States">
+										<option value="1">Alabama</option>
+										<option value="2">Boston</option>
+										<option value="3">Ohaio</option>
+										<option value="4">New York</option>
+										<option value="5">Washington</option>
+									</optgroup>
+								</select>
+							</div>
+						</div>
 
-		<!--Purpose of ride-->
-		<label>Purpose of ride</label>
-		<textarea placeholder="Min 50 words discription" rows="7" cols="50" name="purpose"></textarea>
-		<br>
-		<!-- Date Travel-->
-		<label for="date_return">Date of Return</label>
-		<input type="date" class="date_picker" name="date_return" >
+						<div class="col-md-3">
+							<div class="form-group">
+								<label class="control-label" for="zip">Zip</label>
+								<input class="form-control"  name="zip" id="zip" data-mask="** *** **" data-validate="required" placeholder="Zip Code" />
+							</div>
+						</div>
 
-		<!--Time of return-->
-		<label for="time_return">Time of return</label>
-		<select name="time_return" id="time_return">
-			<option value="5:00 AM">5:00 AM</option>
-			<option value="5:15 AM">5:15 AM</option>
-			<option value="5:30 AM">5:30 AM</option>
-			<option value="5:45 AM">5:45 AM</option>
+					</div>
 
-			<option value="6:00 AM">6:00 AM</option>
-			<option value="6:15 AM">6:15 AM</option>
-			<option value="6:30 AM">6:30 AM</option>
-			<option value="6:45 AM">6:45 AM</option>
+				</div>
 
-			<option value="7:00 AM">7:00 AM</option>
-			<option value="7:15 AM">7:15 AM</option>
-			<option value="7:30 AM">7:30 AM</option>
-			<option value="7:45 AM">7:45 AM</option>
+				<div class="tab-pane with-bg" id="fwv-3">
 
-			<option value="8:00 AM">8:00 AM</option>
-			<option value="8:15 AM">8:15 AM</option>
-			<option value="8:30 AM">8:30 AM</option>
-			<option value="8:45 AM">8:45 AM</option>
-
-			<option value="9:00 AM">9:00 AM</option>
-			<option value="9:15 AM">9:15 AM</option>
-			<option value="9:30 AM">9:30 AM</option>
-			<option value="9:45 AM">9:45 AM</option>
-
-			<option value="10:00 AM">10:00 AM</option>
-			<option value="10:15 AM">10:15 AM</option>
-			<option value="10:30 AM">10:30 AM</option>
-			<option value="10:45 AM">10:45 AM</option>
-
-			<option value="11:00 AM">11:00 AM</option>
-			<option value="11:15 AM">11:15 AM</option>
-			<option value="11:30 AM">11:30 AM</option>
-			<option value="11:45 AM">11:45 AM</option>
-
-			<option value="12:00 PM">12:00 PM</option>
-			<option value="12:15 PM">12:15 PM</option>
-			<option value="12:30 PM">12:30 PM</option>
-			<option value="12:45 PM">12:45 PM</option>
-
-			<option value="1:00 PM">1:00 PM</option>
-			<option value="1:15 PM">1:15 PM</option>
-			<option value="1:30 PM">1:30 PM</option>
-			<option value="1:45 PM">1:45 PM</option>
-
-			<option value="2:00 PM">2:00 PM</option>
-			<option value="2:15 PM">2:15 PM</option>
-			<option value="2:30 PM">2:30 PM</option>
-			<option value="2:45 PM">2:45 PM</option>
-
-			<option value="3:00 PM">3:00 PM</option>
-			<option value="3:15 PM">3:15 PM</option>
-			<option value="3:30 PM">3:30 PM</option>
-			<option value="3:45 PM">3:45 PM</option>
-
-			<option value="4:00 PM">4:00 PM</option>
-			<option value="4:15 PM">4:15 PM</option>
-			<option value="4:30 PM">4:30 PM</option>
-			<option value="4:45 PM">4:45 PM</option>
-
-			<option value="5:00 PM">5:00 PM</option>
-			<option value="5:15 PM">5:15 PM</option>
-			<option value="5:30 PM">5:30 PM</option>
-			<option value="5:45 PM">5:45 PM</option>
-
-			<option value="6:00 PM">6:00 PM</option>
-			<option value="6:15 PM">6:15 PM</option>
-			<option value="6:30 PM">6:30 PM</option>
-			<option value="6:45 PM">6:45 PM</option>
-
-			<option value="7:00 PM">7:00 PM</option>
-			<option value="7:15 PM">7:15 PM</option>
-			<option value="7:30 PM">7:30 PM</option>
-			<option value="7:45 PM">7:45 PM</option>
-
-			<option value="8:00 PM">8:00 PM</option>
-			<option value="8:15 PM">8:15 PM</option>
-			<option value="8:30 PM">8:30 PM</option>
-			<option value="8:45 PM">8:45 PM</option>
-
-			<option value="9:00 PM">9:00 PM</option>
-			<option value="9:15 PM">9:15 PM</option>
-			<option value="9:30 PM">9:30 PM</option>
-			<option value="9:45 PM">9:45 PM</option>
-
-			<option value="10:00 PM">10:00 PM</option>
-			<option value="10:15 PM">10:15 PM</option>
-			<option value="10:30 PM">10:30 PM</option>
-			<option value="10:45 PM">10:45 PM</option>
-
-			<option value="11:00 PM">11:00 PM</option>
-			<option value="11:15 PM">11:15 PM</option>
-			<option value="11:30 PM">11:30 PM</option>
-			<option value="11:45 PM">11:45 PM</option>
-		</select>
-		<br>
+					<strong>Primary School</strong>
+					<br />
+					<br />
 
 
-		<!-- car-->
-		<div id="signup_gender">
-			<label for="vechicle_model">Vehicle model</label>
-			<input type="text" name="vechicle_model" placeholder="example: Toyota Innova">
-		</div>
-		<br>
+					<div class="row">
 
-		<!-- file browser -->
-		<label for="vechicle_picture">Upload a Photo of your vehicle</label>
-		<input type="file" name="vehicle_picture" accept="image/*">
-		<br>
-		<br>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label class="control-label" for="prim_subject">Subject</label>
+								<input class="form-control" name="prim_subject" id="prim_subject" data-validate="require" placeholder="Graduation Degree" />
+							</div>
+						</div>
 
-		<!-- car-->
-		<div id="signup_gender">
-			<label for="gender_select">Restrictions to Co-travallers:</label>
+						<div class="col-md-4">
+							<div class="form-group">
+								<label class="control-label" for="prim_school">School Name</label>
+								<input class="form-control" name="prim_school" id="prim_school" placeholder="Which school did you attended" />
+							</div>
+						</div>
+
+						<div class="col-md-2">
+							<div class="form-group">
+								<label class="control-label" for="prim_date_start">Start Date</label>
+								<input class="form-control datepicker" name="prim_date_start" id="prim_date_start" data-start-view="2" placeholder="(Optional)" />
+							</div>
+						</div>
+
+						<div class="col-md-2">
+							<div class="form-group">
+								<label class="control-label" for="prim_date_end">End Date</label>
+								<input class="form-control datepicker" name="prim_date_end" id="prim_date_end" data-start-view="2" placeholder="(Optional)" />
+							</div>
+						</div>
+
+					</div>
+
+					<br />
+
+					<strong>Secondary School</strong>
+					<br />
+					<br />
+
+					<div class="row">
+
+						<div class="col-md-4">
+							<div class="form-group">
+								<label class="control-label" for="second_subject">Subject</label>
+								<input class="form-control" name="second_subject" id="second_subject" data-validate="require" placeholder="High School" />
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="form-group">
+								<label class="control-label" for="second_school">School Name</label>
+								<input class="form-control" name="second_school" id="second_school" placeholder="Which school did you attended" />
+							</div>
+						</div>
+
+						<div class="col-md-2">
+							<div class="form-group">
+								<label class="control-label" for="second_date_start">Start Date</label>
+								<input class="form-control datepicker" name="second_date_start" id="second_date_start" data-start-view="2" placeholder="(Optional)" />
+							</div>
+						</div>
+
+						<div class="col-md-2">
+							<div class="form-group">
+								<label class="control-label" for="second_date_end">End Date</label>
+								<input class="form-control datepicker" name="second_date_end" id="second_date_end" data-start-view="2" placeholder="(Optional)" />
+							</div>
+						</div>
+
+					</div>
+
+					<br />
+
+					<div class="row">
+
+						<div class="col-md-12">
+							<div class="form-group">
+								<label class="control-label" for="other_qualifications"><strong>Other Qualifications</strong></label>
+								<textarea class="form-control autogrow" name="other_qualifications" id="other_qualifications" placeholder="List one subject per row"></textarea>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="tab-pane with-bg" id="fwv-4">
+
+					<strong>Current &amp; Past Jobs</strong>
+					<br />
+					<br />
+
+					<div class="row">
+
+						<div class="col-md-1">
+							<label class="control-label">&nbsp;</label>
+							<p class="text-right">
+								<span class="label label-info">1</span>
+							</p>
+						</div>
+
+						<div class="col-md-3">
+							<div class="form-group">
+								<label class="control-label" for="job_position_1">Company Name</label>
+								<input class="form-control" name="job_position_1" id="job_position_1" data-validate="require" placeholder="Your current job" />
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="form-group">
+								<label class="control-label" for="job_position_1">Job Position</label>
+								<input class="form-control" name="job_position_1" id="job_position_1" data-validate="require" placeholder="Your current position" />
+							</div>
+						</div>
+
+						<div class="col-md-2">
+							<div class="form-group">
+								<label class="control-label" for="job_position_start_date_1">Start Date</label>
+								<input class="form-control datepicker" name="job_position_start_date_1" id="job_position_start_date_1" placeholder="(Optional)" />
+							</div>
+						</div>
+
+						<div class="col-md-2">
+							<div class="form-group">
+								<label class="control-label" for="job_position_end_date_1">End Date</label>
+								<input class="form-control datepicker" name="job_position_end_date_1" id="job_position_end_date_1" placeholder="(Optional)" />
+							</div>
+						</div>
+
+					</div>
+
+					<div class="row">
+
+						<div class="col-md-1">
+							<label class="control-label">&nbsp;</label>
+							<p class="text-right">
+								<span class="label label-info">2</span>
+							</p>
+						</div>
+
+						<div class="col-md-3">
+							<div class="form-group">
+								<label class="control-label" for="job_position_2">Company Name</label>
+								<input class="form-control" name="job_position_2" id="job_position_2" data-validate="require" placeholder="(Optional)" />
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="form-group">
+								<label class="control-label" for="job_position_2">Job Position</label>
+								<input class="form-control" name="job_position_2" id="job_position_2" data-validate="require" placeholder="(Optional)" />
+							</div>
+						</div>
+
+						<div class="col-md-2">
+							<div class="form-group">
+								<label class="control-label" for="job_position_start_date_2">Start Date</label>
+								<input class="form-control datepicker" name="job_position_start_date_2" id="job_position_start_date_2" placeholder="(Optional)" />
+							</div>
+						</div>
+
+						<div class="col-md-2">
+							<div class="form-group">
+								<label class="control-label" for="job_position_end_date_2">End Date</label>
+								<input class="form-control datepicker" name="job_position_end_date_2" id="job_position_end_date_2" placeholder="(Optional)" />
+							</div>
+						</div>
+
+					</div>
+
+					<div class="row">
+
+						<div class="col-md-1">
+							<label class="control-label">&nbsp;</label>
+							<p class="text-right">
+								<span class="label label-info">3</span>
+							</p>
+						</div>
+
+						<div class="col-md-3">
+							<div class="form-group">
+								<label class="control-label" for="job_position_3">Company Name</label>
+								<input class="form-control" name="job_position_3" id="job_position_3" data-validate="require" placeholder="(Optional)" />
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="form-group">
+								<label class="control-label" for="job_position_3">Job Position</label>
+								<input class="form-control" name="job_position_3" id="job_position_3" data-validate="require" placeholder="(Optional)" />
+							</div>
+						</div>
+
+						<div class="col-md-2">
+							<div class="form-group">
+								<label class="control-label" for="job_position_start_date_3">Start Date</label>
+								<input class="form-control datepicker" name="job_position_start_date_3" id="job_position_start_date_3" placeholder="(Optional)" />
+							</div>
+						</div>
+
+						<div class="col-md-2">
+							<div class="form-group">
+								<label class="control-label" for="job_position_end_date_3">End Date</label>
+								<input class="form-control datepicker" name="job_position_end_date_3" id="job_position_end_date_3" placeholder="(Optional)" />
+							</div>
+						</div>
+
+					</div>
+
+					<div class="row">
+
+						<div class="col-md-1">
+							<label class="control-label">&nbsp;</label>
+							<p class="text-right">
+								<span class="label label-info">4</span>
+							</p>
+						</div>
+
+						<div class="col-md-3">
+							<div class="form-group">
+								<label class="control-label" for="job_position_4">Company Name</label>
+								<input class="form-control" name="job_position_4" id="job_position_4" data-validate="require" placeholder="(Optional)" />
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="form-group">
+								<label class="control-label" for="job_position_4">Job Position</label>
+								<input class="form-control" name="job_position_4" id="job_position_4" data-validate="require" placeholder="(Optional)" />
+							</div>
+						</div>
+
+						<div class="col-md-2">
+							<div class="form-group">
+								<label class="control-label" for="job_position_start_date_4">Start Date</label>
+								<input class="form-control datepicker" name="job_position_start_date_4" id="job_position_start_date_4" placeholder="(Optional)" />
+							</div>
+						</div>
+
+						<div class="col-md-2">
+							<div class="form-group">
+								<label class="control-label" for="job_position_end_date_4">End Date</label>
+								<input class="form-control datepicker" name="job_position_end_date_4" id="job_position_end_date_4" placeholder="(Optional)" />
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="tab-pane with-bg" id="fwv-5">
+
+					<div class="form-group">
+						<label class="control-label">Choose Username</label>
+
+						<div class="input-group">
+							<div class="input-group-addon">
+								<i class="linecons-user"></i>
+							</div>
+
+							<input type="text" class="form-control" name="username" id="username" data-validate="required,minlength[5]" data-message-minlength="Username must have minimum of 5 chars." placeholder="Could also be your email" />
+						</div>
+					</div>
+
+					<div class="row">
+
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="control-label">Choose Password</label>
+
+								<div class="input-group">
+									<div class="input-group-addon">
+										<i class="linecons-lock"></i>
+									</div>
+
+									<input type="password" class="form-control" name="password" id="password" data-validate="required" placeholder="Enter strong password" />
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="control-label">Repeat Password</label>
+
+								<div class="input-group">
+									<div class="input-group-addon">
+										<i class="linecons-lock"></i>
+									</div>
+
+									<input type="password" class="form-control" name="password" id="password" data-validate="required,equalTo[#password]" data-message-equal-to="Passwords doesn't match." placeholder="Confirm password" />
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="row">
+
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="control-label">Include Services</label>
+
+								<select multiple="multiple" name="my-select[]" class="form-control multi-select">
+									<option value="1">Web Builder</option>
+									<option value="2" selected>Server Side Scripting</option>
+									<option value="3">Secure Connection</option>
+									<option value="4" selected>Database Access</option>
+									<option value="5" selected>Email</option>
+									<option value="6">eCommerce</option>
+									<option value="7">Royalty Free Photos</option>
+									<option value="8">WordPress Installation</option>
+									<option value="9">Magento Installation</option>
+									<option value="10">Reseller Account</option>
+									<option value="11">WHM Client</option>
+									<option value="12">Nginx</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="form-group">
+								<label class="control-label">Gender</label>
+
+								<br />
+
+								<input type="checkbox" class="iswitch iswitch-red" checked>
+							</div>
+
+							<div class="form-group">
+								<label class="control-label">Subscribe for Newsletter</label>
+
+								<br />
+
+								<input type="checkbox" class="iswitch iswitch-purple" checked>
+							</div>
+
+							<div class="form-group">
+								<label class="control-label">
+									Auto-renew Subscription
+									<span class="label label-warning">Yearly</span>
+								</label>
+
+								<br />
+
+								<input type="checkbox" class="iswitch iswitch-secondary" checked>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="form-group">
+						<input type="checkbox" class="cbr" name="chk-rules" id="chk-rules" data-validate="required" data-message-message="You must accept rules in order to complete this registration.">
+						<label for="chk-rules">By registering I accept terms and conditions.</label>
+					</div>
+
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary">Finish Registration</button>
+					</div>
+
+				</div>
 
 
-			<span>Smoking</span> <input type="checkbox" name="smoking" value="1">
+				<!-- Tabs Pager -->
 
+				<ul class="pager wizard">
+					<li class="previous">
+						<a href="#"><i class="entypo-left-open"></i> Previous</a>
+					</li>
 
-			<span>Drinking</span><input type="checkbox" name="drinking" value="1">
+					<li class="next">
+						<a href="#">Next <i class="entypo-right-open"></i></a>
+					</li>
+				</ul>
 
-			<span>Music</span><input type="checkbox" name="music" value="1">
+			</div>
 
-		</div>
-
-		<br>
-		<!-- Gender-->
-		<div id="signup_gender">
-			<label for="gender_select">Enter your priority of Co-travalers:</label>
-
-			<span for="gender_male">Male</span>
-			<input type="radio" name="gender_select" value="m"/>
-
-			<span for="gender_female">Female</span>
-			<input type="radio" name="gender_select" value= "f"/>
-
-			<span for="gender_others">Others</span>
-			<input type="radio" name="gender_select" value="o"/>
-		</div>
-
-
-		<div id="ride_phone">
-			<label for="ride_phone">Contact phone number:</label>
-			<input type="number" name="ride_phone"/>
-		</div>
-
-		<!-- sumbit button -->
-		<input type="button" class="submit_button" value="submit" onclick="processUpdate();">
-	</form>
+		</form>
+	</div>
 </div>
+
+
+
