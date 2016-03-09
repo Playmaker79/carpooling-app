@@ -37,6 +37,11 @@ exports.createaccount = function (values, password, res, req) {
     var success;
     db.users.create(data).then(function(){
         res.redirect('/login');
+    },function(err){
+        if(err.name == "SequelizeUniqueConstraintError"){
+            res.render('account',{status:'DuplicateAccount',title:'Create an Account'});
+            res.end();
+        }
     });
     /*connection.query('INSERT INTO `users`(`name`, `lastname`, `gender`, `dob`, `email`, `occupation`, `company`,`phone`,`profile_pic`, `password_hash`) VALUES (?,?,?,?,?,?,?,?,?,?)', data,
         function (err, result) {
