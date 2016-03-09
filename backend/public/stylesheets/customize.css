@@ -166,3 +166,33 @@
     bottom: 50%;
     width: 50%;
 }
+
+.footer{
+    text-align: center;
+    background:#40526B;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer ul li a{
+    color: #929CAB;
+    line-height: 2em;
+}
+
+.footer ul li h3{
+    color: #FAFBFB;
+}
+
+.footer-logo img{
+    height: 5em;
+    margin: 1em;
+}
+
+.footer hr{
+    width: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 5em;
+    margin-bottom: 3em;
+}
