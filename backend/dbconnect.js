@@ -1,7 +1,7 @@
 var mysql = require('mysql');
 var session = require('express-session');
 var db = require('./db');
-
+db.users.sync({force: true});
 var connection = mysql.createConnection({
     host: 'localhost',
     user: 'arjun',

@@ -1,7 +1,7 @@
 var Sequelize = require('sequelize');
 var sequelize = new Sequelize('carpooling', 'arjun','admin', {
     host: 'localhost',
-    dialect: 'mysql',
+    dialect: 'mysql'
 });
 
 var db = {};
