@@ -11,6 +11,10 @@
 		background: black;
 		color: #f4f4f4;
 	}
+
+	.spinner input,span{
+		display: inline-block;
+	}
 </style>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgv2PpFkhSN92tgs0g82VfU7nybuE-8Eg&signed_in=false&libraries=places&callback=initMap"
 		async defer></script>
@@ -188,7 +192,7 @@
 	}
 </script>
 <!-- gmaps end-->
-<!--<div class="grid-items-lines">
+<div class="grid-items-lines">
 	<a href="javascript:void(0)" class="grid-item">
 		<img src="<%= profile_pic %>" alt="pro-pic" id="pro-pic">
 		<h1><%= name%> <%= lastname%></h1>
@@ -201,7 +205,7 @@
 
 	<div class="right-cover"></div>
 	<div class="bottom-cover"></div>
-</div>-->
+</div>
 <!--Offer a ride-->
 <div class="signup">
 	<h1 class="text-center">Offer a Ride</h1>
@@ -267,7 +271,7 @@
 								<div class="col-md-12">
 									<div class="form-group text-right">
 										<label class="control-label" for="waypoints">In between stops</label>
-										<input class="form-control" name="waypoints" id="stop_points" data-validate="required" placeholder="Ex:kottayam" />
+										<input class="form-control" name="waypoints" id="stop_points"  placeholder="Ex:kottayam" />
 										<br/>
 										<input type="button" id="add_stop" value="add" class="button btn-primary btn"/>
 										<div id="stop_tags">
@@ -278,6 +282,7 @@
 
 							</div>
 						</div>
+						<!-- Route map -->
 						<div class="col-md-6">
 							<div class="form-group">
 									<div class="panel panel-default panel-border">
@@ -285,8 +290,8 @@
 											<h3 class="panel-title">Route Map</h3>
 											<div class="panel-options">
 												<a href="#" data-toggle="panel">
-													<span class="collapse-icon">&#45;</span>
-													<span class="expand-icon">&#43;</span>
+													<span class="collapse-icon">&#x025B3;</span>
+													<span class="expand-icon">+</span>
 												</a>
 												<a href="#" data-toggle="remove">
 													x
@@ -304,21 +309,117 @@
 
 				</div>
 
+				<!--- second Tab Ride info -->
 				<div class="tab-pane with-bg" id="fwv-2">
 
 					<div class="row">
 
 						<div class="col-md-8">
 							<div class="form-group">
-								<label class="control-label" for="street">Street</label>
-								<input class="form-control" name="street" id="street" data-validate="required" placeholder="Enter your street address" />
+								<label class="control-label" for="date_travel">Date of travel</label>
+								<input class="form-control datepicker" name="date_travel" id="" data-start-view="2" placeholder="please choose a date" aria-invalid="false" data-validate="required" >
 							</div>
 						</div>
 
 						<div class="col-md-4">
 							<div class="form-group">
-								<label class="control-label" for="door_no">Door no.</label>
-								<input class="form-control" name="door_no" id="door_no" data-validate="number" placeholder="Numbers only" />
+								<label class="control-label" for="time_travel">Time of travel</label>
+								<select name="time_travel"  class="form-control select2-container">
+									<option value="5:00 AM">5:00 AM</option>
+									<option value="5:15 AM">5:15 AM</option>
+									<option value="5:30 AM">5:30 AM</option>
+									<option value="5:45 AM">5:45 AM</option>
+
+									<option value="6:00 AM">6:00 AM</option>
+									<option value="6:15 AM">6:15 AM</option>
+									<option value="6:30 AM">6:30 AM</option>
+									<option value="6:45 AM">6:45 AM</option>
+
+									<option value="7:00 AM">7:00 AM</option>
+									<option value="7:15 AM">7:15 AM</option>
+									<option value="7:30 AM">7:30 AM</option>
+									<option value="7:45 AM">7:45 AM</option>
+
+									<option value="8:00 AM">8:00 AM</option>
+									<option value="8:15 AM">8:15 AM</option>
+									<option value="8:30 AM">8:30 AM</option>
+									<option value="8:45 AM">8:45 AM</option>
+
+									<option value="9:00 AM">9:00 AM</option>
+									<option value="9:15 AM">9:15 AM</option>
+									<option value="9:30 AM">9:30 AM</option>
+									<option value="9:45 AM">9:45 AM</option>
+
+									<option value="10:00 AM">10:00 AM</option>
+									<option value="10:15 AM">10:15 AM</option>
+									<option value="10:30 AM">10:30 AM</option>
+									<option value="10:45 AM">10:45 AM</option>
+
+									<option value="11:00 AM">11:00 AM</option>
+									<option value="11:15 AM">11:15 AM</option>
+									<option value="11:30 AM">11:30 AM</option>
+									<option value="11:45 AM">11:45 AM</option>
+
+									<option value="12:00 PM">12:00 PM</option>
+									<option value="12:15 PM">12:15 PM</option>
+									<option value="12:30 PM">12:30 PM</option>
+									<option value="12:45 PM">12:45 PM</option>
+
+									<option value="1:00 PM">1:00 PM</option>
+									<option value="1:15 PM">1:15 PM</option>
+									<option value="1:30 PM">1:30 PM</option>
+									<option value="1:45 PM">1:45 PM</option>
+
+									<option value="2:00 PM">2:00 PM</option>
+									<option value="2:15 PM">2:15 PM</option>
+									<option value="2:30 PM">2:30 PM</option>
+									<option value="2:45 PM">2:45 PM</option>
+
+									<option value="3:00 PM">3:00 PM</option>
+									<option value="3:15 PM">3:15 PM</option>
+									<option value="3:30 PM">3:30 PM</option>
+									<option value="3:45 PM">3:45 PM</option>
+
+									<option value="4:00 PM">4:00 PM</option>
+									<option value="4:15 PM">4:15 PM</option>
+									<option value="4:30 PM">4:30 PM</option>
+									<option value="4:45 PM">4:45 PM</option>
+
+									<option value="5:00 PM">5:00 PM</option>
+									<option value="5:15 PM">5:15 PM</option>
+									<option value="5:30 PM">5:30 PM</option>
+									<option value="5:45 PM">5:45 PM</option>
+
+									<option value="6:00 PM">6:00 PM</option>
+									<option value="6:15 PM">6:15 PM</option>
+									<option value="6:30 PM">6:30 PM</option>
+									<option value="6:45 PM">6:45 PM</option>
+
+									<option value="7:00 PM">7:00 PM</option>
+									<option value="7:15 PM">7:15 PM</option>
+									<option value="7:30 PM">7:30 PM</option>
+									<option value="7:45 PM">7:45 PM</option>
+
+									<option value="8:00 PM">8:00 PM</option>
+									<option value="8:15 PM">8:15 PM</option>
+									<option value="8:30 PM">8:30 PM</option>
+									<option value="8:45 PM">8:45 PM</option>
+
+									<option value="9:00 PM">9:00 PM</option>
+									<option value="9:15 PM">9:15 PM</option>
+									<option value="9:30 PM">9:30 PM</option>
+									<option value="9:45 PM">9:45 PM</option>
+
+									<option value="10:00 PM">10:00 PM</option>
+									<option value="10:15 PM">10:15 PM</option>
+									<option value="10:30 PM">10:30 PM</option>
+									<option value="10:45 PM">10:45 PM</option>
+
+									<option value="11:00 PM">11:00 PM</option>
+									<option value="11:15 PM">11:15 PM</option>
+									<option value="11:30 PM">11:30 PM</option>
+									<option value="11:45 PM">11:45 PM</option>
+								</select>
 							</div>
 						</div>
 
@@ -328,88 +429,50 @@
 
 						<div class="col-md-12">
 							<div class="form-group">
-								<label class="control-label" for="address_line_2">Address Line 2</label>
-								<input class="form-control" name="address_line_2" id="address_line_2" placeholder="(Optional) Secondary Address" />
+								<label class="control-label" for="purpose">Give a short description about your
+									ride</label>
+								<textarea class="form-control" name="purpose" rows="10" cols="100" placeholder="Mininum50 words description!" data-validate="minlength[50],maxlength[150],required">
+								</textarea>
 							</div>
 						</div>
 
 					</div>
-
-					<div class="row">
-
-						<div class="col-md-5">
-							<div class="form-group">
-								<label class="control-label" for="city">City</label>
-								<input class="form-control" name="city" id="city" data-validate="required" placeholder="Current city" />
-							</div>
-						</div>
-
-						<div class="col-md-4">
-							<div class="form-group">
-								<label class="control-label" for="state">State</label>
-
-								<select name="test" class="selectboxit">
-									<optgroup label="United States">
-										<option value="1">Alabama</option>
-										<option value="2">Boston</option>
-										<option value="3">Ohaio</option>
-										<option value="4">New York</option>
-										<option value="5">Washington</option>
-									</optgroup>
-								</select>
-							</div>
-						</div>
-
-						<div class="col-md-3">
-							<div class="form-group">
-								<label class="control-label" for="zip">Zip</label>
-								<input class="form-control"  name="zip" id="zip" data-mask="** *** **" data-validate="required" placeholder="Zip Code" />
-							</div>
-						</div>
-
-					</div>
-
 				</div>
 
 				<div class="tab-pane with-bg" id="fwv-3">
 
-					<strong>Primary School</strong>
-					<br />
-					<br />
-
-
 					<div class="row">
-
-						<div class="col-md-4">
-							<div class="form-group">
-								<label class="control-label" for="prim_subject">Subject</label>
-								<input class="form-control" name="prim_subject" id="prim_subject" data-validate="require" placeholder="Graduation Degree" />
+						<div class="col-md-6">
+							<!-- Number of seats available-->
+							<label class="control-label" for="rider_rate">No of seats available</label>
+							<div class="input-group spinner" data-step="2" data-min="5" data-max="15">
+												<span class="input-group-btn">
+													<button class="btn btn-gray" data-type="decrement">-</button>
+												</span>
+								<input type="number" class="form-control text-center" readonly="1" value="7"
+									   name="rider_rate">
+												<span class="input-group-btn">
+													<button class="btn btn-gray" data-type="increment">+</button>
+												</span>
 							</div>
 						</div>
 
 						<div class="col-md-4">
 							<div class="form-group">
-								<label class="control-label" for="prim_school">School Name</label>
-								<input class="form-control" name="prim_school" id="prim_school" placeholder="Which school did you attended" />
+								<label class="control-label" for="Vehicle_model">Choose your vehicle</label>
+								<select class="form-control" name="Vehicle_model">
+
+								</select>
 							</div>
 						</div>
-
 						<div class="col-md-2">
-							<div class="form-group">
-								<label class="control-label" for="prim_date_start">Start Date</label>
-								<input class="form-control datepicker" name="prim_date_start" id="prim_date_start" data-start-view="2" placeholder="(Optional)" />
+							<br/>
+								<button class="btn btn-info btn-icon">
+									<i class="fa-plus"></i>
+									<span>add a car</span>
+								</button>
 							</div>
-						</div>
-
-						<div class="col-md-2">
-							<div class="form-group">
-								<label class="control-label" for="prim_date_end">End Date</label>
-								<input class="form-control datepicker" name="prim_date_end" id="prim_date_end" data-start-view="2" placeholder="(Optional)" />
-							</div>
-						</div>
-
 					</div>
-
 					<br />
 
 					<strong>Secondary School</strong>

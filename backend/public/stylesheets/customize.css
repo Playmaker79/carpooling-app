@@ -16,6 +16,7 @@
     font-size: 1.2em;
     font-family: "open sans semibold";
 }
+
 #logo img{
     vertical-align: middle;
 
@@ -28,7 +29,7 @@
 }
 
 #field-1 {
-    font-family: "Segoe ui";
+    font-family: "Open sans";
     font-size: 1.4em;
     height: 5%;
     color:  #3f3f3f;
@@ -94,7 +95,6 @@
     border-size:2px;
     border-style:solid;
     border-color:#f1f1f1;
-    font-family: 'Montserrat', sans-serif;
     font-size: 1.3em;
 }
 #toprides panel{
@@ -153,9 +153,10 @@
     border-radius: 0.3em;
 }
 
-#toprides img, button{
+#toprides >img, #toprides >button{
     margin: 0.7em;
 }
+
 #viewmore_button{
     margin:0%;
 }

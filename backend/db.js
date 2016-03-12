@@ -8,4 +8,5 @@ var db = {};
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 db.users = sequelize.import(__dirname+"/models/users");
+db.cars = sequelize.import(__dirname+"/models/cars");
 module.exports = db;

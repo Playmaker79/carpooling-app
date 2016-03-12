@@ -1,7 +1,8 @@
 var mysql = require('mysql');
 var session = require('express-session');
 var db = require('./db');
-db.users.sync({force: true});
+db.users.sync({force: false});
+db.cars.sync({force:false});
 var connection = mysql.createConnection({
     host: 'localhost',
     user: 'arjun',
@@ -69,6 +70,10 @@ exports.uploadprofile = function (path, id, res, sess) {
         });
 }
 
+
+exports.test = function(data){
+    return db.cars.find({where : {owner: data}});
+}
 
 exports.GetCurrentProfile = function (req) {
     var sess = req.session;
