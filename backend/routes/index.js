@@ -112,7 +112,7 @@ router.get('/logout', function (req, res, next) {
 router.get('/user/cars',function(req,res){
     var sess = req.session;
     if(sess.current_user){
-        var data = dbconnect.test(sess.current_user);
+        var data = dbconnect.getCars(sess.current_user);
         data.then(function(values){
             console.log(values);
             res.send(values);
@@ -122,6 +122,10 @@ router.get('/user/cars',function(req,res){
         res.status(401).send("oops!! got you.");
     }
 });
+
+
+
+
 
 
 

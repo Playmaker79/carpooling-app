@@ -1,0 +1,89 @@
+<div class="modal fade in" id="modal-6" aria-hidden="false" style="display: block;"><div class="modal-backdrop fade in" style="height: 588px;"></div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title">Add a new car</h4>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <label for="model_name" class="control-label">Model name</label>
+                            <input type="text" class="form-control" id="model_name" placeholder="Ex: si20,vento etc.">
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <label for="company" class="control-label">Manfacturer</label>
+                            <input type="text" class="form-control" id="company" placeholder="hyundai,volkswagen etc.">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12">
+
+                        <div class="form-group">
+                            <label for="regNumber" class="control-label">Registration Number (seperated by spaces)
+                            </label>
+                            <input type="text" class="form-control" data-mask="^[A-Z]{2}[ -][0-9]{1,2}(?: [A-Z])?(?: [A-Z]*)? [0-9]{4}$" data-is-regex="true" placeholder="Ex: KL 31 H 3321">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+
+                        <div class="form-group">
+                            <label for="photo" class="control-label">vechicle photo</label>
+                            <input type="file" name="photo" accept="image/*" id="img-input" data-validate="required">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="form-group album-image">
+                            <img src="" alt="" class="img-responsive img-thumbnail" id="car_photo"/>
+                            <div class="loader-1 " hidden></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-info">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#car_photo').attr('src',e.target.result);
+                $('.loader-1').hide();
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#img-input").change(function(){
+        $('.loader-1').show();
+        readURL();
+    });
+</script>

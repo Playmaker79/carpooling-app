@@ -71,7 +71,7 @@ exports.uploadprofile = function (path, id, res, sess) {
 }
 
 
-exports.test = function(data){
+exports.getCars = function(data){
     return db.cars.find({where : {owner: data}});
 }
 
@@ -113,7 +113,7 @@ exports.offeraride = function (data, file, req, res) {
         /* console.log(data.travel_date);
          console.log(data.return_date);*/
         var values = [data.source, destination, waypts, date_travel, data.time_travel, data.purpose, date_return, data.time_return, data.vechicle_model, vehicle_picture, data.drinking, data.smoking, data.music, data.gender_select, current_user, data.rider_rate, data.ride_phone];
-        console.log("\n\n the stuff we insterted \n\n");
+        console.log("\n the stuff we insterted \n\n");
         console.log(values);
         console.log("\n\n");
         connection.query('INSERT INTO `rides`(`source`, `destination`,`waypoints`,`travel_date`, `travel_time`, `purpose`, `return_date`, `return_time`, `car_name`, `car_photo`, `drinking`, `smoking`, `music`, `passenger`, `rider_id`,`Rate`,`phone`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values, function (err, result) {
