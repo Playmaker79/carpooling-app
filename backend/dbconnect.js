@@ -72,7 +72,7 @@ exports.uploadprofile = function (path, id, res, sess) {
 
 
 exports.getCars = function(data){
-    return db.cars.find({where : {owner: data}});
+    return db.cars.findAll({where : {owner: data}});
 }
 
 exports.GetCurrentProfile = function (req) {

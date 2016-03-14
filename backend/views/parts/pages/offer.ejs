@@ -16,10 +16,8 @@
 		display: inline-block;
 	}
 </style>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgv2PpFkhSN92tgs0g82VfU7nybuE-8Eg&signed_in=false&libraries=places&callback=initMap"
-		async defer></script>
-<!-- gmaps-->
 <script>
+	var last_car;
 	var waypts = [];
 	var add_points = true;
 
@@ -101,6 +99,7 @@
 		document.getElementById('dest_addr').addEventListener('change', onChangeHandler);
 		document.getElementById('add_stop').addEventListener('click', onClickHandler);
 		document.getElementById('seat_value').addEventListener('change', onRateChange);
+		document.getElementById('#vechicle_model').addEventListener('change',getCars);
 
 	}
 
@@ -147,8 +146,8 @@
 		}
 		totalDist = totalDist / 1000;
 		totalTime = (totalTime / 60).toFixed(2);
-		 console.log(totalDist);
-		 console.log(totalTime);
+		console.log(totalDist);
+		console.log(totalTime);
 		var seat = $("input[name='seat_value']").val();
 		var rate = rateCalc(totalDist,10,seat);
 		console.log(rate);
@@ -190,7 +189,25 @@
 		cost.maximum = Math.round(cost.maximum) *10;
 		return cost;
 	}
+
+	function getCars(){
+		$.ajax("/user/cars", {
+			success: function(data) {
+				$("#vehicle_model").empty();
+				$.each(data,function(i,value){
+					$("#vehicle_model").append('<option>'+value.manufacturer+' '+value.model+'</option>');
+				});
+			},
+			error: function() {
+				$('#notification-bar').text('An error occurred');
+			}
+		});
+	}
+
 </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgv2PpFkhSN92tgs0g82VfU7nybuE-8Eg&signed_in=false&libraries=places&callback=initMap"
+		async defer></script>
+<!-- gmaps-->
 <!-- gmaps end-->
 <!--<div class="grid-items-lines">
 	<a href="javascript:void(0)" class="grid-item">
@@ -441,12 +458,10 @@
 				</div>
 
 				<div class="tab-pane with-bg" id="fwv-3">
-
-					<div class="row">
 						<div class="col-md-6">
 							<!-- Number of seats available-->
 							<label class="control-label" for="rider_rate">No of seats available</label>
-							<div class="input-group spinner" data-step="2" data-min="5" data-max="15">
+							<div class="input-group spinner" data-step="2" data-min="1" data-max="15">
 												<span class="input-group-btn">
 													<button class="btn btn-gray" data-type="decrement">-</button>
 												</span>
@@ -461,59 +476,27 @@
 						<div class="col-md-4">
 							<div class="form-group">
 								<label class="control-label" for="Vehicle_model">Choose your vehicle</label>
-								<select class="form-control" name="Vehicle_model">
+								<select class="form-control" name="Vehicle_model" id="vehicle_model">
 
 								</select>
 							</div>
 						</div>
 						<div class="col-md-2">
 							<br/>
-								<button class="btn btn-info btn-icon">
+								<span class="btn btn-info btn-icon" onclick="addCar()">
 									<i class="fa-plus"></i>
 									<span>add a car</span>
-								</button>
+								</span>
 							</div>
-					</div>
-					<br />
-
-					<strong>Secondary School</strong>
-					<br />
-					<br />
-
 					<div class="row">
-
 						<div class="col-md-4">
 							<div class="form-group">
 								<label class="control-label" for="second_subject">Subject</label>
 								<input class="form-control" name="second_subject" id="second_subject" data-validate="require" placeholder="High School" />
 							</div>
 						</div>
-
-						<div class="col-md-4">
-							<div class="form-group">
-								<label class="control-label" for="second_school">School Name</label>
-								<input class="form-control" name="second_school" id="second_school" placeholder="Which school did you attended" />
-							</div>
-						</div>
-
-						<div class="col-md-2">
-							<div class="form-group">
-								<label class="control-label" for="second_date_start">Start Date</label>
-								<input class="form-control datepicker" name="second_date_start" id="second_date_start" data-start-view="2" placeholder="(Optional)" />
-							</div>
-						</div>
-
-						<div class="col-md-2">
-							<div class="form-group">
-								<label class="control-label" for="second_date_end">End Date</label>
-								<input class="form-control datepicker" name="second_date_end" id="second_date_end" data-start-view="2" placeholder="(Optional)" />
-							</div>
-						</div>
-
 					</div>
-
 					<br />
-
 					<div class="row">
 
 						<div class="col-md-12">
@@ -527,169 +510,7 @@
 
 				</div>
 
-				<div class="tab-pane with-bg" id="fwv-4">
 
-					<strong>Current &amp; Past Jobs</strong>
-					<br />
-					<br />
-
-					<div class="row">
-
-						<div class="col-md-1">
-							<label class="control-label">&nbsp;</label>
-							<p class="text-right">
-								<span class="label label-info">1</span>
-							</p>
-						</div>
-
-						<div class="col-md-3">
-							<div class="form-group">
-								<label class="control-label" for="job_position_1">Company Name</label>
-								<input class="form-control" name="job_position_1" id="job_position_1" data-validate="require" placeholder="Your current job" />
-							</div>
-						</div>
-
-						<div class="col-md-4">
-							<div class="form-group">
-								<label class="control-label" for="job_position_1">Job Position</label>
-								<input class="form-control" name="job_position_1" id="job_position_1" data-validate="require" placeholder="Your current position" />
-							</div>
-						</div>
-
-						<div class="col-md-2">
-							<div class="form-group">
-								<label class="control-label" for="job_position_start_date_1">Start Date</label>
-								<input class="form-control datepicker" name="job_position_start_date_1" id="job_position_start_date_1" placeholder="(Optional)" />
-							</div>
-						</div>
-
-						<div class="col-md-2">
-							<div class="form-group">
-								<label class="control-label" for="job_position_end_date_1">End Date</label>
-								<input class="form-control datepicker" name="job_position_end_date_1" id="job_position_end_date_1" placeholder="(Optional)" />
-							</div>
-						</div>
-
-					</div>
-
-					<div class="row">
-
-						<div class="col-md-1">
-							<label class="control-label">&nbsp;</label>
-							<p class="text-right">
-								<span class="label label-info">2</span>
-							</p>
-						</div>
-
-						<div class="col-md-3">
-							<div class="form-group">
-								<label class="control-label" for="job_position_2">Company Name</label>
-								<input class="form-control" name="job_position_2" id="job_position_2" data-validate="require" placeholder="(Optional)" />
-							</div>
-						</div>
-
-						<div class="col-md-4">
-							<div class="form-group">
-								<label class="control-label" for="job_position_2">Job Position</label>
-								<input class="form-control" name="job_position_2" id="job_position_2" data-validate="require" placeholder="(Optional)" />
-							</div>
-						</div>
-
-						<div class="col-md-2">
-							<div class="form-group">
-								<label class="control-label" for="job_position_start_date_2">Start Date</label>
-								<input class="form-control datepicker" name="job_position_start_date_2" id="job_position_start_date_2" placeholder="(Optional)" />
-							</div>
-						</div>
-
-						<div class="col-md-2">
-							<div class="form-group">
-								<label class="control-label" for="job_position_end_date_2">End Date</label>
-								<input class="form-control datepicker" name="job_position_end_date_2" id="job_position_end_date_2" placeholder="(Optional)" />
-							</div>
-						</div>
-
-					</div>
-
-					<div class="row">
-
-						<div class="col-md-1">
-							<label class="control-label">&nbsp;</label>
-							<p class="text-right">
-								<span class="label label-info">3</span>
-							</p>
-						</div>
-
-						<div class="col-md-3">
-							<div class="form-group">
-								<label class="control-label" for="job_position_3">Company Name</label>
-								<input class="form-control" name="job_position_3" id="job_position_3" data-validate="require" placeholder="(Optional)" />
-							</div>
-						</div>
-
-						<div class="col-md-4">
-							<div class="form-group">
-								<label class="control-label" for="job_position_3">Job Position</label>
-								<input class="form-control" name="job_position_3" id="job_position_3" data-validate="require" placeholder="(Optional)" />
-							</div>
-						</div>
-
-						<div class="col-md-2">
-							<div class="form-group">
-								<label class="control-label" for="job_position_start_date_3">Start Date</label>
-								<input class="form-control datepicker" name="job_position_start_date_3" id="job_position_start_date_3" placeholder="(Optional)" />
-							</div>
-						</div>
-
-						<div class="col-md-2">
-							<div class="form-group">
-								<label class="control-label" for="job_position_end_date_3">End Date</label>
-								<input class="form-control datepicker" name="job_position_end_date_3" id="job_position_end_date_3" placeholder="(Optional)" />
-							</div>
-						</div>
-
-					</div>
-
-					<div class="row">
-
-						<div class="col-md-1">
-							<label class="control-label">&nbsp;</label>
-							<p class="text-right">
-								<span class="label label-info">4</span>
-							</p>
-						</div>
-
-						<div class="col-md-3">
-							<div class="form-group">
-								<label class="control-label" for="job_position_4">Company Name</label>
-								<input class="form-control" name="job_position_4" id="job_position_4" data-validate="require" placeholder="(Optional)" />
-							</div>
-						</div>
-
-						<div class="col-md-4">
-							<div class="form-group">
-								<label class="control-label" for="job_position_4">Job Position</label>
-								<input class="form-control" name="job_position_4" id="job_position_4" data-validate="require" placeholder="(Optional)" />
-							</div>
-						</div>
-
-						<div class="col-md-2">
-							<div class="form-group">
-								<label class="control-label" for="job_position_start_date_4">Start Date</label>
-								<input class="form-control datepicker" name="job_position_start_date_4" id="job_position_start_date_4" placeholder="(Optional)" />
-							</div>
-						</div>
-
-						<div class="col-md-2">
-							<div class="form-group">
-								<label class="control-label" for="job_position_end_date_4">End Date</label>
-								<input class="form-control datepicker" name="job_position_end_date_4" id="job_position_end_date_4" placeholder="(Optional)" />
-							</div>
-						</div>
-
-					</div>
-
-				</div>
 
 				<div class="tab-pane with-bg" id="fwv-5">
 
@@ -820,6 +641,11 @@
 		</form>
 	</div>
 </div>
+<script>
+	$("#vehicle_model").bind('click',function(){
+		getCars();
+	});
+</script>
 
 
 
