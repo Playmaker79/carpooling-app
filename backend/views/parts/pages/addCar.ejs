@@ -33,7 +33,7 @@
                         <div class="form-group">
                             <label for="regNumber" class="control-label">Registration Number (seperated by spaces)
                             </label>
-                            <input type="text" class="form-control" data-mask="^[A-Z]{2}[ -][0-9]{1,2}(?: [A-Z])?(?: [A-Z]*)? [0-9]{4}$" data-is-regex="true" placeholder="Ex: KL 31 H 3321">
+                            <input id="regNo" type="text" class="form-control" data-mask="^[A-Z]{2}[ -][0-9]{1,2}(?: [A-Z])?(?: [A-Z]*)? [0-9]{4}$" data-is-regex="true" placeholder="Ex: KL 31 H 3321">
                         </div>
 
                     </div>
@@ -72,8 +72,23 @@
     function updateCars(){
         var selected_item =$('#vehicle_model').find(":selected").text();
         console.log(selected_item);
-        var formData = new FormData()
-        formData.append('car_name',$())
+        var carData = new FormData()
+        formData.append('vehicle_model',$("#vehicle_model"));
+        formData.append('company',$("#company"));
+        formData.append('regNo',$("#regNo"));
+        formData.append('car_image',$( '#img-input' )[0].files[0]);
+        $.ajax("/user/cars", {
+            success: function(data) {
+                $.each(data,function(i,value){
+                    $("#vehicle_model").append('<option id="'+value.id+'">'+value.manufacturer+' '+value
+                                    .model+'</option>');
+                });
+                $("#vehicle_model").last().attr("disabled");
+            },
+            error: function() {
+                $('.alert-danger').text('An error occurred');
+            }
+        });
     }
 
     function addCar(){
