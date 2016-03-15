@@ -1,0 +1,50 @@
+.cover_area{
+    background-image: url(../images/cover.jpg);
+     background-size: cover;
+    height: 60%;
+    overflow: hidden;
+}
+.cover_area h1, #iphone_demo h2 {
+    text-align:center; font-size:2.3em; font-family: 'Varela', sans-serif; font-weight: 700; color: #FFFFFF;
+}
+.featured h2{
+   text-align:center; font-size:2.3em; font-family: 'Varela', sans-serif; font-weight: 700; color: #3f3f3f; 
+}
+.featured p{
+   text-align:center; font-size:1em; font-family: 'Varela', sans-serif; font-weight: 400; color: #1a1a1a; margin-bottom:auto;
+}
+
+.cover_area h3{
+    text-align:center; font-size:1.3em; font-family: 'Varela', sans-serif; font-weight: 500; color: #FFFFFF;
+}
+
+.cover_area img{
+    margin: 0 auto; display: block; width: 30%; height: auto; margin-top: 7%;
+}
+
+    #iphone_demo {
+        height: 30%;
+        background: linear-gradient(to top, #0A120D, #162C4C); 
+}
+
+#iphone_demo img{
+    height: auto;
+    width: 50%;
+    margin-top: -20%;
+    margin-left: 40%;
+}
+
+.featured{
+    height:auto;
+    background-color: #ffffff;
+    
+}
+
+.featured img{
+    height: auto;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    display: block;
+}
