@@ -69,6 +69,12 @@
 
 <script type="text/javascript">
 
+    function updateCars(){
+        var selected_item =$('#vehicle_model').find(":selected").text();
+        console.log(selected_item);
+        var formData = new FormData()
+        formData.append('car_name',$())
+    }
 
     function addCar(){
         $('#addCar').modal('show');

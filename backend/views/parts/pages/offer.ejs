@@ -99,7 +99,6 @@
 		document.getElementById('dest_addr').addEventListener('change', onChangeHandler);
 		document.getElementById('add_stop').addEventListener('click', onClickHandler);
 		document.getElementById('seat_value').addEventListener('change', onRateChange);
-		document.getElementById('#vechicle_model').addEventListener('change',getCars);
 
 	}
 
@@ -193,10 +192,11 @@
 	function getCars(){
 		$.ajax("/user/cars", {
 			success: function(data) {
-				$("#vehicle_model").empty();
 				$.each(data,function(i,value){
-					$("#vehicle_model").append('<option>'+value.manufacturer+' '+value.model+'</option>');
+					$("#vehicle_model").append('<option id="'+value.id+'">'+value.manufacturer+' '+value
+									.model+'</option>');
 				});
+				$("#vehicle_model").last().attr("disabled");
 			},
 			error: function() {
 				$('#notification-bar').text('An error occurred');
@@ -204,6 +204,9 @@
 		});
 	}
 
+	$(document).ready(function(){
+		getCars();
+	});
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgv2PpFkhSN92tgs0g82VfU7nybuE-8Eg&signed_in=false&libraries=places&callback=initMap"
 		async defer></script>
@@ -641,11 +644,6 @@
 		</form>
 	</div>
 </div>
-<script>
-	$("#vehicle_model").bind('click',function(){
-		getCars();
-	});
-</script>
 
 
 

@@ -6,7 +6,11 @@
     <bookmark url="file://$PROJECT_DIR$" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7fd94be-981c-4584-81e9-cc708cc4ca11" name="Default" comment="" />
+    <list default="true" id="f7fd94be-981c-4584-81e9-cc708cc4ca11" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/parts/pages/addCar.ejs" afterPath="$PROJECT_DIR$/backend/views/parts/pages/addCar.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/views/parts/pages/offer.ejs" afterPath="$PROJECT_DIR$/backend/views/parts/pages/offer.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="carpooling-app.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,8 +43,8 @@
       <file leaf-file-name="dbconnect.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/dbconnect.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.0689654">
-              <caret line="73" column="26" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -50,17 +54,17 @@
         <entry file="file://$PROJECT_DIR$/backend/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+              <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="addCar.ejs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="addCar.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/addCar.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-28.928572">
-              <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.49637157">
+              <caret line="75" column="33" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -79,7 +83,7 @@
       <file leaf-file-name="xenon.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/xenon.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="0.0">
               <caret line="0" column="173982" selection-start-line="0" selection-start-column="173982" selection-end-line="0" selection-end-column="173982" />
               <folding />
             </state>
@@ -106,11 +110,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="offer.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="offer.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/offer.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5378486">
-              <caret line="195" column="17" selection-start-line="195" selection-start-column="17" selection-end-line="195" selection-end-column="17" />
+            <state vertical-scroll-proportion="9.925926">
+              <caret line="146" column="41" selection-start-line="146" selection-start-column="41" selection-end-line="146" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -180,10 +184,10 @@
         <option value="$PROJECT_DIR$/backend/models/cars.js" />
         <option value="C:/xampp/phpMyAdmin/themes/metro/css/common.css.php" />
         <option value="$PROJECT_DIR$/backend/views/offer.ejs" />
-        <option value="$PROJECT_DIR$/backend/views/parts/pages/addCar.ejs" />
         <option value="$PROJECT_DIR$/backend/routes/index.js" />
         <option value="$PROJECT_DIR$/backend/dbconnect.js" />
         <option value="$PROJECT_DIR$/backend/views/parts/pages/offer.ejs" />
+        <option value="$PROJECT_DIR$/backend/views/parts/pages/addCar.ejs" />
       </list>
     </option>
   </component>
@@ -197,8 +201,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="width" value="1456" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -223,7 +227,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -383,6 +386,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -391,7 +395,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value="db&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/dbconnect.js&#10;account&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/views/parts/pages/account_form.ejs&#10;off&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/views/parts/pages/offer.ejs&#10;cus&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/public/stylesheets/customize.css&#10;us&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/models/users.js&#10;l&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/views/parts/pages/login.ejs&#10;users&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/models/users.js&#10;acc&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/views/parts/pages/account_form.ejs&#10;mod&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/node_modules/sequelize/lib/model.js&#10;ani&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Desktop/carpooling-app/backend/public/stylesheets/fonts/meteocons/css/animation.css&#10;anima&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Desktop/carpooling-app/backend/public/javascripts/uikit/less/animation.less&#10;a&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Desktop/carpooling-app/backend/public/stylesheets/fonts/elusive/css/animation.css&#10;DBCO&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/dbconnect.js&#10;APP&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/app.js&#10;toggles&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/public/javascripts/xenon-toggles.js&#10;xenon&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/public/javascripts/xenon-api.js&#10;accoun&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/views/parts/pages/account_form.ejs&#10;footer&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/views/parts/template/footer.ejs&#10;bootstrap.css&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/public/stylesheets/bootstrap.css&#10;logged&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/views/parts/template/logged.ejs&#10;ind&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/routes/index.js&#10;index&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/routes/index.js&#10;arvo&#9;null&#9;null&#10;.signup&#9;null&#9;null&#10;signup&#9;null&#9;null&#10;offer&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/views/parts/pages/offer.ejs&#10;find&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/views/parts/pages/find.ejs&#10;inde&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/routes/index.js&#10;res&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/node_modules/express/lib/response.js&#10;app&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/app.js&#10;prot&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/node_modules/mysql/lib/protocol/Protocol.js&#10;util&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/node_modules/multer/node_modules/busboy/node_modules/readable-stream/node_modules/core-util-is/lib/util.js&#10;dbc&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/dbconnect.js" />
+    <property name="SearchEverywhereHistoryKey" value="ADD&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/views/parts/pages/addCar.ejs&#10;db&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/dbconnect.js&#10;account&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/views/parts/pages/account_form.ejs&#10;off&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/views/parts/pages/offer.ejs&#10;cus&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/public/stylesheets/customize.css&#10;us&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/models/users.js&#10;l&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/views/parts/pages/login.ejs&#10;users&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/models/users.js&#10;acc&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/views/parts/pages/account_form.ejs&#10;mod&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/node_modules/sequelize/lib/model.js&#10;ani&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Desktop/carpooling-app/backend/public/stylesheets/fonts/meteocons/css/animation.css&#10;anima&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Desktop/carpooling-app/backend/public/javascripts/uikit/less/animation.less&#10;a&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Desktop/carpooling-app/backend/public/stylesheets/fonts/elusive/css/animation.css&#10;DBCO&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/dbconnect.js&#10;APP&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/app.js&#10;toggles&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/public/javascripts/xenon-toggles.js&#10;xenon&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/public/javascripts/xenon-api.js&#10;accoun&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/views/parts/pages/account_form.ejs&#10;footer&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/views/parts/template/footer.ejs&#10;bootstrap.css&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/public/stylesheets/bootstrap.css&#10;logged&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/views/parts/template/logged.ejs&#10;ind&#9;FILE&#9;file://C:/Users/Arjun/Desktop/carpooling-app/backend/routes/index.js&#10;index&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/routes/index.js&#10;arvo&#9;null&#9;null&#10;.signup&#9;null&#9;null&#10;signup&#9;null&#9;null&#10;offer&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/views/parts/pages/offer.ejs&#10;find&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/views/parts/pages/find.ejs&#10;inde&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/routes/index.js&#10;res&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/node_modules/express/lib/response.js&#10;app&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/app.js&#10;prot&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/node_modules/mysql/lib/protocol/Protocol.js&#10;util&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/node_modules/multer/node_modules/busboy/node_modules/readable-stream/node_modules/core-util-is/lib/util.js&#10;dbc&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Documents/GitHub/carpooling-app/backend/dbconnect.js" />
     <property name="FullScreen" value="false" />
     <property name="com.intellij.ide.scratch.NewScratchFileAction" value="HTML&#10;EJS" />
     <property name="recentsLimit" value="5" />
@@ -504,10 +508,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2061012" sideWeight="0.913649" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20592384" sideWeight="0.913649" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.04778157" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32593855" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -546,14 +550,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backend/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/addCar.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -874,14 +870,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/offer.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.0">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -890,34 +878,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/dbconnect.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.0689654">
-          <caret line="73" column="26" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/addCar.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-28.928572">
-          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+          <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="625" column="0" selection-start-line="625" selection-start-column="0" selection-end-line="625" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/dbconnect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/offer.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5378486">
-          <caret line="195" column="17" selection-start-line="195" selection-start-column="17" selection-end-line="195" selection-end-column="17" />
+        <state vertical-scroll-proportion="9.925926">
+          <caret line="146" column="41" selection-start-line="146" selection-start-column="41" selection-end-line="146" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/offer.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.0">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/addCar.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49637157">
+          <caret line="75" column="33" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
           <folding />
         </state>
       </provider>
