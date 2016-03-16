@@ -61,7 +61,7 @@
 
             <div class="modal-footer">
                 <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                <input type="submit" class="btn btn-info" value="save">
+                <input type="button" class="btn btn-info" value="save" onclick="updateCars()">
             </div>
         </div>
     </div>
@@ -72,21 +72,22 @@
     function updateCars(){
         var selected_item =$('#vehicle_model').find(":selected").text();
         console.log(selected_item);
-        var carData = new FormData()
+        var formData = new FormData();
         formData.append('vehicle_model',$("#vehicle_model"));
         formData.append('company',$("#company"));
         formData.append('regNo',$("#regNo"));
         formData.append('car_image',$( '#img-input' )[0].files[0]);
-        $.ajax("/user/cars", {
-            success: function(data) {
-                $.each(data,function(i,value){
-                    $("#vehicle_model").append('<option id="'+value.id+'">'+value.manufacturer+' '+value
-                                    .model+'</option>');
-                });
-                $("#vehicle_model").last().attr("disabled");
+        $.ajax({
+            type:'POST',
+            url: '/addCar',
+            data: formData,
+            cache: false,
+            contentType: false,
+            processData: false,
+            success:function(data) {
+                console.log(data);
             },
-            error: function() {
-                $('.alert-danger').text('An error occurred');
+            error: function(data) {
             }
         });
     }

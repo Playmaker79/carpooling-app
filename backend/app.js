@@ -239,6 +239,11 @@ app.use(function (err, req, res, next) {
 });
 
 
-
+app.post('/addCar', function(req,res){
+    var sess = req.session;
+    if(sess.current_user){
+       res.send(req.file.filename);
+    }
+});
 
 module.exports = app;
