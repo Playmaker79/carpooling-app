@@ -76,7 +76,7 @@
         formData.append('vehicle_model',$("#vehicle_model"));
         formData.append('company',$("#company"));
         formData.append('regNo',$("#regNo"));
-        formData.append('car_image',$( '#img-input' )[0].files[0]);
+        formData.append('vehicle_picture',$( '#img-input' )[0].files[0]);
         $.ajax({
             type:'POST',
             url: '/addCar',
@@ -88,6 +88,7 @@
                 console.log(data);
             },
             error: function(data) {
+                console.log(data);
             }
         });
     }

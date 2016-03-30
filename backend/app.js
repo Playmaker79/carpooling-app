@@ -59,11 +59,7 @@ app.use('/logout',routes);
 
 
 /*generate menu view for current user globally accesible in all pages wherever the user is logged in*/
-app.use(function(req, res, next){
-    res.locals.loggedUserName = app.locals.loggedUserName;
-    res.locals.loggedUserPic = app.locals.loggedUserPic;
-    next();
-});
+
 /*handle account creation */
 app.post('/account', function (req, res) {
     var values = req.body;
@@ -75,6 +71,7 @@ app.post('/account', function (req, res) {
     //console.log(values.password);    
     var insert = dbconnect.createaccount(values, password,res,req);
 });
+
 
 
 /*handle login page*/
@@ -107,10 +104,9 @@ app.post('/login', function (req, res){
                 if (x == true) {
                     sess = req.session;
                     sess.current_user = current_user;
-                    app.locals.loggedUserName = rows[0].name;
-                    app.locals.loggedUserPic = rows[0].profile_pic;
-
-
+                    sess.loggedUsername = rows[0].name;
+                    sess.loggedUserPic = rows[0].profile_pic;
+                    console.log(sess.loggedUserPic);
 
                     /*redirect to initial profile pic upload page*/
                     if (sess.updateprofile == true && sess.current_user) {
@@ -159,7 +155,7 @@ app.post('/user/setup', profile_pic_location.single('pic'), function (req, res, 
 //offer a ride
 
 //handle offer a ride
-app.post('/offer',vehicle_picture.single('vehicle_picture'), function (req, res, next){
+app.post('/offer',vehicle_picture.single('vehicle_picture'), function (req, res,next){
     sess = req.session;
     /*upload car pic only when redirected and or when the user is logged in*/ 
     if(sess.current_user){
@@ -177,6 +173,18 @@ app.post('/offer',vehicle_picture.single('vehicle_picture'), function (req, res,
         console.log(sess);
     }
     });
+
+
+app.post('/addCar',vehicle_picture.single('vehicle_picture'), function(req,res){
+    var sess = req.session;
+    var file = req.file;
+    if(sess.current_user){
+        dbconnect.addCar(file,req,res);
+    }
+    else{
+        res.status(401).send("Unauthorized");
+    }
+});
 
 
 //search for rides 
@@ -239,11 +247,5 @@ app.use(function (err, req, res, next) {
 });
 
 
-app.post('/addCar', function(req,res){
-    var sess = req.session;
-    if(sess.current_user){
-       res.send(req.file.filename);
-    }
-});
 
 module.exports = app;

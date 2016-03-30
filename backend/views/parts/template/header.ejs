@@ -38,10 +38,8 @@
 
       <!-- The user logged in stuff here -->
 
-      <%if (typeof loggedUserName !== 'undefined' && typeof session !== 'undefined'){%>
       <%if (session.current_user){%>
       <% include logged.ejs%>
-      <%}%>
       <%}%>
     </div>
     <!-- /.navbar-collapse -->

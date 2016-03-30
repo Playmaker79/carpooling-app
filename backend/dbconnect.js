@@ -91,7 +91,10 @@ exports.GetCurrentProfile = function (req) {
     }
 }
 
-
+exports.addCar = function (file,req,res) {
+ var car_photo = file.filename;
+    
+}
 exports.offeraride = function (data, file, req, res) {
     var sess = req.session;
     if (sess.current_user) {
@@ -124,6 +127,7 @@ exports.offeraride = function (data, file, req, res) {
         })
     }
 }
+
 
 
 module.exports.connection = connection;
