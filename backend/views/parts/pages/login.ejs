@@ -28,6 +28,9 @@
         <% } else if( status == 'invalidAccount') {%>
         <span class="alert alert-danger invalidAccount ">That password username combo doesnt seem to work :)
                 </span>
+        <% } else if( status == 'serviceError') {%>
+        <span class="alert alert-warning invalidAccount ">OOPS! Something went wrong.Please try again later :(
+                </span>
         <%}%>
     </div>
 </div>

@@ -37,8 +37,9 @@
       </ul>
 
       <!-- The user logged in stuff here -->
-
-      <%if (session.current_user){%>
+      <%if (typeof(session)=='undefined'){%>
+         <br/>
+      <%}else if (session.current_user){%>
       <% include logged.ejs%>
       <%}%>
     </div>

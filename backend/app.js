@@ -85,41 +85,43 @@ app.post('/login', function (req, res){
     dbconnect.connection.query('SELECT * FROM `users` WHERE `email`=?', [values.email],
         function (err, rows, fields) {
             console.log(rows+"\n");
-            if(rows.length == 0){
-                /*when an account is not found*/
-                res.render("login",{create:false,title:'Login to your Account',status:'invalidAccount'});
-                res.end();
-            }
-            else if (err){
+            if (err){
+                res.render("login", {create: false, title: 'Login to your Account', status: 'serviceError'});
                 res.end();
             }
             else if (!err) {
-                password_db = rows[0].password_hash;
-                current_user = rows[0].id;
-
-
-                /* compare enterd password with hashed password in database*/
-                var x = bcrypt.compareSync(password_user, password_db);
-               // console.log("sync" + x);
-                if (x == true) {
-                    sess = req.session;
-                    sess.current_user = current_user;
-                    sess.loggedUsername = rows[0].name;
-                    sess.loggedUserPic = rows[0].profile_pic;
-                    console.log(sess.loggedUserPic);
-
-                    /*redirect to initial profile pic upload page*/
-                    if (sess.updateprofile == true && sess.current_user) {
-                        res.redirect("/user/setup");
-                    }
-                    else {
-                        res.redirect("/find");
-                        res.end();
-                    }
+                if (rows.length == 0) {
+                    /*when an account is not found*/
+                    res.render("login", {create: false, title: 'Login to your Account', status: 'invalidAccount'});
+                    res.end();
                 }
                 else {
-                    res.redirect("/login");
-                    res.end();
+                    password_db = rows[0].password_hash;
+                    current_user = rows[0].id;
+
+                    /* compare enterd password with hashed password in database*/
+                    var x = bcrypt.compareSync(password_user, password_db);
+                    // console.log("sync" + x);
+                    if (x == true) {
+                        sess = req.session;
+                        sess.current_user = current_user;
+                        sess.loggedUsername = rows[0].name;
+                        sess.loggedUserPic = rows[0].profile_pic;
+                        console.log(sess.loggedUserPic);
+
+                        /*redirect to initial profile pic upload page*/
+                        if (sess.updateprofile == true && sess.current_user) {
+                            res.redirect("/user/setup");
+                        }
+                        else {
+                            res.redirect("/find");
+                            res.end();
+                        }
+                    }
+                    else {
+                        res.render("login", {create: false, title: 'Login to your Account', status: 'invalidAccount'});
+                        res.end();
+                    }
                 }
             }
         }
