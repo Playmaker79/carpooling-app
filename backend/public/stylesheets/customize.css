@@ -197,3 +197,11 @@
     margin-top: 5em;
     margin-bottom: 3em;
 }
+
+#profileDropdown>a.dropdown-toggle{
+    padding-bottom: 5px !important;
+}
+
+#profileDropdown img.userpic-32{
+    border-radius: 20%;
+}
