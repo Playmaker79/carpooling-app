@@ -91,10 +91,11 @@ exports.GetCurrentProfile = function (req) {
     }
 }
 
-exports.addCar = function (file,req,res) {
- var car_photo = file.filename;
-    
+exports.addCar = function (data) {
+    return db.cars.create(data)
 }
+
+
 exports.offeraride = function (data, file, req, res) {
     var sess = req.session;
     if (sess.current_user) {

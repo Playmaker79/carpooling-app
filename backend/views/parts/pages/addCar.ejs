@@ -12,7 +12,7 @@
                     <div class="col-md-6">
 
                         <div class="form-group">
-                            <label for="model_name" class="control-label">Model name</label>
+                             <label for="model_name" class="control-label">Model name</label>
                             <input type="text" class="form-control" id="model_name" placeholder="Ex: si20,vento etc.">
                         </div>
 
@@ -58,10 +58,9 @@
                     </div>
                 </div>
             </div>
-
             <div class="modal-footer">
                 <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
-                <input type="button" class="btn btn-info" value="save" onclick="updateCars()">
+                <button type="button" class="btn btn-info"  onclick="updateCars()">Save</button>
             </div>
         </div>
     </div>
@@ -69,27 +68,41 @@
 
 <script type="text/javascript">
 
+    function showError(){
+
+    }
+
     function updateCars(){
         var selected_item =$('#vehicle_model').find(":selected").text();
         console.log(selected_item);
         var formData = new FormData();
-        formData.append('vehicle_model',$("#vehicle_model"));
-        formData.append('company',$("#company"));
-        formData.append('regNo',$("#regNo"));
+        formData.append('vehicle_model',$("#model_name").val());
+        formData.append('company',$("#company").val());
+        formData.append('regNo',$("#regNo").val());
         formData.append('vehicle_picture',$( '#img-input' )[0].files[0]);
-        $.ajax({
+        var request = $.ajax({
             type:'POST',
             url: '/addCar',
             data: formData,
             cache: false,
-            contentType: false,
-            processData: false,
-            success:function(data) {
-                alert(data);
-            },
-            error: function(data) {
-                console.log(data);
+            contentType:false,
+            processData: false
+        });
+        request.fail(function (xhr, status, errorThrown ) {
+            if(xhr.status == 409){
+                toastr["error"]("You already have a vechicle with that number.Please make sure to add unique numbers", "Oops !");
             }
+            else if(xhr.status == 500){
+                toastr["error"]("You have missed some fields! please fill them out.", "Missing fields !");
+            }
+            else{
+
+            }
+        });
+        request.done(function (data) {
+            toastr["success"]($('#model_name').val()+" has been added to your account", "New car added !");
+            $('#addCar input').val('');
+            $( '#car_photo').attr('src','');
         });
     }
 

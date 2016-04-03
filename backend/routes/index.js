@@ -49,7 +49,6 @@ router.get('/find', function (req, res, next) {
            // console.log(data);
             if (err) throw err;
             else {
-                console.log(req.session);
                 res.render('find', {
                     title: 'Find A Ride',
                     ride_list: data,
@@ -114,7 +113,6 @@ router.get('/user/cars',function(req,res){
     if(sess.current_user){
         var data = dbconnect.getCars(sess.current_user);
         data.then(function(values){
-            console.log(values);
             res.send(values);
         });
     }

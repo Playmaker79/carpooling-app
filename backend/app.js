@@ -178,10 +178,21 @@ app.post('/offer',vehicle_picture.single('vehicle_picture'), function (req, res,
 
 
 app.post('/addCar',vehicle_picture.single('vehicle_picture'), function(req,res){
-    var sess = req.session;
-    var file = req.file;
-    if(sess.current_user){
-        dbconnect.addCar(file,req,res);
+    if(req.session.current_user){
+        var data  = {
+            model: req.body.vehicle_model,
+            manufacturer: req.body.company,
+            regnumber:req.body.regNo,
+            owner: req.session.current_user,
+            photo: req.file.filename
+        }
+        dbconnect.addCar(data).then(function (data) {
+            res.status(201).send();
+        }, function (error) {
+            if(error.name == "SequelizeUniqueConstraintError"){
+                res.status(409).send();
+            }
+        });
     }
     else{
         res.status(401).send("Unauthorized");
@@ -189,7 +200,7 @@ app.post('/addCar',vehicle_picture.single('vehicle_picture'), function(req,res){
 });
 
 
-//search for rides 
+//search for rides
 app.post('/find', function (req, res){
     var source = req.body.from_location.toString();
     source = source.split(',');
@@ -199,7 +210,7 @@ app.post('/find', function (req, res){
     destination = "%"+destination[0]+"%";
     var query = [source,destination];
     console.log(query);
-dbconnect.connection.query('select * from rides,users WHERE `rides`.`source` LIKE ? AND `rides`.`destination` LIKE ? and rides.rider_id = users.id',query,function (err, rows, fields) { 
+dbconnect.connection.query('select * from rides,users WHERE `rides`.`source` LIKE ? AND `rides`.`destination` LIKE ? and rides.rider_id = users.id',query,function (err, rows, fields) {
       if(err) {
           res.redirect("/find");
           throw err

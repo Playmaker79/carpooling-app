@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <% include parts/template/head.ejs %>
-    <link rel="stylesheet" href="/stylesheets/offer.css" type="text/css"/>
-    <link rel="stylesheet" href="/stylesheets/app.css" type="text/css"/>
+      <% include parts/template/head.ejs %>
+      <link rel="stylesheet" href="/stylesheets/offer.css" type="text/css"/>
+      <link rel="stylesheet" href="/stylesheets/app.css" type="text/css"/>
+      <link rel="stylesheet" href="/javascripts/toastr/toastr.css" type="text/css"/>
   </head>
    <body>
-       
+
     <!-- menu section -->
     <% include parts/template/header.ejs%>
   <!-- Account creation form-->
@@ -15,4 +16,24 @@
   </body>
   <!-- footer section -->
   <% include parts/template/footer.ejs%>
+<script src="/javascripts/toastr/toastr.min.js"></script>
+  <script>
+      toastr.options = {
+          "closeButton": true,
+          "debug": false,
+          "newestOnTop": true,
+          "progressBar": false,
+          "positionClass": "toast-bottom-right",
+          "preventDuplicates": true,
+          "onclick": null,
+          "showDuration": "300",
+          "hideDuration": "1000",
+          "timeOut": "5000",
+          "extendedTimeOut": "1000",
+          "showEasing": "swing",
+          "hideEasing": "linear",
+          "showMethod": "fadeIn",
+          "hideMethod": "fadeOut"
+      }
+  </script>
 </html>
