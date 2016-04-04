@@ -150,7 +150,7 @@
 		var seat = $("input[name='seat_value']").val();
 		var rate = rateCalc(totalDist,10,seat);
 		console.log(rate);
-		$("input[name='rider_rate']").val(rate.avg);
+		$("rateSlider").slider('value',rate.avg);
 	}
 
 	function processUpdate(){
@@ -492,10 +492,14 @@
 								</span>
 							</div>
 					<div class="row">
-						<div class="col-md-4">
+						<div class="col-md-6">
 							<div class="form-group">
-								<label class="control-label" for="second_subject">Subject</label>
-								<input class="form-control" name="second_subject" id="second_subject" data-validate="require" placeholder="High School" />
+								<label class="control-label" for="second_subject">Rate per passenger</label>
+								<div class="panel" id="rate">
+									<div class="slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-basic="1" data-min="0" data-max="1800" data-value="120" data-step="10" id="rateSlider">
+										<span class="fa fa-inr ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style=""><span class="ui-label title">1060</span></span></div>
+									<br/>
+								</div>
 							</div>
 						</div>
 					</div>

@@ -205,3 +205,12 @@
 #profileDropdown img.userpic-32{
     border-radius: 20%;
 }
+
+.fa-inr{
+    font-size: 25px !important;
+    text-align: center;
+    color:#40bbea;
+}
+#rate .ui-slider-handle{
+    background: none !important;
+}
