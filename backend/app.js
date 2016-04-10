@@ -157,15 +157,14 @@ app.post('/user/setup', profile_pic_location.single('pic'), function (req, res, 
 //offer a ride
 
 //handle offer a ride
-app.post('/offer',vehicle_picture.single('vehicle_picture'), function (req, res,next){
+app.post('/offer', function (req, res,next){
     sess = req.session;
     /*upload car pic only when redirected and or when the user is logged in*/ 
     if(sess.current_user){
-    var current_user = sess.current_user;
+    var current_user = req.session.current_user;
     var data = req.body;
     console.log(req.body);
-    var file = req.file;
-        dbconnect.offeraride(data,file,req,res);
+        dbconnect.offeraride(data,req,res);
     }
     /*if the profile is needed to be updated manually*/
     /*worst case - redirect to login page*/

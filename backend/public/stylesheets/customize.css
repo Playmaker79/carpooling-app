@@ -1,3 +1,6 @@
+*{
+font-family: 'Montserrat', sans-serif;
+}
 
 .navbar{
     margin-bottom: 0px;
@@ -83,7 +86,6 @@
 }
 
 .search_background h3, #toprides_txt {
-    font-family: "open sans";
     color:  #eb7a5c;
     font-weight: 700;
     align-content: center;
@@ -96,9 +98,6 @@
     border-style:solid;
     border-color:#f1f1f1;
     font-size: 1.3em;
-}
-#toprides panel{
-    border-radius: 5em;
 }
 
 .search_background{
@@ -145,8 +144,13 @@
 #viewmore_button button:hover{
     background-color:#eb7a5c;
 }
-.list-unstyled user-info-list li, list-unstyled user-friends-count li{
+.list-unstyled .user-info-list li, .list-unstyled .user-friends-count li{
     text-align: center;
+}
+
+.user-info-list li>img{
+    width: 30px;
+    height: 30px;
 }
 #phnbtn1 span,#phnbtn2 span,#phnbtn3 span,#phnbtn4 span{
     background-color:#32bbaa; !important;
@@ -214,3 +218,16 @@
 #rate .ui-slider-handle{
     background: none !important;
 }
+
+#offerSubmit{
+    float: right;
+}
+
+.grid-item .user-info-sidebar{
+    height: 600px;
+}
+
+.search_background .input-lg{
+    border-radius: 0px 20px 0px 20px;
+}
+

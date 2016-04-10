@@ -96,9 +96,9 @@ exports.addCar = function (data) {
 }
 
 
-exports.offeraride = function (data, file, req, res) {
+exports.offeraride = function (data,req, res) {
     var sess = req.session;
-    if (sess.current_user) {
+    if (req.session.current_user) {
         if (data.drinking == null) {
             data.drinking = 0;
         }
@@ -108,27 +108,31 @@ exports.offeraride = function (data, file, req, res) {
         if (data.music == null) {
             data.music = 0;
         }
-        var vehicle_picture = file.filename;
-        var current_user = sess.current_user;
+        var current_user = req.session.current_user;
         var date_travel = new Date(data.date_travel);
         var date_return = new Date(data.date_return);
         var destination = data.destination.toString();
-        var waypts = data.waypts.toString();
+        if(typeof(data.waypts)!= 'undefined') {
+            var waypts = data.waypts.toString();
+        }
+        else{
+            var waypts= 'none';
+        }
         /* console.log(data.travel_date);
          console.log(data.return_date);*/
-        var values = [data.source, destination, waypts, date_travel, data.time_travel, data.purpose, date_return, data.time_return, data.vechicle_model, vehicle_picture, data.drinking, data.smoking, data.music, data.gender_select, current_user, data.rider_rate, data.ride_phone];
+        console.log(data.drinking+" drinking");
+        var values = [data.source, destination, waypts, date_travel, data.time_travel, data.purpose,data.Vehicle_model,data.drinking, data.smoking, data.music, data.gender_select, current_user, data.rider_rate];
         console.log("\n the stuff we insterted \n\n");
         console.log(values);
         console.log("\n\n");
-        connection.query('INSERT INTO `rides`(`source`, `destination`,`waypoints`,`travel_date`, `travel_time`, `purpose`, `return_date`, `return_time`, `car_name`, `car_photo`, `drinking`, `smoking`, `music`, `passenger`, `rider_id`,`Rate`,`phone`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)', values, function (err, result) {
+        connection.query('INSERT INTO `rides`(`source`, `destination`,`waypoints`,`travel_date`, `travel_time`, `purpose`, `car_id`,`drinking`,`smoking`,`music`,`passenger`,`rider_id`,`Rate`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)', values, function (err, result) {
             if (err) throw err;
             if (!err) {
                 res.redirect('/find');
             }
-        })
+        });
     }
-}
-
+} 
 
 
 module.exports.connection = connection;

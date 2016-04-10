@@ -5,6 +5,16 @@
     }
 </style>
 
+<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
+<script>
+    var $container = $('.grid-content');
+    $container.imagesLoaded( function () {
+        $container.masonry({
+            columnWidth: '.grid-item',
+            itemSelector: '.grid-item'
+        });
+    });
+</script>
 <!-- Top rides start -->
 <div id="toprides">
     <h1 id="toprides_txt">Latest Rides</h1>
@@ -14,8 +24,9 @@
     </div>
     <% }else{ %>
     <div class="container-fluid">
+        <div class="row grid-content"></div>
         <% ride_list.forEach(function(ride_data) { %>
-            <div class="col-sm-6 col-md-3 col-xs-12">
+            <div class="col-sm-6 col-md-3 col-xs-12 grid-item">
                 <div class="panel panel-default">
 
                     <div class="panel-body">
@@ -37,25 +48,30 @@
 
                                 <li>
                                     <img src="images/icons/Location.svg"></i>
-                                    <strong><span><%= ride_data.source %></span></strong> to <strong><span><%= ride_data.destination %></span></strong>
+                                    <strong><span><%= ride_data.source %></span></strong> <BR><span class="text-center"> TO </span> <strong><span><%= ride_data.destination %></span></strong>
                                 </li>
+                                <br/>
                                 <li>
                                     <img src="images/icons/Date_O_T-01.svg"></i>
                                     <%var travel_date = ride_data.travel_date.toString()%>
                                     <% var date = travel_date.split("00:");%>
                                     <strong><span><%= date[0]%></span></strong>
                                 </li>
+                                <br/>
                                 <li>
                                     <img src="images/icons/Time_O_T-01.svg"></i>
                                     <strong><span><%= ride_data.travel_time %></span></strong>
                                 </li>
+                                <br/>
                                 </li>
                                 <img src="images/icons/travel%20rate-01.svg"></i>
-                                <strong><span><%= ride_data.Rate%></span></strong>Per Passenger.
+                                <strong><b><%= ride_data.Rate%></b></strong><small> per passenger</small>.
                                 </li>
+                                <br/>
+                                <br/>
                                 <li>
                                     <% var splittedWaypoints = ride_data.waypoints.split(",")%>
-                                    <img src="images/icons/in_btwn_location-01-01.svg"></i>
+                                    <img src="images/icons/in_btwn_location-01.svg"></i>
                                     <% splittedWaypoints.forEach(function(waypoint){%>
                                     <strong><span class="tag label label-warning"><%= waypoint %></span></strong>
                                     <%});%>
@@ -72,8 +88,8 @@
                         </div></div></div>
             </div>
         <% }); %>
-        </div>
         <%}%>
+    </div>
         <!-- View more------------------------------------------------------------------------------------------ -->
 
 

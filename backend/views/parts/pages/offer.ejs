@@ -99,7 +99,11 @@
 		document.getElementById('dest_addr').addEventListener('change', onChangeHandler);
 		document.getElementById('add_stop').addEventListener('click', onClickHandler);
 		document.getElementById('seat_value').addEventListener('change', onRateChange);
-
+		
+		$('.spinnerButton').click(function () {
+			onRateChange();
+		})
+		
 	}
 
 	function popNonvalidplace(){
@@ -150,8 +154,16 @@
 		var seat = $("input[name='seat_value']").val();
 		var rate = rateCalc(totalDist,10,seat);
 		console.log(rate);
-		$("rateSlider").slider('value',rate.avg);
-	}
+		console.log(typeof(rate.max));
+		$("#rateSlider").slider({
+			value: Number(rate.avg),
+			max:Number(rate.maximum),
+			min:Number(rate.minimum)
+		});
+
+		var avg_value = $("#rateSlider").slider("value");
+		$("#rateSlider .ui-label").text(avg_value);
+			}
 
 	function processUpdate(){
 		for(i=0;i<waypts.length;i++){
@@ -159,9 +171,16 @@
 				type: 'hidden',
 				name: 'waypts',
 				value: waypts[i].location,
-			}).appendTo('#offer_form');
+			}).appendTo('#rootwizard');
 		}
-		$('#offer_form').submit();
+		var rate = $("#rateSlider .ui-label").html();
+		$('<input>').attr({
+			type:'hidden',
+			name:'rider_rate',
+			value: rate
+		}).appendTo('#rootwizard');
+
+		$('#rootwizard').submit();
 	}
 
 	var rateCalc = function(distance,rate,people){
@@ -187,21 +206,22 @@
 		cost.maximum = cost.maximum/10
 		cost.maximum = Math.round(cost.maximum) *10;
 		return cost;
+
 	}
 
 	function getCars(){
 		$.ajax("/user/cars", {
 			success: function(data) {
 				$.each(data,function(i,value){
-					$("#vehicle_model").append('<option id="'+value.id+'">'+value.manufacturer+' '+value
+					$("#vehicle_model").append('<option value="'+value.id+'">'+value.manufacturer+' '+value
 									.model+'</option>');
 				});
-				$("#vehicle_model").last().attr("disabled");
 			},
 			error: function() {
 				$('#notification-bar').text('An error occurred');
 			}
 		});
+		$("#vehicle_model option").last().prop('selected', 'selected').change();
 	}
 
 	$(document).ready(function(){
@@ -229,9 +249,9 @@
 
 <!--Offer a ride-->
 <div class="signup">
-	<h1 class="text-center">Offer a Ride</h1>
+	<h1 class="text-center"><b>S</b>hare  <b>A R</b>ide </h1>
 	<div class="container">
-		<form role="forl" id="rootwizard" class="form-wizard validate" novalidate>
+		<form METHOD="post" action="/offer" id="rootwizard" class="form-wizard validate" novalidate >
 
 			<ul class="tabs">
 				<li class="active">
@@ -252,18 +272,11 @@
 						<span>3</span>
 					</a>
 				</li>
-				<li>
-					<a href="#fwv-4" data-toggle="tab">
-						Finishing Up!
-						<span>4</span>
-					</a>
-				</li>
 			</ul>
 
 			<div class="progress-indicator">
 				<span></span>
 			</div>
-
 			<div class="tab-content no-margin">
 
 				<!-- Tabs Content -->
@@ -463,15 +476,15 @@
 				<div class="tab-pane with-bg" id="fwv-3">
 						<div class="col-md-6">
 							<!-- Number of seats available-->
-							<label class="control-label" for="rider_rate">No of seats available</label>
+							<label class="control-label" for="seat_value">No of seats available</label>
 							<div class="input-group spinner" data-step="2" data-min="1" data-max="15">
-												<span class="input-group-btn">
-													<button class="btn btn-gray" data-type="decrement">-</button>
+												<span class="input-group-btn spinnerButton">
+													<button class="btn btn-info" data-type="decrement">-</button>
 												</span>
 								<input type="number" class="form-control text-center" readonly="1" value="7"
-									   name="rider_rate">
-												<span class="input-group-btn">
-													<button class="btn btn-gray" data-type="increment">+</button>
+									   name="seat_value" id="seat_value">
+												<span class="input-group-btn spinnerButton">
+													<button class="btn btn-info" data-type="increment">+</button>
 												</span>
 							</div>
 						</div>
@@ -496,138 +509,57 @@
 							<div class="form-group">
 								<label class="control-label" for="second_subject">Rate per passenger</label>
 								<div class="panel" id="rate">
-									<div class="slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-basic="1" data-min="0" data-max="1800" data-value="120" data-step="10" id="rateSlider">
+									<div class="slider ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-basic="1" data-min="0" data-max="1800" data-value="0" data-step="10" id="rateSlider">
 										<span class="fa fa-inr ui-slider-handle ui-state-default ui-corner-all" tabindex="0" style=""><span class="ui-label title">1060</span></span></div>
 									<br/>
 								</div>
 							</div>
 						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<label for="gender_select" class="control-label">Passenger Gender preference</label>
+								<br/>
+								<label class="radio-inline" >
+									<input type="radio" name="gender_select" value="m">
+									Male
+								</label>
+								<label class="radio-inline" >
+									<input type="radio" name="gender_select" value="n" checked>
+									None
+								</label>
+								<label class="radio-inline" >
+									<input type="radio" name="gender_select" value="f">
+									female
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-6">
+							<label class="control-label">Restrictions</label>
+						<div class="form-group">
+								<label class="checkbox-inline">
+									<input type="checkbox" value="1" name="drinking">
+									Drinking
+								</label>
+								<label class="checkbox-inline">
+									<input type="checkbox" value="1" name="smoking">
+									Smoking
+								</label>
+								<label class="checkbox-inline">
+									<input type="checkbox" value="1" name="music">
+									Music
+								</label>
+							</div>
+						</div>
 					</div>
 					<br />
 					<div class="row">
-
 						<div class="col-md-12">
-							<div class="form-group">
-								<label class="control-label" for="other_qualifications"><strong>Other Qualifications</strong></label>
-								<textarea class="form-control autogrow" name="other_qualifications" id="other_qualifications" placeholder="List one subject per row"></textarea>
-							</div>
-						</div>
-
-					</div>
-
-				</div>
-
-
-
-				<div class="tab-pane with-bg" id="fwv-5">
-
-					<div class="form-group">
-						<label class="control-label">Choose Username</label>
-
-						<div class="input-group">
-							<div class="input-group-addon">
-								<i class="linecons-user"></i>
-							</div>
-
-							<input type="text" class="form-control" name="username" id="username" data-validate="required,minlength[5]" data-message-minlength="Username must have minimum of 5 chars." placeholder="Could also be your email" />
+							<input type="button" class="button btn btn-primary" value="submit" onclick="processUpdate();">
 						</div>
 					</div>
-
-					<div class="row">
-
-						<div class="col-md-6">
-							<div class="form-group">
-								<label class="control-label">Choose Password</label>
-
-								<div class="input-group">
-									<div class="input-group-addon">
-										<i class="linecons-lock"></i>
-									</div>
-
-									<input type="password" class="form-control" name="password" id="password" data-validate="required" placeholder="Enter strong password" />
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-6">
-							<div class="form-group">
-								<label class="control-label">Repeat Password</label>
-
-								<div class="input-group">
-									<div class="input-group-addon">
-										<i class="linecons-lock"></i>
-									</div>
-
-									<input type="password" class="form-control" name="password" id="password" data-validate="required,equalTo[#password]" data-message-equal-to="Passwords doesn't match." placeholder="Confirm password" />
-								</div>
-							</div>
-						</div>
-
-					</div>
-
-					<div class="row">
-
-						<div class="col-md-6">
-							<div class="form-group">
-								<label class="control-label">Include Services</label>
-
-								<select multiple="multiple" name="my-select[]" class="form-control multi-select">
-									<option value="1">Web Builder</option>
-									<option value="2" selected>Server Side Scripting</option>
-									<option value="3">Secure Connection</option>
-									<option value="4" selected>Database Access</option>
-									<option value="5" selected>Email</option>
-									<option value="6">eCommerce</option>
-									<option value="7">Royalty Free Photos</option>
-									<option value="8">WordPress Installation</option>
-									<option value="9">Magento Installation</option>
-									<option value="10">Reseller Account</option>
-									<option value="11">WHM Client</option>
-									<option value="12">Nginx</option>
-								</select>
-							</div>
-						</div>
-
-						<div class="col-md-6">
-							<div class="form-group">
-								<label class="control-label">Gender</label>
-
-								<br />
-
-								<input type="checkbox" class="iswitch iswitch-red" checked>
-							</div>
-
-							<div class="form-group">
-								<label class="control-label">Subscribe for Newsletter</label>
-
-								<br />
-
-								<input type="checkbox" class="iswitch iswitch-purple" checked>
-							</div>
-
-							<div class="form-group">
-								<label class="control-label">
-									Auto-renew Subscription
-									<span class="label label-warning">Yearly</span>
-								</label>
-
-								<br />
-
-								<input type="checkbox" class="iswitch iswitch-secondary" checked>
-							</div>
-						</div>
-
-					</div>
-
-					<div class="form-group">
-						<input type="checkbox" class="cbr" name="chk-rules" id="chk-rules" data-validate="required" data-message-message="You must accept rules in order to complete this registration.">
-						<label for="chk-rules">By registering I accept terms and conditions.</label>
-					</div>
-
-					<div class="form-group">
-						<button type="submit" class="btn btn-primary">Finish Registration</button>
-					</div>
-
 				</div>
 
 

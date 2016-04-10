@@ -378,6 +378,7 @@ var public_vars = public_vars || {};
 				$this.datepicker(opts);
 
 				if($n.is('.input-group-addon') && $n.has('a'))
+
 				{
 					$n.on('click', function(ev)
 					{
