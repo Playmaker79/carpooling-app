@@ -1,5 +1,5 @@
 var Sequelize = require('sequelize');
-var sequelize = new Sequelize('carpooling', 'arjun','admin', {
+var sequelize = new Sequelize('carpooling', 'arjun','invertedaxis', {
     host: 'localhost',
     dialect: 'mysql'
 });

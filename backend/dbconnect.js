@@ -6,7 +6,7 @@ db.cars.sync({force:false});
 var connection = mysql.createConnection({
     host: 'localhost',
     user: 'arjun',
-    password: 'admin',
+    password: 'invertedaxis',
     database: 'carpooling'
 });
 
