@@ -212,16 +212,17 @@
 	function getCars(){
 		$.ajax("/user/cars", {
 			success: function(data) {
+				$("#vehicle_model option").remove();
 				$.each(data,function(i,value){
 					$("#vehicle_model").append('<option value="'+value.id+'">'+value.manufacturer+' '+value
 									.model+'</option>');
 				});
+				$("#vehicle_model option").last().prop('selected', 'selected');
 			},
 			error: function() {
 				$('#notification-bar').text('An error occurred');
 			}
 		});
-		$("#vehicle_model option").last().prop('selected', 'selected').change();
 	}
 
 	$(document).ready(function(){

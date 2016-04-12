@@ -161,7 +161,7 @@ app.post('/offer', function (req, res,next){
     sess = req.session;
     /*upload car pic only when redirected and or when the user is logged in*/ 
     if(sess.current_user){
-    var current_user = req.session.current_user;
+    var current_user = req.session.current_user
     var data = req.body;
     console.log(req.body);
         dbconnect.offeraride(data,req,res);
