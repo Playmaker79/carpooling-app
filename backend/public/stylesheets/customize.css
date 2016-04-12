@@ -231,3 +231,12 @@ font-family: 'Montserrat', sans-serif;
     border-radius: 0px 20px 0px 20px;
 }
 
+
+#navSecondary a{
+    color:#f4f4f4;
+    padding: 0px;
+}
+
+#navSecondary a:hover{
+    background: #080808;
+}

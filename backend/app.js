@@ -139,7 +139,6 @@ app.post('/user/setup', profile_pic_location.single('pic'), function (req, res, 
     /* second param : if the profile is needed to be updated manually*/
     if(sess.current_user&&sess.updateprofile || sess.current_user){
     var current_user = sess.current_user;
-    console.log("profile upload");
     console.log(req.file.filename);
     console.log(req.file.destination);
     var filepath = req.file.filename;

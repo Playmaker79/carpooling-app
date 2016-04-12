@@ -60,6 +60,7 @@ exports.uploadprofile = function (path, id, res, sess) {
         function (err, result) {
             if (err) throw err;
             if (!err) {
+                sess.loggedUserPic = path;
                 res.redirect('/find');
                 res.end();
                 sess.updateprofile = null;

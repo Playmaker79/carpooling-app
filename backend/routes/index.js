@@ -22,11 +22,16 @@ router.get('/account', function (req, res, next) {
 });
 
 router.get('/user/setup', function (req, res, next) {
-    res.render('parts/pages/init_setup.ejs', {
-        title: 'Setup your account',
-        create: false,
-        session: req.session
-    });
+    if(req.session.current_user) {
+        res.render('parts/pages/init_setup.ejs', {
+            title: 'Setup your account',
+            create: false,
+            session: req.session
+        });
+    }
+    else{
+        res.redirect('/login');
+    }
 });
 
 
