@@ -37,7 +37,7 @@
       </ul>
 
       <!-- The user logged in stuff here -->
-      <%if (typeof(session.current_user)=='undefined'){%>
+      <%if (typeof session === 'undefined'||typeof session.current_user === 'undefined'){%>
       <ul class="nav navbar-nav navbar-right" id="navSecondary">
         <br/>
         <li>

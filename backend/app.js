@@ -101,7 +101,6 @@ app.post('/login', function (req, res){
 
                     /* compare enterd password with hashed password in database*/
                     var x = bcrypt.compareSync(password_user, password_db);
-                    // console.log("sync" + x);
                     if (x == true) {
                         sess = req.session;
                         sess.current_user = current_user;
