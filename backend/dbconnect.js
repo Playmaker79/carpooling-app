@@ -3,6 +3,8 @@ var session = require('express-session');
 var db = require('./db');
 db.users.sync({force: false});
 db.cars.sync({force:false});
+db.rides.sync({force:false});
+
 var connection = mysql.createConnection({
     host: 'localhost',
     user: 'arjun',
@@ -74,6 +76,10 @@ exports.uploadprofile = function (path, id, res, sess) {
 
 exports.getCars = function(data){
     return db.cars.findAll({where : {owner: data}});
+}
+
+exports.getRide = function(ride_id){
+    return db.rides.findAll({where :{id : ride_id}});
 }
 
 exports.GetCurrentProfile = function (req) {

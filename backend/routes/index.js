@@ -127,5 +127,18 @@ router.get('/user/cars',function(req,res){
 });
 
 
+router.get('/rides/:ride_id', function (req,res) {
+    var ride_id = req.params.ride_id;
+        console.log(ride_id);
+        var ride_list = dbconnect.getRide(ride_id);
+        ride_list.then(function(data){
+            console.log("rider o "+data.rider_id);
+            dbconnect.getCars(data.rider_id).then(function(car_data){
+                res.send(data,car_data);
+            });
+        },function(err) {
+            res.send(err);
+        })
+});
 
 module.exports = router;

@@ -9,4 +9,8 @@ db.sequelize = sequelize;
 db.Sequelize = Sequelize;
 db.users = sequelize.import(__dirname+"/models/users");
 db.cars = sequelize.import(__dirname+"/models/cars");
+db.rides = sequelize.import(__dirname+"/models/rides");
+
+
+
 module.exports = db;
