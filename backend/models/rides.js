@@ -28,7 +28,7 @@ module.exports = function (sequelize, DataTypes) {
             allowNull: false
         },
         purpose: {
-            type: DataTypes.DATEONLY,
+            type: DataTypes.STRING,
             allowNull: false
         },
         car_id: {

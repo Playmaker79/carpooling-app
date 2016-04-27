@@ -1,0 +1,108 @@
+/*css for the view more page.*/
+.page-body span{
+    font-weight: 600;
+}
+.page-body{
+    font-weight: 100;
+}
+
+#stop_point_list{
+    padding-top: 2%;
+}
+
+.ride_details ul, .rider-info ul{
+    list-style-type: none;
+    padding: 0;
+}
+.ride_details p{
+    padding-top: 1%;
+}
+.description span{
+    font-size: 0.7em;
+    font-weight: 100 !important;
+}
+.description{
+    text-align: left;
+}
+.panel-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+}
+.rider-info img{
+    width: 5em;
+    border-radius: 50%;
+    height: 5em;
+
+}
+.vehicle-info img{
+    width: 7em;
+    height: 4em;
+}
+.rider-info span, .vehicle-info span {
+    color: #eb7a5c;
+}
+
+.btn{
+    border-radius: 2px;
+}
+
+.btn-primary, .btn-primary:hover
+{
+    font-family: open sans;
+    font-weight: 700;
+    background-color:#1a1a1a;
+    border: 0px;
+    color:#ffffff !important;
+    border-radius: 5%;
+}
+
+.ride_details span{
+    /*color:#1a1a1a;*/
+    padding: 1%;
+}
+
+.ride_details #way{
+    width:5em;
+}
+.ride_details img{
+    width: 3em;
+}
+
+
+.date_time, .rider-info, .call, .route_map, .vehicle-info{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3em;
+    text-align: center !important;
+    overflow: inherit;
+    list-style-type: none;
+}
+.ride_details{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+.stop_points{
+    font-size: 0.8em;
+    font-weight: 500;
+    margin: 6.5% auto;
+    text-align: center;
+}
+.date{
+    color: #ffffff !important;
+}
+
+#ride_text{
+    text-align: center;
+    padding:2em;
+}
+
+.date_time{
+    font-size: 1.32em;
+    font-weight: 700;
+
+}
+
+.label-info{
+    color:black;
+}
+

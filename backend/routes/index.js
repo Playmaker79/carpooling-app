@@ -128,17 +128,27 @@ router.get('/user/cars',function(req,res){
 
 
 router.get('/rides/:ride_id', function (req,res) {
+    var ride_data = [];
     var ride_id = req.params.ride_id;
         console.log(ride_id);
         var ride_list = dbconnect.getRide(ride_id);
-        ride_list.then(function(data){
-            console.log("rider o "+data.rider_id);
-            dbconnect.getCars(data.rider_id).then(function(car_data){
-                res.send(data,car_data);
+        ride_list.then(function(data) {
+                ride_data[0] =  data;
+                dbconnect.getCar(data.car_id).then(function(data){
+                    ride_data[1] = data;
+                });
+                dbconnect.getUser(data.rider_id).then(function (data) {
+                    ride_data[2] =  data;
+                    res.render('ride_details', {
+                        title: ride_data[0].source +" to "+ ride_data[0].destination,
+                        ride_details : ride_data[0],
+                        car_details : ride_data[1],
+                        user_details: ride_data[2]
+                    });
+                });
             });
         },function(err) {
             res.send(err);
-        })
-});
+        });
 
 module.exports = router;

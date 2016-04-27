@@ -78,8 +78,16 @@ exports.getCars = function(data){
     return db.cars.findAll({where : {owner: data}});
 }
 
+exports.getCar = function(data){
+    return db.cars.find({where : {id: data}});
+}
+
 exports.getRide = function(ride_id){
-    return db.rides.findAll({where :{id : ride_id}});
+    return db.rides.find({where :{id : ride_id}});
+}
+
+exports.getUser = function(user_id){
+    return db.users.find({where :{id : user_id}});
 }
 
 exports.GetCurrentProfile = function (req) {
