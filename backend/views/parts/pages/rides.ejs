@@ -83,12 +83,14 @@
                                 <i class="fa fa-phone-square"></i>
                                 <span><%=ride_data.phone%></span>
                             </button>
-
-
-                        </div></div></div>
+                        </div></div>
+                    <h1><%= ride_data.id %></h1>
+                    <a href="<%= "/rides/"+ride_data.id%>">view more</a>
+                </div>
             </div>
         <% }); %>
         <%}%>
+        
     </div>
         <!-- View more------------------------------------------------------------------------------------------ -->
 

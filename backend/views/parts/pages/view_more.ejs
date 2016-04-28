@@ -1,6 +1,5 @@
 <br/>
 <div class="container-fluid">
-
     <!-- ride+profile ------------------------------------------------------------------------------------------ -->
     <div class="row">
         <div class="col-md-6 col-sm-6 col-xs-12">
@@ -22,19 +21,23 @@
                     <br>
                     <div class="date_time">
                         <div class="row">
-                            <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="col-md-6 col-sm-4- col-xs-12">
                                 <button class="btn btn-orange btn-icon btn-icon-standalone btn-lg date">
                                     <i class="fa-calendar"></i>
-                                    <span><%= ride_details.travel_date%></span>
+                                    <%
+                                    var date = new Date(ride_details.travel_date);
+                                    var formattedDate = date.toDateString();
+                                      %>
+                                    <span><%= formattedDate %></span>
                                 </button>
                             </div>
-                            <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="col-md-3 col-sm-2 col-xs-12">
                                 <button class="btn btn-secondary btn-icon btn-icon-standalone btn-lg rate">
                                     <i class="fa-money"></i>
                                     <span><%= ride_details.Rate%></span>
                                 </button>
                             </div>
-                            <div class="col-md-4 col-sm-4 col-xs-12">
+                            <div class="col-md-3 col-sm-4 col-xs-12">
                                 <button class="btn btn-info btn-icon btn-icon-standalone btn-lg time">
                                     <i class="fa-clock-o"></i>
                                     <span><%= ride_details.travel_time%></span>
@@ -44,7 +47,7 @@
                         <!-- Date Time Rate end-------------------------------------------------------->
                         <!-- Call Button-------------------------------------------------------->
                         <div class="call">
-                            <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
                                 <button class="btn btn-purple btn-icon btn-icon-standalone btn-lg">
                                     <i class="fa-phone"></i>
                                     <span><%= user_details.phone%></span>
@@ -65,8 +68,14 @@
                         </li>
                         <li>
                             <br><p>Co-passenger preferance</p>
-                            <span><img src="/images/icons/male-01.svg"</span> <span><img src="/images/icons/female-01
-                        .svg"</span>  </li>
+                            <% if(ride_details.passenger == 'm'){%>
+                            <span data-toggle="tooltip" title="Males only"><img src="/images/icons/male-01.svg"</span>
+                            <%}else{%>
+                              <%if(ride_details.passenger == 'f'){%>
+                            <span data-toggle="tooltip" title="Females only" ><img src="/images/icons/female-01.svg"</span>
+                                <%}%>
+                            <%}%>
+                        </li>
                         <li>
                             <br><p>Restrictions</p>
                             <span><img src="/images/icons/cigarettes-01.svg"></span>
@@ -148,3 +157,8 @@
 <!-- ride+profile end------------------------------------------------------------------------------------------ -->
 
 </div>
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>

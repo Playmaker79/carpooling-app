@@ -54,12 +54,13 @@ router.get('/find', function (req, res, next) {
            // console.log(data);
             if (err) throw err;
             else {
-                res.render('find', {
+                res.send(data);
+                /*res.render('find', {
                     title: 'Find A Ride',
                     ride_list: data,
                     create:false,
                     session:req.session
-                });
+                });*/
             }
         });
 });
