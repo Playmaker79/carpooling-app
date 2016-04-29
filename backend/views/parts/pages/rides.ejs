@@ -84,8 +84,11 @@
                                 <span><%=ride_data.phone%></span>
                             </button>
                         </div></div>
-                    <h1><%= ride_data.id %></h1>
-                    <a href="<%= "/rides/"+ride_data.id%>">view more</a>
+                    <div class="btn-group btn-group-justified">
+                        <a class="btn btn-success btn-sm" href="<%= "/rides/"+ride_data.id%>">view more &nbsp;
+                        <i class="fa-plus-circle"> </i>
+                        </a>
+                    </div>
                 </div>
             </div>
         <% }); %>

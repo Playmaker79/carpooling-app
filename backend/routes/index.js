@@ -48,19 +48,20 @@ router.get('/find', function (req, res, next) {
     /*dbconnect.connection.query('SELECT * FROM `rides`,`users` where rides.rider_id = ? AND users.id = ?')*/
 
     //get the list of current 10 rides
-    dbconnect.connection.query('SELECT * FROM `rides`,`users` WHERE `rides`.`rider_id`=`users`.`id`',
+    dbconnect.connection.query('SELECT * FROM `users`,`rides` WHERE `users`.`id`=`rides`.`rider_id`',
         function (err, rows, fields) {
             var data = rows;
-           // console.log(data);
+            console.log(data);
             if (err) throw err;
             else {
-                res.send(data);
-                /*res.render('find', {
+                console.log(data);
+                /*res.send(data);*/
+                res.render('find', {
                     title: 'Find A Ride',
                     ride_list: data,
                     create:false,
                     session:req.session
-                });*/
+                });
             }
         });
 });
