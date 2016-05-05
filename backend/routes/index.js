@@ -46,7 +46,6 @@ router.get('/login', function (req, res, next) {
 //find a ride page
 router.get('/find', function (req, res, next) {
     /*dbconnect.connection.query('SELECT * FROM `rides`,`users` where rides.rider_id = ? AND users.id = ?')*/
-
     //get the list of current 10 rides
     dbconnect.connection.query('SELECT * FROM `users`,`rides` WHERE `users`.`id`=`rides`.`rider_id`',
         function (err, rows, fields) {

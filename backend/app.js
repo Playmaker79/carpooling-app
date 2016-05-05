@@ -168,14 +168,14 @@ app.post('/offer', function (req, res,next){
     /*worst case - redirect to login page*/
     else{
         res.redirect('/login');
-        res.end();
-        console.log(sess);
     }
     });
 
 
 app.post('/addCar',vehicle_picture.single('vehicle_picture'), function(req,res){
+    console.log(req.file);
     if(req.session.current_user){
+        console.log("here");
         var data  = {
             model: req.body.vehicle_model,
             manufacturer: req.body.company,

@@ -95,9 +95,11 @@
         });
         request.fail(function (xhr, status, errorThrown ) {
             if(xhr.status == 409){
+                toastr.clear();
                 toastr["error"]("You already have a vechicle with that number.Please make sure to add unique numbers", "Oops !");
             }
             else if(xhr.status == 500){
+                toastr.clear();
                 toastr["error"]("You have missed some fields! please fill them out.", "Missing fields !");
             }
             else{
