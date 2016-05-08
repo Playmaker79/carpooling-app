@@ -8,7 +8,7 @@
     text-align:center; font-size:2.3em; font-family: 'Varela', sans-serif; font-weight: 700; color: #FFFFFF;
 }
 .featured h2{
-   text-align:center; font-size:2.3em; font-family: 'Varela', sans-serif; font-weight: 700; color: #3f3f3f; 
+   text-align:center; font-size:2.3em; font-family: 'Varela', sans-serif; font-weight: 700; color: #3f3f3f;
 }
 .featured p{
    text-align:center; font-size:1em; font-family: 'Varela', sans-serif; font-weight: 400; color: #1a1a1a; margin-bottom:auto;
@@ -24,20 +24,26 @@
 
     #iphone_demo {
         height: 30%;
-        background: linear-gradient(to top, #0A120D, #162C4C); 
+        background: linear-gradient(to top, #0A120D, #162C4C);
 }
 
 #iphone_demo img{
     height: auto;
     width: 50%;
     margin-top: -20%;
-    margin-left: 40%;
+    margin-left: 50%;
+    float: right;
+}
+
+#iphone_demo .container{
+    font-size:100%;
+    color: #f4f4f4;
 }
 
 .featured{
     height:auto;
     background-color: #ffffff;
-    
+
 }
 
 .featured img{

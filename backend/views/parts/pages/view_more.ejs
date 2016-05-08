@@ -93,7 +93,10 @@
                         </li>
                 </ul>
             </div>
-
+            <div class="col-md-12 panel ">
+                <br/>
+                <a href="#" class="button btn btn-red col-md-6 col-md-offset-3">Book a seat</a>
+            </div>
         </div>
 
         <div class="col-md-6 col-sm-6 col-xs-12">
@@ -123,10 +126,15 @@
                     <div class="panel panel-default ">
                         <div class="panel-heading">Rider Information</div>
                         <br>
+                        <%
+                          var n = new Date().getFullYear();
+                          var user_dob = new Date(user_details.dob).getFullYear();
+                            var age = n - user_dob;
+                          %>
                         <ul class="rider-info">
                             <li> <span><img src="/<%= user_details.profile_pic %>" class="img-thumbnail"></span></li>
                             <li> <span><%= user_details.name %> <%= user_details.lastname %> </span></li>
-                            <li><p>Age: <br><span><%= user_details.dob %></span></li>
+                            <li><p>Age: <br><span><%= age %></span></li>
                             <li><p>Job: <br><span><%= user_details.occupation %></span></li>
                             <li><p>Email: <br><span><%= user_details.email %></span></li>
                             <li><p>Company: <br><span><%= user_details.company %></span></li>
@@ -149,7 +157,6 @@
     </div>
 </div>
 <!-- ride+profile end------------------------------------------------------------------------------------------ -->
-
 </div>
 <script>
     $(document).ready(function(){
@@ -162,7 +169,150 @@
         var directionsDisplay = new google.maps.DirectionsRenderer;
         var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 8,
-        center: {lat: 20, lng: 78}
+        center: {lat: 20, lng: 78},
+                styles:[
+                    {
+                        "featureType": "administrative",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "labels",
+                        "stylers": [
+                            {
+                                "visibility": "on"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.country",
+                        "elementType": "labels",
+                        "stylers": [
+                            {
+                                "visibility": "on"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.neighborhood",
+                        "elementType": "labels",
+                        "stylers": [
+                            {
+                                "visibility": "on"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "simplified"
+                            },
+                            {
+                                "hue": "#0066ff"
+                            },
+                            {
+                                "saturation": 74
+                            },
+                            {
+                                "lightness": 100
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "simplified"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "simplified"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            },
+                            {
+                                "weight": 0.6
+                            },
+                            {
+                                "saturation": -85
+                            },
+                            {
+                                "lightness": 61
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry",
+                        "stylers": [
+                            {
+                                "visibility": "on"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "off"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "on"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "simplified"
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "all",
+                        "stylers": [
+                            {
+                                "visibility": "simplified"
+                            },
+                            {
+                                "color": "#69b7ec"
+                            },
+                            {
+                                "lightness": "14"
+                            }
+                        ]
+                    }
+                ]
         });
         directionsDisplay.setMap(map);
 
@@ -173,7 +323,7 @@
                     destination: '<%=ride_details.destination%>',
                     waypoints: waypts,
                     optimizeWaypoints: true,
-                    travelMode: google.maps.TravelMode.DRIVING
+                    travelMode: google.maps.TravelMode.DRIVING,
                 }, function(response, status) {
                     if (status === google.maps.DirectionsStatus.OK) {
                         directionsDisplay.setDirections(response);
