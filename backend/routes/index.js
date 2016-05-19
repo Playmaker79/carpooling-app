@@ -35,6 +35,25 @@ router.get('/user/setup', function (req, res, next) {
 });
 
 
+router.get('/settings', function (req,res) {
+    if(req.session.current_user){
+        dbconnect.getUser(req.session.current_user).then(function (data) {
+            res.render('Settings', {
+                title: 'Account settings',
+                create: false,
+                session:req.session,
+                userData:data
+            });
+        }, function (err) {
+                res.render('/login');
+        })
+
+    }
+    else{
+        res.redirect('/login');
+    }
+})
+
 router.get('/login', function (req, res, next) {
     res.render('login', {
         title: 'login to your account',

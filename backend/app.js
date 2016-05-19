@@ -197,6 +197,38 @@ app.post('/addCar',vehicle_picture.single('vehicle_picture'), function(req,res){
 });
 
 
+app.post('/settings', function (req,res) {
+        if(req.session.current_user){
+            var values = req.body;
+            var data = {
+                name: values.First_name,
+                lastname: values.last_name,
+                gender: values.gender_select,
+                email: values.email,
+                occupation: values.occupation,
+                company: values.company,
+                phone: values.phone,
+            }
+           dbconnect.updateUser(data,req.session.current_user).then(function (data) {
+               dbconnect.getUser(req.session.current_user).then(function (data) {
+                   res.render('Settings', {
+                       title: 'Account settings',
+                       create: false,
+                       session:req.session,
+                       userData:data,
+                       status:'dataUpdated'
+                   });
+               }, function (err) {
+                   res.render('/login');
+               })
+           }, function (err) {
+               console.log(err);
+           })
+        }
+});
+
+
+
 //search for rides
 app.post('/find', function (req, res){
     var source = req.body.from_location.toString();
@@ -220,6 +252,7 @@ dbconnect.connection.query('select * from rides,users WHERE `rides`.`source` LIK
       }
      }
 )});
+
 
 
 // catch 404 and forward to error handler
@@ -255,6 +288,8 @@ app.use(function (err, req, res, next) {
         error: {}
     });
 });
+
+
 
 
 

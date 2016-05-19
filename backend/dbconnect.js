@@ -48,7 +48,7 @@ exports.createaccount = function (values, password, res, req) {
             res.end();
         }
         else if (err.name == "SequelizeConnectionRefusedError") {
-            res.render('account', {status: 'ErrorConnection', title: 'Create an Account'});
+            res.redirect('account', {status: 'ErrorConnection', title: 'Create an Account'});
             res.end();
         }
     });
@@ -110,6 +110,9 @@ exports.addCar = function (data) {
     return db.cars.create(data)
 }
 
+exports.updateUser = function (data,user_id) {
+    return  db.users.update(data,{where: {id :user_id}});
+}
 
 exports.offeraride = function (data,req, res) {
     var sess = req.session;
