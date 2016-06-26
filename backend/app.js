@@ -257,8 +257,13 @@ dbconnect.connection.query('select * from rides,users WHERE `rides`.`source` LIK
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
-    var err = new Error('Not Found');
+    var err = new Error('Not Founds');
     err.status = 404;
+    res.render('404.ejs',{
+        title: 'Oops! 404 ',
+        create: false,
+        session:req.session
+    });
     next(err);
 });
 
@@ -283,10 +288,10 @@ if (app.get('env') === 'development') {
 // no stacktraces leaked to user
 app.use(function (err, req, res, next) {
     res.status(err.status || 500);
-    res.render('error',{
+         res.render('error',{
         message: err.message,
         error: {}
-    });
+            });
 });
 
 

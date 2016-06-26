@@ -86,8 +86,13 @@ exports.getRide = function(ride_id){
     return db.rides.find({where :{id : ride_id}});
 }
 
+
 exports.getUser = function(user_id){
     return db.users.find({where :{id : user_id}});
+}
+
+exports.getUserRides = function (user_id) {
+    return db.rides.findAll({where:{rider_id:user_id}});
 }
 
 exports.GetCurrentProfile = function (req) {

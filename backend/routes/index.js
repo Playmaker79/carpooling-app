@@ -4,6 +4,7 @@ var router = express.Router();
 var session = require('express-session');
 var dbconnect = require('../dbconnect.js');
 var mysql = require('mysql');
+var hashids = require('hashids');
 /* GET home page. */
 router.get('/', function (req, res, next) {
     res.render('index', {
@@ -19,6 +20,29 @@ router.get('/account', function (req, res, next) {
         create: false,
         session:req.session
     });
+});
+
+router.get('/myrides',function(req,res){
+    if(req.session.current_user){
+        var uid = req.session.current_user;
+        dbconnect.getUserRides(uid).then(function(data){
+            var hashid = new hashids("xxx");
+            var x = hashid.encode("hello");
+            res.send(x);
+
+            /*res.render('myrides.ejs',{
+                title:'My rides',
+                session : req.session,
+                create:false,
+                ride_list:data
+            });*/
+        },function(err){
+            //custom login notify page
+        });
+    }
+    else{
+        //render a custom 404 here
+    }
 });
 
 router.get('/user/setup', function (req, res, next) {
