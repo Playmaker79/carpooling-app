@@ -26,24 +26,36 @@ router.get('/myrides',function(req,res){
     if(req.session.current_user){
         var uid = req.session.current_user;
         dbconnect.getUserRides(uid).then(function(data){
-            var hashid = new hashids("xxx");
-            var x = hashid.encode("hello");
-            res.send(x);
-
-            /*res.render('myrides.ejs',{
+            Hashids = new hashids(uid);
+            var ride_data = JSON.parse(JSON.stringify(data));
+            for(var i in ride_data){
+                ride_data[i].id = Hashids.encode(data[i].id);
+            }
+            res.render('myrides.ejs',{
                 title:'My rides',
                 session : req.session,
                 create:false,
-                ride_list:data
-            });*/
+                ride_list: ride_data
+            });
+
         },function(err){
             //custom login notify page
         });
     }
     else{
-        //render a custom 404 here
+        res.redirect('/login');
     }
 });
+
+/*router.get ('/tt', function (req,res) {
+    dbconnect.getUserRides(1).then(function (data)
+        for(var i=0;i<ride_data.length;i++){
+            ride_data[i].id = 1111;
+        }
+        res.send(ride_data);
+        res.end();
+    });
+});*/
 
 router.get('/user/setup', function (req, res, next) {
     if(req.session.current_user) {
