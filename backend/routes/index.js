@@ -199,7 +199,9 @@ router.get('/rides/:ride_id', function (req,res) {
                         title: ride_data[0].source +" to "+ ride_data[0].destination,
                         ride_details : ride_data[0],
                         car_details : ride_data[1],
-                        user_details: ride_data[2]
+                        user_details: ride_data[2],
+			create:false,
+			session:req.session
                     });
                 });
             });

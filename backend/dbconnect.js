@@ -1,9 +1,10 @@
 var mysql = require('mysql');
 var session = require('express-session');
 var db = require('./db');
-db.users.sync({force: false});
-db.cars.sync({force:false});
-db.rides.sync({force:false});
+var sync = false;
+db.users.sync({force: sync});
+db.cars.sync({force:sync});
+db.rides.sync({force:sync});
 
 var connection = mysql.createConnection({
     host: 'localhost',
