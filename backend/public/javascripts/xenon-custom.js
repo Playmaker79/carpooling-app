@@ -6,7 +6,7 @@
 
 var public_vars = public_vars || {};
 
-;(function($, window, undefined){
+(function($, window, undefined){
 
 	"use strict";
 

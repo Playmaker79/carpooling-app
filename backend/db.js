@@ -1,6 +1,7 @@
 var Sequelize = require('sequelize');
-var sequelize = new Sequelize('carpooling', 'arjun','invertedaxis', {
-    host: 'localhost',
+var config = require('./config/config');
+var sequelize = new Sequelize(config.appDb.database,config.appDb.user,config.appDb.password, {
+    host: config.appDb.host,
     dialect: 'mysql'
 });
 

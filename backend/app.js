@@ -10,6 +10,7 @@ var routes = require('./routes/index');
 var app = express();
 var multer = require('multer');
 var session = require('express-session');
+var hashids = require('hashids');
 
 var profile_pic_location = multer({
     dest: 'uploads/profile_pics/',
@@ -41,9 +42,9 @@ app.use(bodyParser.urlencoded({
 
 app.use(cookieParser());
 app.use(session({secret: 'qwerty124',
-                 resave: true,
-                 saveUninitialized: true
-                }));
+    resave: true,
+    saveUninitialized: true
+}));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static('uploads/profile_pics'));
 app.use(express.static('uploads/car_pics'));
@@ -58,6 +59,7 @@ app.use('/offer',routes);
 app.use('/logout',routes);
 
 
+
 /*generate menu view for current user globally accesible in all pages wherever the user is logged in*/
 
 /*handle account creation */
@@ -68,13 +70,12 @@ app.post('/account', function (req, res) {
     var password_salt = bcrypt.genSaltSync(10);
     var password = bcrypt.hashSync(values.password, password_salt);
     //console.log(values.password_salt);
-    //console.log(values.password);    
+    //console.log(values.password);
     var insert = dbconnect.createaccount(values, password,res,req);
 });
 
 
 
-/*handle login page*/
 /*handle login page*/
 app.post('/login', function (req, res){
     var values = req.body;
@@ -129,20 +130,20 @@ app.post('/login', function (req, res){
         //var insert = dbconnect.createaccount(values,password,res);
     );});
 
-//handle profile pic upload 
+//handle profile pic upload
 app.post('/user/setup', profile_pic_location.single('pic'), function (req, res, next){
     console.log(app.locals.loggedUserName);
     sess = req.session;
-    
+
     /*upload profiles only when redirected and or when the user is logged in*/
     /* second param : if the profile is needed to be updated manually*/
     if(sess.current_user&&sess.updateprofile || sess.current_user){
-    var current_user = sess.current_user;
-    console.log(req.file.filename);
-    console.log(req.file.destination);
-    var filepath = req.file.filename;
-    console.log(filepath);
-    dbconnect.uploadprofile(filepath,current_user,res,sess);
+        var current_user = sess.current_user;
+        console.log(req.file.filename);
+        console.log(req.file.destination);
+        var filepath = req.file.filename;
+        console.log(filepath);
+        dbconnect.uploadprofile(filepath,current_user,res,sess);
     }
     /*worst case - redirect to login page*/
     else{
@@ -150,18 +151,18 @@ app.post('/user/setup', profile_pic_location.single('pic'), function (req, res, 
         res.end();
         console.log(sess);
     }
-    });
+});
 
 //offer a ride
 
 //handle offer a ride
 app.post('/offer', function (req, res,next){
     sess = req.session;
-    /*upload car pic only when redirected and or when the user is logged in*/ 
+    /*upload car pic only when redirected and or when the user is logged in*/
     if(sess.current_user){
-    var current_user = req.session.current_user
-    var data = req.body;
-    console.log(req.body);
+        var current_user = req.session.current_user;
+        var data = req.body;
+        console.log(req.body);
         dbconnect.offeraride(data,req,res);
     }
     /*if the profile is needed to be updated manually*/
@@ -169,7 +170,7 @@ app.post('/offer', function (req, res,next){
     else{
         res.redirect('/login');
     }
-    });
+});
 
 
 app.post('/addCar',vehicle_picture.single('vehicle_picture'), function(req,res){
@@ -182,7 +183,7 @@ app.post('/addCar',vehicle_picture.single('vehicle_picture'), function(req,res){
             regnumber:req.body.regNo,
             owner: req.session.current_user,
             photo: req.file.filename
-        }
+        };
         dbconnect.addCar(data).then(function (data) {
             res.status(201).send();
         }, function (error) {
@@ -198,36 +199,54 @@ app.post('/addCar',vehicle_picture.single('vehicle_picture'), function(req,res){
 
 
 app.post('/settings', function (req,res) {
-        if(req.session.current_user){
-            var values = req.body;
-            var data = {
-                name: values.First_name,
-                lastname: values.last_name,
-                gender: values.gender_select,
-                email: values.email,
-                occupation: values.occupation,
-                company: values.company,
-                phone: values.phone,
-            }
-           dbconnect.updateUser(data,req.session.current_user).then(function (data) {
-               dbconnect.getUser(req.session.current_user).then(function (data) {
-                   res.render('Settings', {
-                       title: 'Account settings',
-                       create: false,
-                       session:req.session,
-                       userData:data,
-                       status:'dataUpdated'
-                   });
-               }, function (err) {
-                   res.render('/login');
-               })
-           }, function (err) {
-               console.log(err);
-           })
-        }
+    if(req.session.current_user){
+        var values = req.body;
+        var data = {
+            name: values.First_name,
+            lastname: values.last_name,
+            gender: values.gender_select,
+            email: values.email,
+            occupation: values.occupation,
+            company: values.company,
+            phone: values.phone,
+        };
+        dbconnect.updateUser(data,req.session.current_user).then(function (data) {
+            dbconnect.getUser(req.session.current_user).then(function (data) {
+                res.render('Settings', {
+                    title: 'Account settings',
+                    create: false,
+                    session:req.session,
+                    userData:data,
+                    status:'dataUpdated'
+                });
+            }, function (err) {
+                res.render('/login');
+            })
+        }, function (err) {
+            console.log(err);
+        })
+    }
 });
 
 
+app.delete('/rides/:ride_id/', function (req,res,next) {
+    if(req.session.current_user){
+        var hash_id = new hashids(req.session.current_user);
+        var user_id = hash_id.decode(req.params.ride_id);
+        dbconnect.deleteRide(user_id).then(function(data){
+            res.status(200).send();
+        },function(err){
+            res.status(400).send();
+        });
+    }
+    else{
+        res.status(401).send("Please login to continue");
+    }
+});
+
+/*app.delete('/stuff/matters',function(req,res){
+  res.send("stuff matters");
+});*/
 
 //search for rides
 app.post('/find', function (req, res){
@@ -239,36 +258,34 @@ app.post('/find', function (req, res){
     destination = "%"+destination[0]+"%";
     var query = [source,destination];
     console.log(query);
-dbconnect.connection.query('select * from rides,users WHERE `rides`.`source` LIKE ? AND `rides`.`destination` LIKE ? and rides.rider_id = users.id',query,function (err, rows, fields) {
-      if(err) {
-          res.redirect("/find");
-          throw err
-      }
-      if(!err){
-          var data = rows;
-          console.log(rows.length);
-          console.log("\n no error");
-          res.render('find',{title:'Find A Ride',ride_list:data,create:false,session:req.session});
-      }
-     }
-)});
+    dbconnect.connection.query('select * from rides,users WHERE `rides`.`source` LIKE ? AND `rides`.`destination` LIKE ? and rides.rider_id = users.id',query,function (err, rows, fields) {
+            if(err) {
+                res.redirect("/find");
+                throw err
+            }
+            if(!err){
+                var data = rows;
+                console.log(rows.length);
+                console.log("\n no error");
+                res.render('find',{title:'Find A Ride',ride_list:data,create:false,session:req.session});
+            }
+        }
+    )});
 
 
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
-    var err = new Error('Not Founds');
+    var err = new Error('Not Found');
     err.status = 404;
     res.render('404.ejs',{
         title: 'Oops! 404 ',
         create: false,
         session:req.session
     });
-    next(err);
 });
 
 // error handlers
-
 // development error handler
 // will print stacktrace
 if (app.get('env') === 'development') {
@@ -283,17 +300,15 @@ if (app.get('env') === 'development') {
 }
 
 
-
 // production error handler
 // no stacktraces leaked to user
-app.use(function (err, req, res, next) {
+/*app.use(function (err, req, res, next) {
     res.status(err.status || 500);
-         res.render('error',{
+    res.render('error',{
         message: err.message,
         error: {}
-            });
-});
-
+    });
+});*/
 
 
 

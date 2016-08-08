@@ -1,16 +1,17 @@
 var mysql = require('mysql');
 var session = require('express-session');
 var db = require('./db');
+var config = require('./config/config');
 var sync = false;
 db.users.sync({force: sync});
 db.cars.sync({force:sync});
 db.rides.sync({force:sync});
 
 var connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'arjun',
-    password: 'invertedaxis',
-    database: 'carpooling'
+    host: config.appDb.host,
+    user: config.appDb.user,
+    password: config.appDb.password,
+    database: config.appDb.database
 });
 
 connection.connect(function (err) {
@@ -158,5 +159,10 @@ exports.offeraride = function (data,req, res) {
     }
 } 
 
+
+
+exports.deleteRide = function (ride_id) {
+  return db.rides.destroy({where:{id:ride_id}});
+};
 
 module.exports.connection = connection;

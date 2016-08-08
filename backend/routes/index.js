@@ -209,4 +209,19 @@ router.get('/rides/:ride_id', function (req,res) {
             res.send(err);
         });
 
+
+router.get('/rides/:ride_id/edit',function(req,res) {
+    if(req.session.current_user){
+        var ride_details = dbconnect.getUserRides(req.session.current_user);
+        ride_details.then(function (data) {
+            res.render('editRide',{
+                title:'Edit Ride',
+                ride_details: data
+            });
+        },function (err) {
+
+        });
+    }
+})
+
 module.exports = router;

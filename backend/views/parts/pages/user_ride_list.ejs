@@ -3,18 +3,20 @@
         width:100px;
         height: 100px;
     }
+    .action-links a{
+        display: inline-block !important;
+        font-size: inherit !important;
+        border: 1px solid rgba(108, 108, 116, 0.0);
+        padding: 10px;
+    }
+    .action-links a:hover{
+        border-radius: 10px;
+        background: #ffffff;
+        border: 1px dashed rgba(108, 108, 116, 0.48);
+    }
 </style>
+<link rel="stylesheet" href="/stylesheets/fonts/linecons/css/linecons.css" id="style-resource-2">
 
-<script src="https://npmcdn.com/masonry-layout@4.0/dist/masonry.pkgd.min.js"></script>
-<script>
-    var $container = $('.grid-content');
-    $container.imagesLoaded( function () {
-        $container.masonry({
-            columnWidth: '.grid-item',
-            itemSelector: '.grid-item'
-        });
-    });
-</script>
 <!-- Top rides start -->
 <div id="toprides">
     <h1 id="toprides_txt"><%= session.loggedUsername %>'s Rides</h1>
@@ -31,16 +33,16 @@
                     <tr>
                         <th></th>
                         <th class="hidden-xs hidden-sm"></th>
-                        <th>Location</th>
-                        <th class="hidden-xs hidden-sm">Date</th>
-                        <th>waypoints</th>
-                        <th>Settings</th>
+                        <th><i class="fa-road"></i> Location</th>
+                        <th class="hidden-xs hidden-sm"><i class="fa-calendar-o"></i> Date</th>
+                        <th><i class="fa-map-marker"></i> waypoints</th>
+                        <th><i class="fa-gear"></i> settings</th>
                     </tr>
                     </thead>
                     <tbody>
         <% ride_list.forEach(function(ride_data) { %>
                     <tr data-ride="<%= ride_data.id %>">
-                        <td class="user-cb">
+                        <td>
                             <div class="cbr-replaced cbr-checked"><div class="cbr-input"><input type="checkbox" class="cbr cbr-done" name="members-list[]" value="1" checked=""></div><div class="cbr-state"><span></span></div></div>
                         </td>
                         <td class="user-image hidden-xs hidden-sm">
@@ -48,13 +50,13 @@
 
                             </a>
                         </td>
-                        <td class="user-name">
+                        <td>
                             <a href="#" class="name"><%=(ride_data.source.split(','))[0]%></a>
                             <span>TO</span>
                             <a href="#" class="name"><%=(ride_data.destination.split(','))[0]%></a>
                         </td>
-                        <td class="hidden-xs hidden-sm">
-                            <span class="email">
+                        <td>
+                            <span class="date">
                                 <% var options = {
                                     weekday: "long", year: "numeric", month: "short",
                                     day: "numeric"
@@ -64,15 +66,17 @@
                                 <%= travel_date %>
                             </span>
                         </td>
-                        <td class="user-id">
-                            1232518142
+                        <td>
+                            <% var splittedWaypoints = ride_data.waypoints.split(",")%>
+                            <% splittedWaypoints.forEach(function(waypoint){%>
+                             <span class="label label-info"><%=waypoint%></span>
+                            <%});%>
                         </td>
                         <td class="action-links">
                             <a href="#" class="edit">
                                 <i class="linecons-pencil"></i>
                                 Edit
                             </a>
-
                             <a href="#" class="delete-ride">
                                 <i class="linecons-trash"></i>
                                 Delete

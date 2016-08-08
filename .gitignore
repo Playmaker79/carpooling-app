@@ -1,3 +1,4 @@
 .idea/workspace.xml
-node_modules/
-backend/uploads
+backend/node_modules/
+backend/uploads/
+backend/config/config.js
