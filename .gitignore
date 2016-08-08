@@ -1,5 +1,5 @@
 .idea/workspace.xml
-backend/node_modules/
-backend/uploads/car_pics/
-backend/uploads/profile_pics/
+backend/node_modules/*
+backend/uploads/car_pics/*
+backend/uploads/profile_pics/*
 backend/config/config.js
