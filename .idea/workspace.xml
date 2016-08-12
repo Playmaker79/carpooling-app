@@ -5,9 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f7fd94be-981c-4584-81e9-cc708cc4ca11" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/backend/uploads/sas.rtf" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/Rest/Const.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/Rest/Db.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/Rest/Module/Autheniticator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/Rest/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/Rest/middileware/rest_only_check.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/backend/Rest/models/sessions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/app.js" afterPath="$PROJECT_DIR$/backend/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/db.js" afterPath="$PROJECT_DIR$/backend/db.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/backend/dbconnect.js" afterPath="$PROJECT_DIR$/backend/dbconnect.js" />
     </list>
     <ignored path="carpooling-app.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -18,6 +26,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -27,92 +36,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="myrides.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/myrides.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="head.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/parts/template/head.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="107" selection-start-line="4" selection-start-column="107" selection-end-line="4" selection-end-column="107" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rides.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/public/javascripts/rides.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1422">
-              <caret line="79" column="67" selection-start-line="79" selection-start-column="67" selection-end-line="79" selection-end-column="67" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_ride_list.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/user_ride_list.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="666">
-              <caret line="37" column="58" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="dbconnect.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/dbconnect.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
+            <state relative-caret-position="80">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+              <folding>
+                <element signature="e#321#455#0" expanded="false" />
+                <element signature="e#493#651#0" expanded="false" />
+                <element signature="e#718#1729#0" expanded="false" />
+                <element signature="e#1787#2260#0" expanded="false" />
+                <element signature="e#2295#2351#0" expanded="false" />
+                <element signature="e#2384#2434#0" expanded="false" />
+                <element signature="e#2471#2525#0" expanded="false" />
+                <element signature="e#2766#3135#0" expanded="false" />
+                <element signature="e#3170#3205#0" expanded="false" />
+                <element signature="e#3252#3313#0" expanded="false" />
+                <element signature="e#3361#4879#0" expanded="false" />
+                <element signature="e#4923#4975#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sessions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/Rest/models/sessions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="4" column="11" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="11" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/Rest/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="Autheniticator.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/Rest/Module/Autheniticator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+            <state relative-caret-position="268">
+              <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/routes/index.js">
+      <file leaf-file-name="rest_only_check.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/Rest/middileware/rest_only_check.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="810">
-              <caret line="45" column="16" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editRide.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/editRide.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="774">
-              <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
-              <folding />
+            <state relative-caret-position="-764">
+              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+              <folding>
+                <element signature="e#0#49#0" expanded="false" />
+                <element signature="e#740#889#0" expanded="false" />
+                <element signature="e#761#879#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,8 +111,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Html5" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -134,15 +122,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/backend/views/account.ejs" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_5" />
-        <option value="$PROJECT_DIR$/backend/public/stylesheets/bootstrap.css" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_6" />
-        <option value="E:/xenon_1.3/xenon-files/html/forms-wizard.html" />
-        <option value="$PROJECT_DIR$/models/users.js" />
-        <option value="$PROJECT_DIR$/db.js" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_7" />
-        <option value="$PROJECT_DIR$/backend/views/parts/pages/account_form_BK.html" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_8" />
         <option value="$PROJECT_DIR$/backend/models/users.js" />
         <option value="$PROJECT_DIR$/backend/models/cars.js" />
@@ -174,17 +153,26 @@
         <option value="$PROJECT_DIR$/backend/views/parts/template/logged.ejs" />
         <option value="$PROJECT_DIR$/backend/public/rides.js" />
         <option value="$PROJECT_DIR$/backend/config/config.template.js" />
-        <option value="$PROJECT_DIR$/backend/db.js" />
-        <option value="$PROJECT_DIR$/backend/config/config.js" />
         <option value="$PROJECT_DIR$/backend/views/parts/pages/addCar.ejs" />
         <option value="$PROJECT_DIR$/backend/public/javascripts/xenon-custom.js" />
         <option value="$PROJECT_DIR$/backend/views/parts/pages/rides.ejs" />
         <option value="$PROJECT_DIR$/backend/views/parts/pages/user_ride_list.ejs" />
         <option value="$PROJECT_DIR$/backend/public/javascripts/rides.js" />
         <option value="$PROJECT_DIR$/backend/routes/index.js" />
-        <option value="$PROJECT_DIR$/backend/app.js" />
-        <option value="$PROJECT_DIR$/backend/dbconnect.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/backend/ds.js" />
+        <option value="$PROJECT_DIR$/backend/seqTest.js" />
+        <option value="$PROJECT_DIR$/backend/config/config.js" />
+        <option value="$PROJECT_DIR$/backend/Rest/Db.js" />
+        <option value="$PROJECT_DIR$/backend/app.js" />
+        <option value="$PROJECT_DIR$/backend/db.js" />
+        <option value="$PROJECT_DIR$/backend/Rest/Const.js" />
+        <option value="$PROJECT_DIR$/backend/Rest/Module/Autheniticator].js" />
+        <option value="$PROJECT_DIR$/backend/Rest/main.js" />
+        <option value="$PROJECT_DIR$/backend/Rest/models/sessions.js" />
+        <option value="$PROJECT_DIR$/backend/dbconnect.js" />
+        <option value="$PROJECT_DIR$/backend/Rest/Module/Autheniticator.js" />
+        <option value="$PROJECT_DIR$/backend/Rest/middileware/rest_only_check.js" />
       </list>
     </option>
   </component>
@@ -197,8 +185,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1444" />
-    <option name="height" value="876" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -225,7 +213,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -272,7 +260,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="Rest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -290,7 +278,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
+              <option name="myItemId" value="Rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Module" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -308,13 +300,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="Rest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carpooling-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="carpooling-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backend" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -326,7 +340,6 @@
     <property name="SearchEverywhereHistoryKey" value="git&#9;FILE&#9;file://F:/carpooling-app/.gitignore&#10;db&#9;FILE&#9;file://F:/carpooling-app/backend/dbconnect.js&#10;rides&#9;FILE&#9;file://F:/carpooling-app/backend/views/parts/pages/rides.ejs&#10;linecons&#9;FILE&#9;file://F:/carpooling-app/backend/public/stylesheets/fonts/linecons/css/linecons.css&#10;user&#9;FILE&#9;file://F:/carpooling-app/backend/views/parts/pages/user_ride_list.ejs&#10;ind&#9;FILE&#9;file://F:/carpooling-app/backend/routes/index.js&#10;dbcon&#9;FILE&#9;file://F:/carpooling-app/backend/dbconnect.js&#10;xenon&#9;FILE&#9;file://F:/carpooling-app/backend/public/javascripts/xenon-custom.js&#10;dbc&#9;FILE&#9;file://F:/carpooling-app/backend/dbconnect.js&#10;route&#9;FILE&#9;file://F:/carpooling-app/backend/node_modules/express/lib/router/route.js&#10;inde&#9;FILE&#9;file://F:/carpooling-app/backend/routes/index.js&#10;add&#9;FILE&#9;file://F:/carpooling-app/backend/views/parts/pages/addCar.ejs&#10;rides.js&#9;FILE&#9;file://F:/carpooling-app/backend/public/javascripts/rides.js&#10;myr&#9;FILE&#9;file://F:/carpooling-app/backend/views/myrides.ejs&#10;app&#9;FILE&#9;file://F:/carpooling-app/backend/app.js&#10;config&#9;FILE&#9;file://F:/carpooling-app/backend/config/config.js&#10;car&#9;FILE&#9;file://E:/carpooling-app/backend/models/cars.js&#10;head&#9;FILE&#9;file://E:/carpooling-app/backend/views/parts/template/head.ejs&#10;men&#9;FILE&#9;file://E:/carpooling-app/backend/node_modules/ejs/test/fixtures/menu.ejs&#10;pa&#9;FILE&#9;file://E:/carpooling-app/backend/package.json&#10;crypto&#9;null&#9;null&#10;pac&#9;FILE&#9;file://E:/carpooling-app/backend/package.json&#10;packa&#9;FILE&#9;file://E:/carpooling-app/backend/node_modules/moment/package.js&#10;cus&#9;FILE&#9;file://E:/carpooling-app/backend/public/stylesheets/customize.css&#10;css&#9;FILE&#9;file://E:/carpooling-app/backend/public/stylesheets/ride_details.css&#10;logged&#9;FILE&#9;file://E:/carpooling-app/backend/views/parts/template/logged.ejs&#10;ride&#9;FILE&#9;file://E:/carpooling-app/backend/models/rides.js&#10;off&#9;FILE&#9;file://E:/carpooling-app/backend/views/parts/pages/offer.ejs&#10;min.j&#9;FILE&#9;file://E:/carpooling-app/backend/public/javascripts/formwizard/jquery.bootstrap.wizard.min.js&#10;custom&#9;FILE&#9;file://E:/carpooling-app/backend/public/stylesheets/custom.css&#10;in&#9;FILE&#9;file://E:/carpooling-app/backend/routes/index.js&#10;hea&#9;FILE&#9;file://E:/carpooling-app/backend/views/parts/template/head.ejs&#10;foo&#9;FILE&#9;file://E:/carpooling-app/backend/views/parts/template/footer.ejs&#10;find&#9;FILE&#9;file://E:/carpooling-app/backend/views/parts/pages/find.ejs&#10;us&#9;FILE&#9;file://E:/carpooling-app/backend/models/users.js&#10;mode&#9;FILE&#9;file://E:/carpooling-app/backend/node_modules/sequelize/lib/model.js&#10;dbco&#9;FILE&#9;file://E:/carpooling-app/backend/dbconnect.js&#10;login&#9;FILE&#9;file://E:/carpooling-app/backend/views/parts/pages/login.ejs&#10;header&#9;FILE&#9;file://E:/carpooling-app/backend/views/parts/template/header.ejs&#10;logi&#9;FILE&#9;file://E:/carpooling-app/backend/views/login.ejs&#10;heade&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Desktop/carpooling-app/backend/views/parts/template/header.ejs&#10;logg&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Desktop/carpooling-app/backend/views/parts/template/logged.ejs&#10;a&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Desktop/carpooling-app/backend/views/parts/template/header.ejs&#10;l&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Desktop/carpooling-app/backend/views/parts/template/logged.ejs&#10;init&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Desktop/carpooling-app/backend/views/parts/pages/init_setup.ejs&#10;lo&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Desktop/carpooling-app/backend/views/parts/template/logged.ejs&#10;www&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Desktop/carpooling-app/backend/bin/www&#10;of&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Desktop/carpooling-app/backend/views/parts/pages/offer.ejs&#10;offer&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Desktop/carpooling-app/backend/views/parts/pages/offer.ejs&#10;rid&#9;FILE&#9;file://C:/Users/Arjun sreekumar/Desktop/carpooling-app/backend/views/parts/pages/rides.ejs" />
     <property name="com.intellij.ide.scratch.NewScratchFileAction" value="JavaScript&#10;HTML&#10;EJS" />
     <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="true" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="130" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="159" />
@@ -348,24 +361,32 @@
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="prop_add_unversioned_files" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\carpooling-app\backend\views" />
-      <recent name="C:\Users\Arjun\.WebStorm10\config\scratches" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\carpooling-app\backend" />
       <recent name="E:\carpooling-app\backend\public\javascripts" />
       <recent name="E:\carpooling-app\backend\views\parts" />
       <recent name="C:\Users\Arjun\Desktop\carpooling-app\backend" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Acaps\carpooling-app\backend\Rest\middileware" />
+      <recent name="E:\carpooling-app\backend\views" />
+      <recent name="C:\Users\Arjun\.WebStorm10\config\scratches" />
+    </key>
   </component>
-  <component name="RunManager" selected="Node.js.app.js">
+  <component name="RunManager" selected="Node.js.www">
     <configuration default="false" name="dbconnect.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="dbconnect.js" working-dir="$PROJECT_DIR$/backend">
       <method />
     </configuration>
     <configuration default="false" name="app.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="app.js" working-dir="$PROJECT_DIR$/backend">
+      <method />
+    </configuration>
+    <configuration default="false" name="seqTest.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="seqTest.js" working-dir="$PROJECT_DIR$/backend">
+      <method />
+    </configuration>
+    <configuration default="false" name="www" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="www" working-dir="$PROJECT_DIR$/backend/bin">
       <method />
     </configuration>
     <configuration default="true" type="ChromiumRemoteDebugType" factoryName="Chromium Remote">
@@ -428,15 +449,19 @@
     <configuration default="false" name="Unnamed" type="ChromiumRemoteDebugType" factoryName="Chromium Remote">
       <method />
     </configuration>
-    <list size="3">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Chromium Remote.Unnamed" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.dbconnect.js" />
       <item index="2" class="java.lang.String" itemvalue="Node.js.app.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.seqTest.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.www" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.app.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.dbconnect.js" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.www" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.app.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.seqTest.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.dbconnect.js" />
       </list>
     </recent_temporary>
   </component>
@@ -468,11 +493,14 @@
       <workItem from="1470633648954" duration="1685000" />
       <workItem from="1470649160126" duration="5044000" />
       <workItem from="1470674053114" duration="330000" />
+      <workItem from="1470736472902" duration="9150000" />
+      <workItem from="1470919853768" duration="1780000" />
+      <workItem from="1470977123411" duration="19909000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61168000" />
+    <option name="totallyTimeSpent" value="92007000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -484,29 +512,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1444" height="876" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21834993" sideWeight="0.913649" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17349927" sideWeight="0.913649" order="2" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.04778157" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35021096" sideWeight="0.50282085" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286908" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2496464" sideWeight="0.49513212" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.26601672" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="328" y="188" width="1062" height="484" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8075658" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24963397" sideWeight="0.49513212" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3026316" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" x="179" y="227" width="1062" height="482" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3628692" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35654595" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286908" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18647687" sideWeight="0.08635098" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35021096" sideWeight="0.49717912" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3628692" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -522,148 +550,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/find.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/template/footer.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/login.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="12" column="110" selection-start-line="12" selection-start-column="110" selection-end-line="12" selection-end-column="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/account.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/settings.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="6" column="82" selection-start-line="6" selection-start-column="82" selection-end-line="6" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/settings_form.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="14" column="85" selection-start-line="14" selection-start-column="85" selection-end-line="14" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/node.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/junk.commented" />
-    <entry file="file://$PROJECT_DIR$/backend/public/javascripts/formwizard/jquery.bootstrap.wizard.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="14" column="489" selection-start-line="14" selection-start-column="489" selection-end-line="14" selection-end-column="489" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/offer.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="230" column="9" selection-start-line="230" selection-start-column="9" selection-end-line="230" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/models/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="12" column="10" selection-start-line="9" selection-start-column="7" selection-end-line="12" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/404.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="24" column="54" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/find.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/ride_details.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="108" column="0" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/customize.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="246" column="17" selection-start-line="246" selection-start-column="17" selection-end-line="246" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/node_modules/multer/storage/disk.js" />
-    <entry file="file://$PROJECT_DIR$/backend/node_modules/moment/package.js" />
-    <entry file="file://$PROJECT_DIR$/backend/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_9" />
-    <entry file="file://$PROJECT_DIR$/backend/public/javascripts/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/node_modules/ejs/test/fixtures/menu.ejs" />
     <entry file="file://$PROJECT_DIR$/backend/views/offer.ejs">
       <provider selected="true" editor-type-id="text-editor">
@@ -679,31 +570,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/models/cars.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="28" column="10" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-61944">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/config/config.template.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/config/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -714,30 +584,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/models/rides.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/node_modules/bcryptjs/dist/bcrypt.min.js" />
     <entry file="file://$PROJECT_DIR$/backend/node_modules/http-errors/README.md" />
     <entry file="file://$PROJECT_DIR$/backend/node_modules/express/lib/router/route.js" />
-    <entry file="file://$PROJECT_DIR$/backend/routes/find.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/public/javascripts/xenon-custom.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -759,14 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/myrides.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/public/stylesheets/fonts/linecons/css/linecons.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -783,49 +624,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/parts/pages/user_ride_list.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
+        <state relative-caret-position="517">
           <caret line="37" column="58" selection-start-line="37" selection-start-column="58" selection-end-line="37" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/public/javascripts/rides.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1422">
+        <state relative-caret-position="540">
           <caret line="79" column="67" selection-start-line="79" selection-start-column="67" selection-end-line="79" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/parts/template/head.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
+        <state relative-caret-position="80">
           <caret line="4" column="107" selection-start-line="4" selection-start-column="107" selection-end-line="4" selection-end-column="107" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/dbconnect.js">
+    <entry file="file://$PROJECT_DIR$/backend/views/myrides.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="60">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
+        <state relative-caret-position="540">
           <caret line="45" column="16" selection-start-line="45" selection-start-column="12" selection-end-line="45" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -833,15 +661,314 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/config/config.s" />
+    <entry file="file://$PROJECT_DIR$/backend/node_modules/mysql/lib/protocol/sequences/Sequence.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="84" column="23" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/node_modules/sequelize/lib/dialects/mysql/connection-manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="81" column="19" selection-start-line="81" selection-start-column="19" selection-end-line="81" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/node_modules/mysql/lib/Connection.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="108" column="27" selection-start-line="108" selection-start-column="27" selection-end-line="108" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/DB/rides.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/node_modules/sequelize/lib/sequelize.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="668" column="0" selection-start-line="668" selection-start-column="0" selection-end-line="668" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/config/config.template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/node_modules/sequelize/lib/dialects/postgres/connection-manager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="63" column="2" selection-start-line="63" selection-start-column="2" selection-end-line="63" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/routes/find.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/seqTest.js" />
+    <entry file="file://$PROJECT_DIR$/backend/ds.js" />
+    <entry file="file://$PROJECT_DIR$/backend/node.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/models/cars.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="38" column="0" selection-start-line="6" selection-start-column="17" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/DB/carpooling (1).sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/Rest/middileware/cars.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/config/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/Rest/Db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/models/users.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/bin/www">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1544">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/models/rides.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-542">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/.npmignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="774">
-          <caret line="43" column="37" selection-start-line="43" selection-start-column="37" selection-end-line="43" selection-end-column="37" />
+        <state relative-caret-position="182">
+          <caret line="108" column="31" selection-start-line="108" selection-start-column="31" selection-end-line="108" selection-end-column="31" />
+          <folding>
+            <element signature="e#473#575#0" expanded="false" />
+            <element signature="e#522#573#0" expanded="false" />
+            <element signature="e#607#705#0" expanded="false" />
+            <element signature="e#652#703#0" expanded="false" />
+            <element signature="e#1013#1082#0" expanded="false" />
+            <element signature="e#1238#1248#0" expanded="false" />
+            <element signature="e#1556#1658#0" expanded="false" />
+            <element signature="e#1660#1688#0" expanded="false" />
+            <element signature="e#1730#2085#0" expanded="false" />
+            <element signature="e#1943#1979#0" expanded="false" />
+            <element signature="e#2091#2112#0" expanded="false" />
+            <element signature="e#2702#2921#0" expanded="false" />
+            <element signature="e#2724#2756#0" expanded="false" />
+            <element signature="e#3070#3131#0" expanded="false" />
+            <element signature="e#3555#3602#0" expanded="false" />
+            <element signature="e#3680#3764#0" expanded="false" />
+            <element signature="e#3794#3911#0" expanded="false" />
+            <element signature="e#3959#4137#0" expanded="false" />
+            <element signature="e#4414#5116#0" expanded="false" />
+            <element signature="e#4489#4563#0" expanded="false" />
+            <element signature="e#4568#4635#0" expanded="false" />
+            <element signature="e#4702#4976#0" expanded="false" />
+            <element signature="e#4981#5020#0" expanded="false" />
+            <element signature="e#5029#5114#0" expanded="false" />
+            <element signature="e#5201#5644#0" expanded="false" />
+            <element signature="e#5231#5304#0" expanded="false" />
+            <element signature="e#5330#5494#0" expanded="false" />
+            <element signature="e#5499#5550#0" expanded="false" />
+            <element signature="e#5555#5594#0" expanded="false" />
+            <element signature="e#5603#5642#0" expanded="false" />
+            <element signature="e#5728#6379#0" expanded="false" />
+            <element signature="e#5789#6315#0" expanded="false" />
+            <element signature="e#5840#6058#0" expanded="false" />
+            <element signature="e#6112#6159#0" expanded="false" />
+            <element signature="e#6178#6307#0" expanded="false" />
+            <element signature="e#6242#6297#0" expanded="false" />
+            <element signature="e#6324#6377#0" expanded="false" />
+            <element signature="e#6511#6787#0" expanded="false" />
+            <element signature="e#6870#7305#0" expanded="false" />
+            <element signature="e#6949#7224#0" expanded="false" />
+            <element signature="e#6990#7208#0" expanded="false" />
+            <element signature="e#7241#7294#0" expanded="false" />
+            <element signature="e#7322#7363#0" expanded="false" />
+            <element signature="e#7432#7836#0" expanded="false" />
+            <element signature="e#7466#7760#0" expanded="false" />
+            <element signature="e#7644#7691#0" expanded="false" />
+            <element signature="e#7705#7752#0" expanded="false" />
+            <element signature="e#7769#7834#0" expanded="false" />
+            <element signature="e#7840#7923#0" expanded="false" />
+            <element signature="e#7981#8868#0" expanded="false" />
+            <element signature="e#8488#8861#0" expanded="false" />
+            <element signature="e#8510#8590#0" expanded="false" />
+            <element signature="e#8611#8851#0" expanded="false" />
+            <element signature="e#8950#9128#0" expanded="false" />
+            <element signature="e#9037#9124#0" expanded="false" />
+            <element signature="e#9132#9149#0" expanded="false" />
+            <element signature="e#9465#9492#0" expanded="false" />
+            <element signature="e#9526#9690#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/Rest/Const.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#49#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/node_modules/express/lib/response.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="334" column="0" selection-start-line="334" selection-start-column="0" selection-end-line="334" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/Rest/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/Rest/models/sessions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="11" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/dbconnect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+          <folding>
+            <element signature="e#321#455#0" expanded="false" />
+            <element signature="e#493#651#0" expanded="false" />
+            <element signature="e#718#1729#0" expanded="false" />
+            <element signature="e#1787#2260#0" expanded="false" />
+            <element signature="e#2295#2351#0" expanded="false" />
+            <element signature="e#2384#2434#0" expanded="false" />
+            <element signature="e#2471#2525#0" expanded="false" />
+            <element signature="e#2766#3135#0" expanded="false" />
+            <element signature="e#3170#3205#0" expanded="false" />
+            <element signature="e#3252#3313#0" expanded="false" />
+            <element signature="e#3361#4879#0" expanded="false" />
+            <element signature="e#4923#4975#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/Rest/Module/Autheniticator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="49" column="18" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/Rest/middileware/rest_only_check.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-764">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#49#0" expanded="false" />
+            <element signature="e#740#889#0" expanded="false" />
+            <element signature="e#761#879#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

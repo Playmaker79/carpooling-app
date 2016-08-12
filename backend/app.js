@@ -5,13 +5,12 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var bcrypt = require('bcryptjs');
 var mysql = require('mysql');
-var dbconnect = require('./dbconnect.js');
 var routes = require('./routes/index');
 var app = express();
 var multer = require('multer');
 var session = require('express-session');
 var hashids = require('hashids');
-
+var db = require('./db');
 var profile_pic_location = multer({
     dest: 'uploads/profile_pics/',
     limits: {
@@ -19,7 +18,6 @@ var profile_pic_location = multer({
         files: 1
     }
 });
-
 var vehicle_picture = multer({
     dest: 'uploads/car_pics/',
     limits: {
@@ -28,17 +26,16 @@ var vehicle_picture = multer({
     }
 });
 
-
-// view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
-
 // uncomment after placing your favicon in /public
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: false
 }));
+
+// view engine setup
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'ejs');
 
 app.use(cookieParser());
 app.use(session({secret: 'qwerty124',
@@ -59,6 +56,12 @@ app.use('/offer',routes);
 app.use('/logout',routes);
 
 
+/**
+ * Android REST api Initializer
+ */
+require('./Rest/main')(app,db);
+
+var dbconnect = require('./dbconnect.js');
 
 /*generate menu view for current user globally accesible in all pages wherever the user is logged in*/
 

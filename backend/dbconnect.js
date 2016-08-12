@@ -6,6 +6,7 @@ var sync = false;
 db.users.sync({force: sync});
 db.cars.sync({force:sync});
 db.rides.sync({force:sync});
+db.rest_session.sync({force:sync});
 
 var connection = mysql.createConnection({
     host: config.appDb.host,
@@ -158,9 +159,7 @@ exports.offeraride = function (data,req, res) {
         });
     }
 } 
-
-
-
+ 
 exports.deleteRide = function (ride_id) {
   return db.rides.destroy({where:{id:ride_id}});
 };
